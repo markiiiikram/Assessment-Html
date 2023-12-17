@@ -1,0 +1,51 @@
+/* line 1, ../Assessment/sass/base/_base.scss */
+* {
+  display: grid;
+  font-size: 100%;
+  grid-template-columns: 10;
+  gap: 10px;
+}
+
+/* line 8, ../Assessment/sass/base/_base.scss */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #939393;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 18, ../Assessment/sass/base/_base.scss */
+h4 {
+  margin: 1em;
+  padding: 1em;
+}
+
+/* line 1, ../Assessment/sass/layout/_header.scss */
+.header {
+  width: auto;
+  text-align: center;
+  text-wrap: pretty;
+}
+
+/* line 1, ../Assessment/sass/layout/_footer.scss */
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin-top: auto;
+  background-color: aqua;
+  justify-content: left;
+}
+
+/* line 11, ../Assessment/sass/layout/_footer.scss */
+.copyright {
+  justify-self: start;
+  text-align: start;
+  max-height: 200px;
+  background-color: yellow;
+}
+
+/*# sourceMappingURL=application.css.map */

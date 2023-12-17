@@ -1,0 +1,26 @@
+.sub-container
+{
+    display:flex;
+    flex-direction:column;
+    min-width:300px;
+    margin-top: auto;
+    background-color: aqua;
+    justify-content:left;
+}
+
+.copyright{
+    justify-self:start;
+    text-align:start;
+    max-height:200px;
+    background-color:yellow;
+}
+// .about-ntm{
+//     flex:auto;
+// }
+// .our-srvc{
+//     grid-area:C1B;
+// }
+// .our-indr{
+//     grid-area:R3B;
+//     margin:30px;
+// }
