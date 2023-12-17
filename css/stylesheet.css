@@ -7,6 +7,9 @@
 body,html{
     height:100%;
 }
+body{
+    font-family:Poppins, sans-serif;
+}
 a{
     color:inherit;
 }
@@ -22,16 +25,25 @@ a{
     padding:15px;
     background-color: #323544;
     color:#fff;
+    text-decoration: none;
+    /* get rid of underline MOVE THIS LATER */
+    a{
+        text-decoration:none;
+    }
+    h4{
+        margin-bottom:25px;
+    }
+img{
+    
 
 
 }
-.about-netmatters{
+.about{
     max-width:80%;
-    margin-bottom:30px;
+    margin-bottom:25px;
 }
-.our-srvc{
-    margin-bottom:30px;
 }
+
 .copyright{
     display:flex;
     align-items: center;
