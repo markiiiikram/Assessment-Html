@@ -27,6 +27,45 @@
     -moz-osx-font-smoothing: grayscale;
   }
   
+  .icon-laptop:before {
+    display:inline-block;
+    content: "\e957";
+    color:#fff;
+    background-color:#67809F;
+    font-size: 32px;
+    padding:15px;
+    border-radius:50%;
+    margin-top:30px;
+  }
+  .icon-googlescholar:before {
+    content: "\e903";
+    color: #4885ed;
+  }
+  .icon-security:before {
+    content: "\e900";
+  }
+  .icon-phone_in_talk:before {
+    content: "\e901";
+  }
+  .icon-bar-graph:before {
+    content: "\e900";
+    display:inline-block;
+    color:#fff;
+    background-color:#67809F;
+    font-size: 32px;
+    padding:15px;
+    border-radius:50%;
+    margin-top:30px;
+  }
+  .icon-display:before {
+    content: "\e956";
+  }
+  .icon-star:before {
+    content: "\e903";
+  }
+  .icon-embed2:before {
+    content: "\ea80";
+  }
   .icon-facebook:before {
     content: "\ea90";
   }
@@ -39,15 +78,20 @@
   .icon-linkedin2:before {
     content: "\eaca";
   }
-  .icon-star:before {
-    content: "\e9d9";
-  }
-
-
 .about{
     max-width:80%;
     margin-bottom:25px;
 }
+/* colours for sass later*/
+/* black:#000
+   white:#fff
+   grey:
+   hoki:
+
+  
+
+
+
 
 /* main body/html */
 *{
@@ -86,7 +130,7 @@ a:hover{
   display:inline-block;
   cursor: pointer;
   text-align: center;
-  color:white;
+  color:#fff;
   height: auto;
   line-height: 35px;
   padding: 5px 15px;
@@ -116,6 +160,36 @@ a:hover{
   background-color: #000;
   color:#fff;
 }
+.button-hoki{
+  background-color:#67809F;
+}
+
+/* containers */
+.container{
+  box-sizing:border-box;
+  display:block;
+  border-radius:15px;
+  padding:30px;
+  box-shadow:rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+  border:1px solid;
+  
+}
+/* Our services */
+
+.bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training{
+text-align: center;
+transition:0.5s ease;
+padding:0px;
+margin-top:30px;
+padding:0px;
+
+
+}
+.bespoke-software:hover{
+  top:-10px;
+  transition:.5 ease
+}
+
 /* Welcome area */
 
 .stars{
@@ -158,12 +232,6 @@ a:hover{
   border-top: 1px solid #ccc;
   width:100%;
 }
-
-
-.line{
-  border-bottom: 10px solid #ccc;
-}
-
 /* email sign up */
 .email-news{
   background-color:#ddd;
@@ -189,7 +257,6 @@ a:hover{
   border:0;
   margin:25px;
 }
-
 
 .icons{
   display:flex;
