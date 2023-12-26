@@ -1,0 +1,34 @@
+/* about us footer */
+.about-footer{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content: space-between;
+    padding:15px 25px;
+    background-color: #323544;
+    color:#fff;
+    text-decoration: none;
+    align-items: flex-start;
+  
+}
+.copyright{
+    display:flex;
+    align-items: center;
+    min-height:35px;
+    padding:0px;
+    background-color:#212330;
+    color:#fff;
+    
+}
+
+
+
+.footer-li{
+  display:flex;
+  flex-direction: column;
+  text-align:start;
+  padding:10px 60px 10px;
+}
+.ftr-li:hover{
+  text-decoration:underline;
+}
+

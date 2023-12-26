@@ -1,0 +1,72 @@
+// ==========================================================================
+// BUTTONS
+// ==========================================================================
+.btn{
+    display:inline-block;
+    cursor: pointer;
+    text-align: center;
+    color:#fff;
+    height: auto;
+    line-height: 35px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border-radius: 3px;
+    white-space: normal;
+  }
+  #google-blue:hover{
+    background-color: #166AF4;
+  
+  }
+  #trust-green:hover{
+    background-color: #009B69;
+  }
+  .button-green{
+    background-color: #00b67b;
+    border:1px solid transparent;
+  }
+  .button-blue{
+    background-color:#4183d7;
+    border:1px solid transparent;
+  }
+  
+  .button-red{
+    background-color:#ce4125;
+    border:1px solid transparent;
+  
+  }
+  .button-black{
+    background-color:#272936;
+    border:1px solid transparent;
+    transition: 0.3s;
+  }
+  .button-black:hover{
+    background-color: #000;
+    color:#fff;
+  }
+  .button-hoki{
+    background-color:#67809F;
+    border:1px solid transparent;
+  }
+  .button-purple{
+    background-color:#926FB1;
+    border:1px solid transparent;
+  }
+  .button-radicalred{
+    background-color:#F62459;
+    border:1px solid transparent;
+  }
+  .button-punch{
+    background-color:#CE4125;
+    border:1px solid transparent;
+  }
+
+  .pretty-checkbox{
+    border-radius: 3px;
+    border: 3px solid #333645;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+  }

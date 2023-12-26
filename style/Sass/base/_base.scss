@@ -1,0 +1,45 @@
+// ==========================================================================
+// BODY
+// ==========================================================================
+body{   
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    text-align:center;
+    color: #666;
+    background-color:#fff;
+  
+  }
+  a{
+    color:inherit;
+    text-decoration:none;
+}
+.a-ul{
+    text-decoration:underline;
+    text-align:start;
+  }
+  .about{
+    max-width:80%;
+    margin-bottom:25px;
+}
+/* headings */
+h1,h2,h3,h4,h5,h6{
+    padding:1.5vh 0;
+    text-transform:capitalize;
+  }
+  h2{  
+    font-size: 32px;
+    font-weight:600;
+  }
+  h3{
+    font-size:26px;
+    font-weight:400;
+  }
+  h4{
+    font-weight:400;
+    margin:25px 0;
+  }
+  
+  h3{
+    margin-bottom:24px;
+  }

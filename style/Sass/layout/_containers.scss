@@ -1,0 +1,228 @@
+.container{
+    box-sizing:border-box;
+    display:block;
+    border-radius:15px;
+    margin:0px 15px;
+    padding:30px 15px;
+    box-shadow:rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
+    border:1px solid;
+    top:0;
+    transition:.5s;
+  }
+  .container:hover{
+    transform: translate(0, -10px);
+  }
+.container-banner{
+  max-width:767px;
+}
+  .container-mw{
+    margin-left: -8px;
+    padding-left: 15px;
+    margin-right: -8px;
+    padding-right:15px;
+    border-right-width: 15px;
+  }
+  /* Our services */
+
+  .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training{
+  text-align: center;
+  padding:0px;
+  margin-top:30px;
+  padding:0px;
+  }
+  .bespoke-software:hover{
+    top:-10px;
+    transition:.5 ease
+  }
+  ///HOVER EFFECTS
+  .bespoke-software:hover, .it-support:hover,.dig-marketing:hover, .tele-services:hover,.web-design:hover, .cyber-security:hover, .developer-training:hover{
+    color: #fff;
+    border-color: transparent;
+    top: -10px;
+    transition: .5s ease;
+    text-decoration: none;
+  }
+  .bespoke-software:hover{
+    background-color: #67809F;
+    #btn-hoki{
+      color:#67809F;
+      background-color:#fff;
+    }
+    .icon-laptop{
+      color:#67809F;
+      background-color:#fff;
+    }
+  }
+  .it-support:hover{
+    background-color: #4183d7;
+    #btn-blue{
+      color:#4183d7;
+      background-color:#fff;
+    }
+    .icon-display{
+      color:#4183d7;
+      background-color:#fff;
+    }
+  }
+  /***********/
+
+.dig-marketing:hover{
+    background-color: #00b67b;
+    .button-green{
+      color:#00b67b;
+      background-color:#fff;
+    }
+    .icon-bar-graph{
+      color:#00b67b;
+      background-color:#fff;
+    }
+  }
+  
+  /*************/ 
+  
+  .tele-services:hover{
+    background-color:#ce4125;
+    .button-red{
+      color:#ce4125;
+      background-color:#fff;
+    }
+    .icon-phone_in_talk{
+      color:#ce4125;
+      background-color:#fff;
+    }
+  }
+  
+  /**********/
+  
+  .web-design:hover{
+    background-color:#926FB1;
+    #btn-purple{
+      color:#926FB1;
+      background-color:#fff;
+    }
+    .icon-code{
+      color:#926FB1;
+      background-color:#fff;
+    }
+  }
+  
+  /**********/
+  .cyber-security:hover{
+    background-color:#F62459;
+    .button-radicalred{
+      color:#F62459;
+      background-color:#fff;
+    }
+    .icon-security{
+      color:#F62459;
+      background-color:#fff;
+    }
+  }
+  
+  .developer-training:hover{
+    background-color:#CE4125;
+    .button-punch{
+      color:#CE4125;
+      background-color:#fff;
+    }
+    .icon-scholar{
+      color:#CE4125;
+      background-color:#fff;
+    }
+  }
+  .btn-art:hover{
+    background-color:#fff;
+  }
+  
+.employees{
+  width:100%;
+}
+// Welcome container
+.welcome{
+    background-color: #323544;
+    color:#fff;
+    margin-top:30px;
+    text-align:left;
+  }
+
+  /* News */
+.article-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    align-content:flex-start;
+    align-items:flex-start;
+    padding:0px;
+    background-color:#fff;
+    margin-top:30px;
+  }
+  .employees{
+    height:100%;
+    width:100%;
+    border-radius:14px 14px 0px 0px;
+  }
+
+  .read-time{
+    display:inline;
+    text-transform:uppercase;
+    color:rgba(51,54,69,.5);
+    font-size: .85rem;
+    vertical-align: middle;
+  }
+  .article-details{
+    display:flex;
+    flex-wrap:wrap;
+    text-align: left;
+    margin-top: 1px;
+    padding:30px;
+    border-top: 1px solid #ccc;
+    width:100%;
+    p{
+      margin-bottom:30px;
+    }
+  }
+
+  /////////////////////
+  /// 
+  /// 
+
+.email-news{
+    background-color:#ddd;
+    padding:50px 10px;
+    display:flex;
+    flex-wrap:wrap;
+    text-align:left;
+  }
+  .email{
+    justify-content:flex-start;
+    width:100%;
+    line-height: 47px;
+  }
+
+  .marketing-agree{
+  border-radius: 3px;
+  border: 3px solid #333645;
+  height: 32px;
+  width: 32px;
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  }
+  .news-input{
+    flex-direction: column;
+    width:100%;
+  
+  }
+  .checkbox{
+    .container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+  }
+
+  .color-logo{
+    filter:grayscale(100%)
+  }

@@ -1,0 +1,308 @@
+// ==========================================================================
+// ICON IMPORTS
+// ==========================================================================
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?dpfmnu');
+  src:  url('../fonts/icomoon.eot?dpfmnu#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf') format('truetype'),
+    url('../fonts/icomoon.woff') format('woff'),
+    url('../fonts/icomoon.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-bar-graph:before {
+  content: "\e900";
+}
+.icon-transfer:before {
+  content: "\e901";
+}
+.icon-arrows:before {
+  content: "\e901";
+}
+.icon-headphones:before {
+  content: "\e910";
+}
+.icon-bullhorn:before {
+  content: "\e91a";
+}
+.icon-folder-open:before {
+  content: "\e930";
+}
+.icon-ticket:before {
+  content: "\e939";
+}
+.icon-cart:before {
+  content: "\e93a";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-display:before {
+  content: "\e956";
+}
+.icon-laptop:before {
+  content: "\e957";
+}
+.icon-mobile:before {
+  content: "\e958";
+}
+.icon-drive:before {
+  content: "\e963";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+.icon-download3:before {
+  content: "\e9c7";
+}
+.icon-earth:before {
+  content: "\e9ca";
+}
+.icon-shuffle:before {
+  content: "\ea30";
+}
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+.icon-code:before {
+  content: "\ea80";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-instagram:before {
+  content: "\ea92";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-angle-double-right:before {
+  content: "\e902";
+}
+.icon-star:before {
+  content: "\e903";
+}
+.icon-lock:before {
+  content: "\e904";
+}
+.icon-flask:before {
+  content: "\e905";
+}
+.icon-clipboard:before {
+  content: "\e906";
+}
+.icon-paste:before {
+  content: "\e906";
+}
+.icon-handshake-o:before {
+  content: "\e907";
+}
+.icon-dashboard:before {
+  content: "\e908";
+}
+.icon-tachometer:before {
+  content: "\e908";
+}
+.icon-phone-square:before {
+  content: "\e909";
+}
+.icon-pencil:before {
+  content: "\e90a";
+}
+.icon-envelope:before {
+  content: "\e90b";
+}
+.icon-money:before {
+  content: "\e90c";
+}
+.icon-scholar:before {
+  content: "\e90d";
+}
+.icon-cloud-download:before {
+  content: "\e90e";
+}
+.icon-cloud:before {
+  content: "\e90f";
+}
+.icon-group:before {
+  content: "\e911";
+}
+.icon-users:before {
+  content: "\e911";
+}
+.icon-cogs:before {
+  content: "\e912";
+}
+.icon-gears:before {
+  content: "\e912";
+}
+.icon-paperplane:before {
+  content: "\e913";
+}
+.icon-send:before {
+  content: "\e913";
+}
+.icon-flight:before {
+  content: "\e913";
+}
+.icon-email:before {
+  content: "\e913";
+}
+.icon-chat:before {
+  content: "\e914";
+}
+.icon-help:before {
+  content: "\e915";
+}
+.icon-security:before {
+  content: "\e916";
+}
+.icon-call:before {
+  content: "\e917";
+}
+.icon-trending_up:before {
+  content: "\e918";
+}
+.icon-phone_in_talk:before {
+  content: "\e919";
+}
+.icon-mouse:before {
+  content: "\e91b";
+}
+// ==========================================================================
+// INDEPENDENT ICONS
+// ==========================================================================
+
+.nm-logo-black{
+  height: 60px;
+  width: 345px;
+  margin-bottom:20px;
+}
+
+
+.icon-ours{
+  display:inline-block;
+  color:#fff;
+  font-size: 32px;
+  padding:15px;
+  border-radius:50%;
+  margin-top:30px;
+}
+.icon-laptop{
+  background-color:#67809F;
+}
+.icon-display{
+  background-color:#4183d7;
+}
+.icon-bar-graph{
+  background-color:#00b67b; 
+}
+.icon-phone_in_talk{
+  background-color: #ce4125;
+}
+.icon-code{
+  background-color: #926FB1;
+}
+
+.icon-security{
+  background-color: #F62459;
+}
+
+.icon-scholar{
+  background-color: #CE4125;
+}
+
+.stars{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+.icon-search{
+  color:#fff;
+  background-color:#999aa2;
+  height:56px;
+  font-size:23px;
+  padding:0;
+  
+}
+
+// FOOTER ICONS
+
+.icons{
+  display:flex;
+  font-size: 26px;
+  width:50%;
+  justify-content: flex-start;
+
+}
+.icons:hover{
+  a{  
+    text-decoration:none;
+  }
+
+}
+.icon-facebook, .icon-instagram, .icon-twitter, .icon-linkedin2{
+  background-color:#212330;
+  height:auto;
+  padding:10px 30px;
+  margin:0 5px;
+  margin-bottom:30px;
+
+}
+.icon-facebook:hover{
+  background-color: #3B5998;
+  text-decoration:none;
+}
+.icon-linkedin2:hover{
+  background-color:#0077B5;
+  text-decoration:none;
+}
+.icon-twitter:hover{
+  background-color:#00ACED;
+  text-decoration:none;
+}
+.icon-instagram:hover{
+  background-color:#D93175;
+  text-decoration:none;
+}
+
+///
+.min-logo{
+  padding-left:10px;
+  padding-bottom:10px;
+  }
+
+
+  .nm-logo-med{
+    width:100%;
+    size:250px;
+    vertical-align:middle;
+    border:0;
+    margin:25px;
+  }
+  
