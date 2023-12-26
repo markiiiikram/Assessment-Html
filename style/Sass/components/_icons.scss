@@ -59,7 +59,7 @@
   content: "\e956";
 }
 .icon-laptop:before {
-  content: "\e957";
+  content: "\e904";
 }
 .icon-mobile:before {
   content: "\e958";
@@ -104,7 +104,7 @@
   content: "\e902";
 }
 .icon-star:before {
-  content: "\e903";
+  content: "\e9d9";
 }
 .icon-lock:before {
   content: "\e904";
@@ -140,7 +140,7 @@
   content: "\e90c";
 }
 .icon-scholar:before {
-  content: "\e90d";
+  content: "\e903";
 }
 .icon-cloud-download:before {
   content: "\e90e";
@@ -179,7 +179,7 @@
   content: "\e915";
 }
 .icon-security:before {
-  content: "\e916";
+  content: "\e900";
 }
 .icon-call:before {
   content: "\e917";
@@ -188,10 +188,15 @@
   content: "\e918";
 }
 .icon-phone_in_talk:before {
-  content: "\e919";
+  content: "\e901";
 }
 .icon-mouse:before {
   content: "\e91b";
+}
+.icon-hamburger:before {
+  content: "\e9bd";
+  background-color: #333645;
+  color:#fff;
 }
 // ==========================================================================
 // INDEPENDENT ICONS
@@ -248,7 +253,7 @@
   height:56px;
   font-size:23px;
   padding:0;
-  
+
 }
 
 // FOOTER ICONS

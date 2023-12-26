@@ -8,8 +8,8 @@
     color:#fff;
     text-decoration: none;
     align-items: flex-start;
-  
 }
+
 .copyright{
     display:flex;
     align-items: center;
@@ -26,9 +26,15 @@
   display:flex;
   flex-direction: column;
   text-align:start;
-  padding:10px 60px 10px;
+  padding:0;
+  list-style-type: none;
 }
 .ftr-li:hover{
   text-decoration:underline;
 }
 
+.footer-h4{
+  margin:0 0 26px;
+  padding:0;
+  text-align: left;
+}

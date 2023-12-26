@@ -14,19 +14,24 @@
     
     <div class="header">
         <a href="#" ><img src="style/images/logos/nm-logo.webp" class="nm-logo-black"></a>
-    
-    
-    <!-- search bar-->
-        <form class="search">
+        <form class="search-low">
             <input type="text" placeholder="Search.." class="search-box">
             <button type="submit" class="search-submit" ><span class="icon-search icon-magnify"></span></button>
-            <button type="submit" class="hamburger" ><span class="icon-ham icon-magnify"></span></button>
+            <button type="submit" class="hamburger" ><span class="icon-search icon-hamburger"></span></button>
+        </form>
+    
+    <!-- search bar-->
+        <form class="search-high">
+            <input type="text" placeholder="Search.." class="search-box">
+            <button type="submit" class="search-submit" ><span class="icon-search icon-magnify"></span></button>
+            <button type="submit" class="hamburger" ><span class="icon-search icon-hamburger"></span></button>
         </form>
 
     </div>
     <!-- carousel -->
+    <div class="banner-main">
     <div class="container-banner">
-        <div class="banner container-mw">
+        <div class="banner">
             <h1 class="banner-heading ">
                 The East Of England's Leading Technology Company
             </h1>
@@ -37,6 +42,7 @@
     
         </div>
     </div>
+</div> 
         <!-- our services area -->
         <div class = "our-services">
             <h2>Our Services</h2>
@@ -118,6 +124,7 @@
         <div class="affiliation-banner">
             <img class="colour-logo mono-logo" src="style/images/logos/black_swan_logo.webp" alt="Black Swan Care Group">
             <img class="colour-logo mono-logo" src="style/images/logos/girls_day_school_trust_logob.webp" alt="Girl Guiding Group">
+            <img class="colour-logo mono-logo" src="style/images/logos/howespercivallogo.webp" alt="Howes Percival Logo">
         </div>
     <!--The review area-->
     <div class="welcome dark container-mw">
@@ -140,7 +147,7 @@
          <div style="color: orange; margin-bottom: 25px; font-size: 50px;"class="icon-star" ></div>
          </div>
 
-         <p><strong><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></strong></p>
+         <p class="quote"><strong><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></strong></p>
         <p><cite>Eleanor Bishop, Head of Marketing -</cite>Ashcroft Partnership LLP</p>
         <div class="google-trust">
             <a href="#" class="btn button-blue" id="google-blue"> Google Reviews</a>
@@ -240,9 +247,11 @@
         <a href='#'><span class="icon icon-twitter"></span></a>
         <a href='#'><span class="icon icon-instagram"></span></a>
         </div>
+        </div>
 
-        <h4 class="footer-h4">ABOUT NETMATTERS</h4>
+     
         <ul class="footer-li" >
+            <h4 class="footer-h4">ABOUT NETMATTERS</h4>
             <li>
                 <a href '#' class="ftr-li">News</a>
             </li>
@@ -274,7 +283,7 @@
         </div>
 
         <div class="about our-srvc">
-            <h4> OUR SERVICES </h4>
+            <h4 class="footer-h4"> OUR SERVICES </h4>
             <ul class="footer-li">
                 <li>
                     <a href '#' class="ftr-li">Bespoke Software</a>
@@ -296,7 +305,7 @@
             </div>
 
         <div class="about our-indr">
-                <h4> OUR INDUSTRIES </h4>
+                <h4 class="footer-h4"> OUR INDUSTRIES </h4>
                 <ul class="footer-li" >
                     <li>
                         <a href '#' class="ftr-li">Financial Services</a>
@@ -326,7 +335,7 @@
                 </ul>
                 </div>
         <div class="about locations">
-            <h4> LOCATIONS </h4>
+            <h4 class="footer-h4"> LOCATIONS </h4>
             <ul class="footer-li">
                 <li>
                     <a href '#' class="ftr-li">London Office</a>

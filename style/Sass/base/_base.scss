@@ -2,6 +2,7 @@
 // BODY
 // ==========================================================================
 body{   
+    display:table;
     font-family: Poppins, sans-serif;
     font-size: 1rem;
     letter-spacing: .4px;
@@ -21,6 +22,20 @@ body{
   .about{
     max-width:80%;
     margin-bottom:25px;
+}
+p{
+line-height: 1.875rem;
+margin-bottom: 25px;
+}
+.quote{
+  font-weight: 600;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+cite{
+  font-weight: 600;
+  color: #a3a8ac;
+  font-size: 1.1rem;
 }
 /* headings */
 h1,h2,h3,h4,h5,h6{
