@@ -1,8 +1,5 @@
 /* about us footer */
 .about-footer{
-    display:flex;
-    flex-flow:column nowrap;
-    justify-content: space-between;
     padding:15px 25px;
     background-color: #323544;
     color:#fff;
@@ -20,7 +17,9 @@
     
 }
 
-
+.about{
+  text-align:start;
+}
 
 .footer-li{
   display:flex;
@@ -32,9 +31,20 @@
 .ftr-li:hover{
   text-decoration:underline;
 }
-
+.footer-h3{
+  font-size:16px
+}
 .footer-h4{
   margin:0 0 26px;
   padding:0;
   text-align: left;
+}
+@media (min-width:768px){
+  .links{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .footer-li{
+    margin-top:0px;
+  }
 }
