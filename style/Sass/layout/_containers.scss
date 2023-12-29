@@ -20,7 +20,7 @@
     // padding-left: 15px;
     // margin-right: -8px;
     // padding-right:15px;
-    width:100%;
+    // width:100%;
   }
   /* Our services */
 
@@ -134,15 +134,11 @@
     background-color:#fff;
   }
   
-.employees{
-  width:100%;
-}
-
-
 //affiliation banner
 .affiliation-banner{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
@@ -153,6 +149,10 @@
     margin-top:30px;
     text-align:left;
   }
+.google-trust{
+  display:inline-block;
+  padding-bottom:30px;
+}
 
   /* News */
 .article-container{
@@ -197,7 +197,8 @@
 
 .email-news{
     background-color:#ddd;
-    padding:50px 10px;
+    padding-left: 15px;
+    padding-right: 15px;
     display:flex;
     flex-wrap:wrap;
     text-align:left;
@@ -234,4 +235,47 @@
 
   .color-logo{
     filter:grayscale(100%)
+  }
+
+  @media (min-width:768px){
+    .align-center{
+      width:80%;
+      margin:auto;
+    }
+    .latest-news{
+      display:grid;
+      grid-template-columns: 1fr 345px 345px 1fr;
+      gap:30px;
+      padding:50px;
+    }
+    // .article-container{
+  
+    // }
+  
+.employees{
+  height:200px;
+  width:345px;
+  border-radius:0px;
+}
+.article-details{
+    margin-top:0px;
+  }
+.container-col-1{
+    grid-column: 2;
+    width:345px;
+    border-radius:0px;
+
+  }
+.container-col-2{
+    grid-column: 3;
+    width:345px;
+    border-radius:0px;
+  }
+.container-col-3{
+    display:none;
+  }
+  }
+
+  .hidden{
+    display:none;
   }

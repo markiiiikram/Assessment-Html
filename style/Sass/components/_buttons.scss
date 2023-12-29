@@ -2,7 +2,6 @@
 // BUTTONS
 // ==========================================================================
 .btn{
-    display:inline-block;
     cursor: pointer;
     text-align: center;
     color:#fff;
@@ -13,6 +12,20 @@
     font-size: 1rem;
     border-radius: 3px;
     white-space: normal;
+  }
+  #google-blue{
+    display:block;
+    margin-right:8px;
+    margin-bottom:8px;
+    height:35px;
+    width:208px;
+    float:left;
+  }
+  #trust-green{
+    display:block;
+    height:35px;
+    width:208px;
+    float:inline-start;
   }
   #google-blue:hover{
     background-color: #166AF4;
@@ -70,10 +83,17 @@
     float: left;
     margin-right: 20px;
   }
+  .checkbox-surround{
+    width:52px;
+    height:96px;
+  }
+
   .hamburger{
     background-color:#333645;
-    margin-left:20px;
+    margin-left:5px;
     border-radius: 3px;
     padding:5px 15px;
     border-color: #333645;
-  }
+    width: 33px;
+    height: 19px;
+}

@@ -190,6 +190,9 @@
 .icon-phone_in_talk:before {
   content: "\e901";
 }
+.icon-phone_in_talk2:before {
+  content: "\e901";
+}
 .icon-mouse:before {
   content: "\e91b";
 }
@@ -197,14 +200,15 @@
   content: "\e9bd";
   background-color: #333645;
   color:#fff;
+  font-size: 1.438rem;
+  line-height: 45px;
 }
 // ==========================================================================
 // INDEPENDENT ICONS
 // ==========================================================================
 
 .nm-logo-black{
-  height: 60px;
-  width: 345px;
+  width:100%;
   margin-bottom:20px;
 }
 
@@ -258,27 +262,35 @@
 
 // FOOTER ICONS
 
-.icons{
+.footer-icons{
   display:flex;
   font-size: 26px;
-  width:50%;
+  width:100%;
   justify-content: flex-start;
-
+  flex-wrap: wrap;
 }
-.icons:hover{
+.footer-icons:hover{
   a{  
     text-decoration:none;
   }
 
 }
 .icon-facebook, .icon-instagram, .icon-twitter, .icon-linkedin2{
-  background-color:#212330;
+  
   height:auto;
-  padding:10px 30px;
-  margin:0 5px;
-  margin-bottom:30px;
-
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
+.icon{
+  background-color:#212330;
+  width:68px;
+  height:28px;
+  padding: 12px 22px 16px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
 .icon-facebook:hover{
   background-color: #3B5998;
   text-decoration:none;
@@ -311,3 +323,23 @@
     margin:25px;
   }
   
+
+
+  @media (max-width:480px){
+    .footer-icons{
+      max-width:300px;
+      max-height:66px;
+    }
+    .icon{
+      width:35%;
+    }
+  }
+
+
+  @media (max-width:1259px){
+    icon{
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+  }
