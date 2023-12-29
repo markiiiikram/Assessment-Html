@@ -89,11 +89,14 @@
   }
 
   .hamburger{
-    background-color:#333645;
-    margin-left:5px;
-    border-radius: 3px;
-    padding:5px 15px;
-    border-color: #333645;
-    width: 33px;
-    height: 19px;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-size: 23px;
+  width: 63px;
+  height: 56px;
+  padding: 7px 20px 3px;
+  background-color:#333645;
+  border: none;
+  border-radius: 0 3px 3px 0;
 }

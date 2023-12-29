@@ -335,7 +335,9 @@
     }
   }
 
-
+@media (min-width:768px){
+  .telephone{display:none}
+}
   @media (max-width:1259px){
     icon{
     padding: 12px 22px 16px;
