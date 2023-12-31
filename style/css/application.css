@@ -117,7 +117,9 @@ h3 {
 
 .header-low-logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .banner-main {
@@ -705,6 +707,12 @@ h3 {
   background-color: #333645;
   border: none;
   border-radius: 0 3px 3px 0;
+  margin-left: 20px;
+}
+
+.telephone {
+  background-color: transparent;
+  border: 0px;
 }
 
 @font-face {
@@ -963,8 +971,11 @@ h3 {
 }
 
 .nm-logo-black {
-  width: 100%;
-  margin-bottom: 20px;
+  max-width: 100%;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
 }
 
 .icon-ours {
@@ -1011,11 +1022,10 @@ h3 {
 }
 
 .icon-search {
-  color: #fff;
-  background-color: #999aa2;
-  height: 56px;
-  font-size: 23px;
-  padding: 0;
+  font-size: 32px;
+  font-weight: 400;
+  color: #333645;
+  background-color: transparent;
 }
 
 .footer-icons {

@@ -16,7 +16,7 @@
   justify-content: space-between;
   border:1px #ccc;
 }
-// media query for later
+
 .search-box{
   height:44px;
   padding:5px 15px 5px;
@@ -42,7 +42,9 @@
 }
 .header-low-logo{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -133,7 +135,6 @@
       justify-content: flex-end;
       border:1px #ccc;
     }
-    // media query for later
     .search-box{
       width:142px;
       padding:5px 15px;
