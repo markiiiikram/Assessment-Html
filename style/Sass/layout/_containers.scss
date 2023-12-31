@@ -30,6 +30,7 @@
     line-height: 1.375rem;
     margin-bottom: 13px;
     font-weight: 400;
+    padding: 15px;
   }
 
   ///HOVER EFFECTS
@@ -245,9 +246,9 @@
     width:750px;
     margin:auto;
   }
-    .ipad-res{
+    .m-device{
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 50%);
     }
       .align-center{
       width:80%;
@@ -295,7 +296,31 @@
     display:none;
   }
 }
-
+.flex{
+  display:block;
+}
 // ==========================================================================
 // Media query End
 // ==========================================================================
+
+@media screen and (min-width:992px)
+{
+  .wrapper{
+    width:970px;
+  }
+.lg-device{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.bespoke-software{
+  display:inherit;
+
+}
+}
+
+
+@media screen and (min-width:1260px){
+  .wrapper{
+    width:1200px;
+  }
+}
