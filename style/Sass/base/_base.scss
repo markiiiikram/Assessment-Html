@@ -58,12 +58,47 @@ h1,h2,h3,h4,h5,h6{
   h3{
     font-size:26px;
     font-weight:400;
+    margin-bottom:24px;
+  }
+  .no-margin{
+    margin:0;
   }
   h4{
     font-weight:400;
     margin:25px 0;
   }
   
-  h3{
-    margin-bottom:24px;
-  }
+
+
+
+  // ///////////////////////////
+  // COLOURS
+  //////////////////////////////
+  $white:      #fff;
+  $hoki:       #67809F; //Bespoke Software
+  $hoki-hover: #526781; //Nav bar Bespoke Software
+  $blue:       #4183d7; //It Support, Google Reviews, Read more buttons
+  $dark-blue:  #166AF4; //Google:hover
+ 
+  $green:      #00b67b; //Digital Marketing, trustpilot
+  $dark-green: #009B69; //trustpilot:hover
+  $green-hover:#25A25A; //Nav bar Digital Marketing
+  $red:        #ce4125; // Developer Training 
+ 
+  $valencia:   #D64541; //Telecoms Services
+  $radical-red:#F62459; //Cyber Security
+  $black:      #272936; //Black buttons
+  $dark-black: #000;    //Black buttons hover
+  $purple:     #926FB1; //Web design, Button Purple
+
+  $mercury:    #E5E5E5; //search-bar
+  $tuna:       #333645; //base container background + buttons before hover.
+
+  // Social media colours
+
+  $linked-in:  #0077B5;//
+  $facebook:   #3B5998;//
+  $twitter:    #00ACED;//
+  $instagram:  #D93175;//
+
+

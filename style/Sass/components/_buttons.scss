@@ -28,25 +28,32 @@
     float:inline-start;
   }
   #google-blue:hover{
-    background-color: #166AF4;
+    background-color: $dark-blue;
   
   }
   #trust-green:hover{
-    background-color: #009B69;
+    background-color: $dark-green;
   }
   .button-green{
-    background-color: #00b67b;
+    background-color: $green;
     border:1px solid transparent;
   }
   .button-blue{
-    background-color:#4183d7;
+    background-color:$blue;
     border:1px solid transparent;
   }
   
   .button-red{
-    background-color:#ce4125;
+    background-color:$red;
     border:1px solid transparent;
-  
+  }
+  .button-radicalred{
+    background-color:#F62459;
+    border:1px solid transparent;
+  }
+  .button-valencia{
+    background-color:#D64541;
+    border: 1px solid transparent;
   }
   .button-black{
     background-color:#272936;
@@ -65,10 +72,7 @@
     background-color:#926FB1;
     border:1px solid transparent;
   }
-  .button-radicalred{
-    background-color:#F62459;
-    border:1px solid transparent;
-  }
+ 
   .button-punch{
     background-color:#CE4125;
     border:1px solid transparent;
@@ -100,6 +104,7 @@
   border: none;
   border-radius: 0 3px 3px 0;
   margin-left:20px;
+  
 }
 
 .telephone{

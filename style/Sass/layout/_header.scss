@@ -10,6 +10,9 @@
 .search-high{
   display:none;
 }
+.nav-bar{
+  display:none;
+}
 .search-low{
   display: inline-flex;
   width: 100%;
@@ -21,7 +24,10 @@
   height:44px;
   padding:5px 15px 5px;
   border:1px 0 1px 1px #999AA2;
+  background-color:#E5E5E5;
   flex-grow:1;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  border: 2px solid rgba(0,0,0,.1);
 }
 .search-box:focus{
   border-color: #5bc0de;
@@ -46,12 +52,25 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.icon-phone_in_talk2{
+  font-size:32px;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+.sub-menu-banner{
+  display:none;
+  text-align:left;
+  position:absolute;
 
+}
+.triangle{
+  display:none;
 
+}
 .banner-main{
   margin-left:-1px;
+  width:auto;
 }
 .banner{
     display:inline-flex;
@@ -65,8 +84,7 @@
     position:relative;
     border:1px solid #7E808A;
     height:550px;
-    min-width:100%;
-
+    width:100%;
     color:#fff;
     .banner-heading{
       font-size:2.5rem;
@@ -92,6 +110,30 @@
     }
   
   }
+  .bespoke-h:hover{
+    background:$hoki;
+    .icon-laptop-h:before{
+      color: #fff;
+    }
+    .bespoke-ul{
+      background-color: $hoki;
+      padding: 30px;
+      top: 19px;
+      width: 100vw;
+      left: -387px;
+  }
+ }
+ .it-h:hover{
+  background:$blue;
+  .icon-display-h::before{
+    color:$white;
+  }
+}
+.sub-menu-banner{
+  a:hover{
+    text-decoration: underline;
+  }
+}  
 
   .our-services{
     .viewourwork{
@@ -117,9 +159,12 @@
   @media (min-width:767px){
     .header-high{
       justify-content:space-evenly;
+      padding-top:20px;
+      padding-bottom:15px;
     }
     .search-high{
       display:contents;
+
     }
     .search-submit{
       position:inherit;
@@ -139,11 +184,80 @@
       width:142px;
       padding:5px 15px;
       border:1px 0 1px 1px #999AA2;
+      
     }
     .search-box:focus{
-      border-color: #5bc0de;
+      border-color: #de5b5b;
       outline: 0;
       box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
     }
   }
-  
+
+  @media(min-width:992px){
+    .bottom-header{
+      background-color: #333645
+    }
+    .nav-bar{
+      display: flex;
+      flex-direction: row;
+      margin:0;
+      padding:0;
+      color:#fff;
+      text-transform: uppercase;
+      line-height:1;
+      span{
+        font-size:1.125rem;
+      }
+      small{
+        font-size:.625rem;
+      }
+
+    }
+    .nav-bar > div{
+      flex-basis:100%;
+      padding: 19px 0 18px;
+      
+    }
+    .nav > a{
+      padding:19px 0 18px;
+    }
+    // make the header icons all font size 30px
+    .nav{
+      [class^="icon-"] {
+        font-size:23px;
+      }
+    } 
+    .nav:hover{
+      .sub-menu-banner{
+        display:block;
+      }
+      .triangle{
+        display:block;
+        content:"";
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 85.5px 35px 85.5px;
+        border-color: transparent transparent #FF4532 transparent;
+        transform: rotate(180deg);
+        position:absolute;
+        z-index:2;
+        margin-top:20px;
+      }
+ 
+      .sub-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        position:absolute;
+        width:100vw;
+        z-index: 1;
+      }
+
+    }
+      .bespoke-h:hover{
+        .triangle{border-color:transparent transparent $hoki transparent;}
+      }
+      .it-h:hover{
+        .triangle{border-color:transparent transparent $hoki transparent;}
+      }
+  }

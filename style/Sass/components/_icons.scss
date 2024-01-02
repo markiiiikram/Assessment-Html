@@ -3,16 +3,15 @@
 // ==========================================================================
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?dpfmnu');
-  src:  url('../fonts/icomoon.eot?dpfmnu#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf') format('truetype'),
-    url('../fonts/icomoon.woff') format('woff'),
-    url('../fonts/icomoon.svg') format('svg');
+  src:  url('../fonts/icomoon.eot?pr74gk');
+  src:  url('../fonts/icomoon.eot?pr74gk#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?pr74gk') format('truetype'),
+    url('../fonts/icomoon.woff?pr74gk') format('woff'),
+    url('../fonts/icomoon.svg?pr74gk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -28,14 +27,44 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-bar-graph:before {
+.icon-trending-up:before {
+  content: "\e90d";
+}
+.icon-arrow-shuffle:before {
+  content: "\e90e";
+}
+.icon-group:before {
+  content: "\e90f";
+}
+.icon-file_copy:before {
+  content: "\e911";
+}
+.icon-wifi_calling:before {
+  content: "\e912";
+}
+.icon-chat:before {
+  content: "\e90b";
+}
+.icon-monitor:before {
+  content: "\e90c";
+}
+.icon-security:before {
   content: "\e900";
 }
-.icon-transfer:before {
+.icon-phone_in_talk:before {
   content: "\e901";
 }
-.icon-arrows:before {
-  content: "\e901";
+.icon-menu:before {
+  content: "\e913";
+}
+.icon-bar-graph:before {
+  content: "\e902";
+}
+.icon-question-mark:before {
+  content: "\e91d";
+}
+.icon-transfer:before {
+  content: "\e905";
 }
 .icon-headphones:before {
   content: "\e910";
@@ -46,38 +75,41 @@
 .icon-folder-open:before {
   content: "\e930";
 }
-.icon-ticket:before {
-  content: "\e939";
-}
-.icon-cart:before {
-  content: "\e93a";
-}
-.icon-clock:before {
-  content: "\e94e";
+.icon-phone:before {
+  content: "\e942";
 }
 .icon-display:before {
   content: "\e956";
 }
-.icon-laptop:before {
-  content: "\e904";
-}
 .icon-mobile:before {
   content: "\e958";
-}
-.icon-drive:before {
-  content: "\e963";
 }
 .icon-search:before {
   content: "\e986";
 }
+.icon-lock:before {
+  content: "\e98f";
+}
+.icon-meter:before {
+  content: "\e9a6";
+}
 .icon-briefcase:before {
   content: "\e9ae";
+}
+.icon-cloud:before {
+  content: "\e9c1";
 }
 .icon-download3:before {
   content: "\e9c7";
 }
 .icon-earth:before {
   content: "\e9ca";
+}
+.icon-star:before {
+  content: "\e9d9";
+}
+.icon-checkmark:before {
+  content: "\ea10";
 }
 .icon-shuffle:before {
   content: "\ea30";
@@ -86,7 +118,7 @@
   content: "\ea3c";
 }
 .icon-code:before {
-  content: "\ea80";
+  content: "\e91e";
 }
 .icon-facebook:before {
   content: "\ea90";
@@ -100,122 +132,69 @@
 .icon-linkedin2:before {
   content: "\eaca";
 }
-.icon-angle-double-right:before {
-  content: "\e902";
-}
-.icon-star:before {
-  content: "\e9d9";
-}
-.icon-lock:before {
-  content: "\e904";
-}
-.icon-flask:before {
-  content: "\e905";
-}
-.icon-clipboard:before {
-  content: "\e906";
-}
-.icon-paste:before {
-  content: "\e906";
+.icon-shopping-cart:before {
+  content: "\e914";
 }
 .icon-handshake-o:before {
-  content: "\e907";
+  content: "\e915";
 }
-.icon-dashboard:before {
-  content: "\e908";
-}
-.icon-tachometer:before {
-  content: "\e908";
-}
-.icon-phone-square:before {
-  content: "\e909";
+.icon-ticket:before {
+  content: "\e916";
 }
 .icon-pencil:before {
-  content: "\e90a";
-}
-.icon-envelope:before {
-  content: "\e90b";
+  content: "\e917";
 }
 .icon-money:before {
-  content: "\e90c";
+  content: "\e918";
+}
+.icon-hdd-o:before {
+  content: "\e919";
+}
+.icon-cloud-download:before {
+  content: "\e91b";
+}
+.icon-cogs:before {
+  content: "\e91c";
+}
+.icon-gears:before {
+  content: "\e91c";
+}
+.icon-dashboard:before {
+  content: "\e906";
+}
+.icon-tachometer:before {
+  content: "\e906";
+}
+.icon-group1:before {
+  content: "\e907";
+}
+.icon-money1:before {
+  content: "\e908";
+}
+.icon-handshake-o1:before {
+  content: "\e909";
+}
+.icon-clipboard:before {
+  content: "\e90a";
+}
+.icon-paste:before {
+  content: "\e90a";
+}
+.icon-laptop:before {
+  content: "\e904";
 }
 .icon-scholar:before {
   content: "\e903";
 }
-.icon-cloud-download:before {
-  content: "\e90e";
-}
-.icon-cloud:before {
-  content: "\e90f";
-}
-.icon-group:before {
-  content: "\e911";
-}
-.icon-users:before {
-  content: "\e911";
-}
-.icon-cogs:before {
-  content: "\e912";
-}
-.icon-gears:before {
-  content: "\e912";
-}
-.icon-paperplane:before {
-  content: "\e913";
-}
-.icon-send:before {
-  content: "\e913";
-}
-.icon-flight:before {
-  content: "\e913";
-}
-.icon-email:before {
-  content: "\e913";
-}
-.icon-chat:before {
-  content: "\e914";
-}
-.icon-help:before {
-  content: "\e915";
-}
-.icon-security:before {
-  content: "\e900";
-}
-.icon-call:before {
-  content: "\e917";
-}
-.icon-trending_up:before {
-  content: "\e918";
-}
-.icon-phone_in_talk:before {
-  content: "\e901";
-}
-.icon-phone_in_talk2:before {
-  content: "\e901";
-}
-.icon-mouse:before {
-  content: "\e91b";
-}
-.icon-hamburger:before {
-  content: "\e9bd";
-  background-color: #333645;
-  color:#fff;
-  font-size: 1.438rem;
-  line-height: 45px;
-}
+
+
 // ==========================================================================
 // INDEPENDENT ICONS
 // ==========================================================================
-
-.nm-logo-black{
-  max-width: 100%;
-  display: block;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right:auto;
-}
+// Images
 
 
+// Base Icons
 .icon-ours{
   display:inline-block;
   color:#fff;
@@ -225,27 +204,30 @@
   margin-top:30px;
 }
 .icon-laptop{
-  background-color:#67809F;
+  background-color:$hoki;
 }
+
 .icon-display{
-  background-color:#4183d7;
+  background-color:$blue;
 }
 .icon-bar-graph{
-  background-color:#00b67b; 
+  background-color:$green; 
 }
 .icon-phone_in_talk{
-  background-color: #ce4125;
+  background-color: $valencia;
 }
+
+
 .icon-code{
-  background-color: #926FB1;
+  background-color: $purple;
 }
 
 .icon-security{
-  background-color: #F62459;
+  background-color: $radical-red;
 }
 
 .icon-scholar{
-  background-color: #CE4125;
+  background-color: $red;
 }
 
 .stars{
@@ -261,7 +243,55 @@
   background-color: transparent;
 
 }
+///////////////////////////////////////////////////////////////////////
+//HEADER ICONS
+///////////////////////////////////////////////////////////////////////
 
+
+
+
+//Nav-bar
+.icon-laptop-h:before {
+  content: "\e904";
+  color:$hoki;
+}
+.icon-display-h:before {
+  content: "\e956";
+  color:$blue;
+}
+.icon-bar-graph-h:before {
+  content: "\e902";
+  color:$green;
+}
+.icon-phone-h:before{
+  content: "\e901";
+  color:$valencia
+}
+.icon-code-h:before {
+  content: "\e91e";
+  color:$purple;
+}
+.icon-security-h:before {
+  content: "\e900";
+  color:$radical-red;
+}
+.icon-scholar-h:before {
+  content: "\e903";
+  color:$red;
+}
+
+
+
+
+
+
+.icon-hamburger:before {
+  content: "\e913";
+  background-color: #333645;
+  color:#fff;
+  font-size: 1.438rem;
+  line-height: 45px;
+}
 // FOOTER ICONS
 
 .footer-icons{
@@ -294,19 +324,19 @@
 }
 
 .icon-facebook:hover{
-  background-color: #3B5998;
+  background-color: $facebook;
   text-decoration:none;
 }
 .icon-linkedin2:hover{
-  background-color:#0077B5;
+  background-color: $linked-in;
   text-decoration:none;
 }
 .icon-twitter:hover{
-  background-color:#00ACED;
+  background-color: $twitter;
   text-decoration:none;
 }
 .icon-instagram:hover{
-  background-color:#D93175;
+  background-color: $instagram;
   text-decoration:none;
 }
 
@@ -324,8 +354,17 @@ position:relative;
 top:1px;
 left:1px;
   }
-  
+.nm-logo-black{
+  max-width: 100%;
+  display: block;
+  padding-left: 0px;
+  padding-right: 15px;
+  margin-right:auto;
+}  
 
+.color-logo, .mono-logo{
+  height:70px;
+}
 
   @media (max-width:480px){
     .footer-icons{
@@ -335,6 +374,7 @@ left:1px;
     .icon{
       width:35%;
     }
+ 
   }
 
 @media (min-width:768px){

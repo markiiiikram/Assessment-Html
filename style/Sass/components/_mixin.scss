@@ -1,3 +1,10 @@
 @mixin dark-containers {
     padding:15px 25px;
 }
+
+
+@mixin containers() {
+    width:345px;
+    border-radius:0px;
+    margin:0px;
+}
