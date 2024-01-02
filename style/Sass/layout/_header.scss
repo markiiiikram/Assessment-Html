@@ -13,6 +13,17 @@
 .nav-bar{
   display:none;
 }
+.nav-item{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -15px;
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  width: 33%;
+  margin-top: 15px;
+}
 .search-low{
   display: inline-flex;
   width: 100%;
@@ -58,7 +69,14 @@
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 .mw{
-  min-width:100%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  z-index: 1;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .sub-menu-banner{
   display:none;
@@ -232,6 +250,7 @@
     .nav:hover{
       .sub-menu-banner{
         display:block;
+        left:0;
       }
       .triangle{
         display:block;
@@ -244,15 +263,21 @@
         transform: rotate(180deg);
         position:absolute;
         z-index:2;
-        margin-top:18px;
+        margin-top:17px;
       }
  
       .sub-menu{
-        display: grid;
-        grid-template-columns: repeat(3, 33%);
-        position:absolute;
-        width:100vw;
-        z-index: 1;
+
+        display: flex;
+        flex-wrap: wrap;
+        /* align-items: center; */
+        margin-top: -33px;
+        list-style: none;
+        text-align: left;
+        padding: 0;
+        flex-direction: row;
+        justify-content: center;
+        padding: inherit;
       }
 
     }
