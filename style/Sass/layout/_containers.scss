@@ -258,14 +258,15 @@
 // Our services section
   .wrapper{
     width:750px;
-
+    margin:auto;
   }
+  .email-container
     .m-device{
       display: grid;
       grid-template-columns: repeat(2, 50%);
     }
       .align-center{
-      width:80%;
+      width:750px;
       margin:auto;
     }
     .hidden-m{
@@ -280,7 +281,6 @@
       grid-template-columns: repeat(2, 50%);
       margin-left:auto;
       margin-right:auto;
-      gap:30px;
       padding-bottom:30px;
     }
 .employees{
@@ -296,17 +296,17 @@
   padding:0px;
 }  
 // Bottom 3 containers
-.container-col-1{
-    grid-column: 1;
+.container-col-1, .container-col-2, .container-col-3{
     width:345px;
     border-radius:0px;
     margin:0px;
+    margin-left:auto;
   }
+ .container-col-1{
+  grid-column: 1;
+ } 
 .container-col-2{
     grid-column: 2;
-    width:345px;
-    border-radius:0px;
-    margin:0px;
   }
 .container-col-3{
     display:none;
@@ -324,9 +324,19 @@
 // Media query End
 // ==========================================================================
 
-@media screen and (min-width:992px){
-
-  .wrapper{
+@media (min-width:992px){
+.article-container, .container-col-1, .container-col-2, .container-col-3{
+    width:455px;
+    border-radius:0px;
+  }
+  .article-details > p {
+    font-size:0.8125rem;
+  }
+.employees{
+  width:455px;
+  height:263px;
+}
+  .align-center{
     width:970px;
   }
 .lg-device{
@@ -356,16 +366,26 @@
 #why{
   margin-right:5px;
 }
-.article-container {
-    width:345px;
-    border-radius:0px;
-    margin:0px;
-}
+
 }
 
 
 @media screen and (min-width:1260px){
   .wrapper{
+    width:1200px;
+  }
+  .article-container, .container-col-1, .container-col-2, .container-col-3{
+    width:370px;
+    border-radius:0px;
+  }
+  .container-col-3{
+    display:flex;
+  }
+  .employees{
+    width:370px;
+    height:213px;
+  }
+  .align-center{
     width:1200px;
   }
   .xl-device{
@@ -376,7 +396,8 @@
     margin-right:auto;
     margin-left:auto;
   }
-  .container-col-3{
-    display:inherit;
-  }
+  // .container-col-3{
+  //   display:inherit;
+  //   @extend .container-col-2;
+  // }
 }

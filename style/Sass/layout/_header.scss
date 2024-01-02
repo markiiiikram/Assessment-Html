@@ -57,7 +57,9 @@
   font-size:32px;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
+.mw{
+  min-width:100%;
+}
 .sub-menu-banner{
   display:none;
   text-align:left;
@@ -116,7 +118,7 @@
       color: #fff;
     }
     .bespoke-ul{
-      background-color: $hoki;
+      background-color: $hoki-hover;
       padding: 30px;
       top: 19px;
       width: 100vw;
@@ -242,7 +244,7 @@
         transform: rotate(180deg);
         position:absolute;
         z-index:2;
-        margin-top:20px;
+        margin-top:18px;
       }
  
       .sub-menu{
