@@ -356,6 +356,12 @@ h4 {
   .nav [class^="icon-"] {
     font-size: 23px;
   }
+  .nav .sub-menu-banner-title {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    font-weight: 500;
+  }
   .nav:hover .sub-menu-banner {
     display: block;
     left: 0;
@@ -371,7 +377,6 @@ h4 {
     transform: rotate(180deg);
     position: absolute;
     z-index: 2;
-    margin-top: 17px;
   }
   .nav:hover .sub-menu {
     display: flex;
@@ -380,33 +385,34 @@ h4 {
     margin-top: -33px;
     list-style: none;
     text-align: left;
-    width: 1200px;
+    width: 970px;
     margin-right: auto;
     margin-left: auto;
     padding: 0;
     flex-direction: row;
-    justify-content: center;
-    padding: inherit;
   }
-  .bespoke-ul {
+  .nav:hover .link-text {
+    margin-left: 10px;
+  }
+  .bespoke-color {
     background-color: #526781;
   }
-  .it-support-ul {
+  .it-support-color {
     background-color: #286abd;
   }
-  .digital-ul {
+  .digital-color {
     background-color: #25A25A;
   }
-  .telecoms-ul {
+  .telecoms-color {
     background-color: #BC2C28;
   }
-  .web-ul {
+  .web-color {
     background-color: #79539A;
   }
-  .cyber-ul {
+  .cyber-color {
     background-color: #DE093F;
   }
-  .developer-ul {
+  .developer-color {
     background-color: #A3331D;
   }
   .bespoke-h:hover:hover {

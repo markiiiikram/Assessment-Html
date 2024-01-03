@@ -253,8 +253,15 @@
         font-size:23px;
 
       }
+      .sub-menu-banner-title{
+        width: 100%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        font-weight: 500;
+      }
     } 
     .nav:hover{
+  
       .sub-menu-banner{
         display:block;
         left:0;
@@ -270,7 +277,6 @@
         transform: rotate(180deg);
         position:absolute;
         z-index:2;
-        margin-top:17px;
       }
       .sub-menu{
         display: flex;
@@ -279,37 +285,40 @@
         margin-top: -33px;
         list-style: none;
         text-align: left;
-        width:1200px;
+        width:970px;
         margin-right:auto;
         margin-left:auto;
         padding: 0;
         flex-direction: row;
-        justify-content: center;
-        padding: inherit;
+        
+  
+      }
+      .link-text{
+        margin-left:10px;
       }
     }
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 /// DROPDOWN BACKGROUND 
 /// ////////////////////////////////////////////////////////////////////////////////////////////////////
-    .bespoke-ul{
+    .bespoke-color{
       background-color:$hoki-hover;
     }
-    .it-support-ul{
+    .it-support-color{
       background-color:$blue-hover;
     }
-    .digital-ul{
+    .digital-color{
       background-color:$green-hover;
     }
-    .telecoms-ul{
+    .telecoms-color{
       background-color:$valencia-hover;
     }
-    .web-ul{
+    .web-color{
       background-color:$purple-hover;
     }
-    .cyber-ul{
+    .cyber-color{
       background-color:$radical-red-hover;
     }
-    .developer-ul{
+    .developer-color{
       background-color:$red-hover;
     }
 
