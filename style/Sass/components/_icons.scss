@@ -298,7 +298,9 @@
   color:$red;
 }
 
-
+.nav:hover > [class^="icon-"] {
+  color: $white;
+}
 
 
 
@@ -397,6 +399,7 @@ left:1px;
 
 @media (min-width:768px){
   .telephone{display:none}
+
 }
   @media (max-width:1259px){
     icon{

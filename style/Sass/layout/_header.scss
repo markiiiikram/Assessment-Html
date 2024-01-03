@@ -73,12 +73,13 @@
   position: absolute;
   top: 100%;
   left: 0;
-  min-width: 100%;
+  min-width: 100vw;
   z-index: 1;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .sub-menu-banner{
+  width:100%;
   display:none;
   text-align:left;
   position:absolute;
@@ -130,19 +131,28 @@
     }
   
   }
-  .bespoke-h:hover{
-    background:$hoki;
-    .icon-laptop-h:before{
-      color: #fff;
-    }
-    .bespoke-ul{
+  // Navigation Bar dropdown.
+.nav:hover{
+  [class^="icon-"]::before {
+    color:$white;
+  }
+    .sub-menu{
       background-color: $hoki-hover;
       padding: 30px;
       top: 19px;
       width: 100vw;
-      left: -387px;
+    }
+    .icon-hover{
+      color:$white
+    }
+    
+}
+.nav:hover{
+  .icon-hover{
+    color:#fff;
   }
- }
+}
+
  .it-h:hover{
   background:$blue;
   .icon-display-h::before{
@@ -245,6 +255,7 @@
     .nav{
       [class^="icon-"] {
         font-size:23px;
+
       }
     } 
     .nav:hover{
@@ -258,33 +269,84 @@
         width: 0px;
         height: 0px;
         border-style: solid;
-        border-width: 0 85.5px 35px 85.5px;
+        border-width: 0px 70px 36px 70px;
         border-color: transparent transparent #FF4532 transparent;
         transform: rotate(180deg);
         position:absolute;
         z-index:2;
         margin-top:17px;
       }
- 
       .sub-menu{
-
         display: flex;
         flex-wrap: wrap;
         /* align-items: center; */
         margin-top: -33px;
         list-style: none;
         text-align: left;
+        width:1200px;
+        margin-right:auto;
+        margin-left:auto;
         padding: 0;
         flex-direction: row;
         justify-content: center;
         padding: inherit;
       }
-
     }
       .bespoke-h:hover{
         .triangle{border-color:transparent transparent $hoki transparent;}
       }
       .it-h:hover{
-        .triangle{border-color:transparent transparent $hoki transparent;}
+        .triangle{border-color:transparent transparent $blue transparent;}
       }
+      .digital-h:hover{
+        &:hover {
+          background-color: $green;
+          .triangle {
+            border-color: transparent transparent $green transparent;
+          }
+      }
+    }
+    .digital-h:hover > .icon-bar-graph-h:before{
+      color: $white;
+    }
+      .telecoms-h:hover{
+        &:hover {
+          background-color: $valencia;
+          .triangle {
+            border-color: transparent transparent $valencia transparent;
+          }
+      }
+      }
+      .web-h:hover{
+              &:hover {
+          background-color: $purple;
+          .triangle {
+            border-color: transparent transparent $purple transparent;
+          }
+      }
+      }
+      .cyber-h:hover{
+        &:hover {
+          background-color: $radical-red;
+          .triangle {
+            border-color: transparent transparent $radical-red transparent;
+          }
+      }
+    }
+      .developer-h:hover{
+        &:hover {
+          background-color: $red;
+          .triangle {
+            border-color: transparent transparent $red transparent;
+          }
+      }
+      }
+  }
+
+  @media (min-width:1260px){
+    .nav:hover{
+      .triangle{
+        border-width: 0 85.5px 35px 85.5px;
+      }
+    }
   }
