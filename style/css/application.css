@@ -903,6 +903,7 @@ h4 {
     width: 1200px;
   }
   .xl-device {
+    display: grid;
     grid-template-columns: repeat(4, 25%);
   }
   .latest-news {
