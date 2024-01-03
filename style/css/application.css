@@ -421,7 +421,10 @@ h4 {
   .bespoke-h:hover:hover .triangle {
     border-color: transparent transparent #67809F transparent;
   }
-  .it-h:hover .triangle {
+  .it-h:hover:hover {
+    background-color: #4183d7;
+  }
+  .it-h:hover:hover .triangle {
     border-color: transparent transparent #4183d7 transparent;
   }
   .digital-h:hover:hover {

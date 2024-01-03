@@ -329,14 +329,17 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 // Nav bar drop down & triangles.
-      .bespoke-h:hover{
+    .bespoke-h:hover{
         &:hover {
           background-color: $hoki;
         .triangle{border-color:transparent transparent $hoki transparent;}
       }
     }
       .it-h:hover{
+        &:hover {
+          background-color: $blue;
         .triangle{border-color:transparent transparent $blue transparent;}
+      }
       }
       .digital-h:hover{
         &:hover {
