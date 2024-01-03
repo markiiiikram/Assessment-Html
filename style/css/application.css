@@ -70,6 +70,48 @@ h4 {
   margin: 25px 0;
 }
 
+@media (min-width: 992px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+    font-family: Poppins,sans-serif;
+    font-size: 1rem;
+    letter-spacing: .4px;
+    color: #666;
+  }
+  .h1, h1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin: 0 0 28px;
+    color: #333645;
+  }
+  .h2, h2 {
+    font-size: 2rem;
+  }
+  .h2, .h3, .h4, h2, h3, h4 {
+    font-weight: 400;
+    margin: 0 0 15px;
+    color: #333645;
+  }
+  .sub-menu-banner-title {
+    color: #fff;
+  }
+  .h3, .h4, h3, h4 {
+    font-size: 1.25rem;
+  }
+  .h3, h3 {
+    font-size: 1.625rem;
+  }
+  .h4, h4 {
+    font-size: 1rem;
+  }
+  p {
+    line-height: 1.875rem;
+    margin-bottom: 25px;
+  }
+}
+
 .header-high {
   display: flex;
   flex-direction: row;
@@ -88,9 +130,6 @@ h4 {
 }
 
 .nav-item {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   margin-top: -15px;
   list-style: none;
   text-align: left;
@@ -218,7 +257,6 @@ h4 {
 }
 
 .nav:hover .sub-menu {
-  background-color: #526781;
   padding: 30px;
   top: 19px;
   width: 100vw;
@@ -229,14 +267,6 @@ h4 {
 }
 
 .nav:hover .icon-hover {
-  color: #fff;
-}
-
-.it-h:hover {
-  background: #4183d7;
-}
-
-.it-h:hover .icon-display-h::before {
   color: #fff;
 }
 
@@ -358,7 +388,31 @@ h4 {
     justify-content: center;
     padding: inherit;
   }
-  .bespoke-h:hover .triangle {
+  .bespoke-ul {
+    background-color: #526781;
+  }
+  .it-support-ul {
+    background-color: #286abd;
+  }
+  .digital-ul {
+    background-color: #25A25A;
+  }
+  .telecoms-ul {
+    background-color: #BC2C28;
+  }
+  .web-ul {
+    background-color: #79539A;
+  }
+  .cyber-ul {
+    background-color: #DE093F;
+  }
+  .developer-ul {
+    background-color: #A3331D;
+  }
+  .bespoke-h:hover:hover {
+    background-color: #67809F;
+  }
+  .bespoke-h:hover:hover .triangle {
     border-color: transparent transparent #67809F transparent;
   }
   .it-h:hover .triangle {

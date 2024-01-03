@@ -1,10 +1,10 @@
 // ==========================================================================
 // BODY
 // ==========================================================================
-html{
-  // nightmode scrollbar
-  // scrollbar-color: #454a4d #202324;
-}
+// html{
+//   // nightmode scrollbar
+//   // scrollbar-color: #454a4d #202324;
+// }
 body{   
     display:inherit;
     font-family: Poppins, sans-serif;
@@ -74,31 +74,94 @@ h1,h2,h3,h4,h5,h6{
   // ///////////////////////////
   // COLOURS
   //////////////////////////////
-  $white:      #fff;
-  $hoki:       #67809F; //Bespoke Software
-  $hoki-hover: #526781; //Nav bar Bespoke Software
-  $blue:       #4183d7; //It Support, Google Reviews, Read more buttons
-  $dark-blue:  #166AF4; //Google:hover
- 
-  $green:      #00b67b; //Digital Marketing, trustpilot
-  $dark-green: #009B69; //trustpilot:hover
-  $green-hover:#25A25A; //Nav bar Digital Marketing
-  $red:        #ce4125; // Developer Training 
- 
-  $valencia:   #D64541; //Telecoms Services
-  $radical-red:#F62459; //Cyber Security
-  $black:      #272936; //Black buttons
-  $dark-black: #000;    //Black buttons hover
-  $purple:     #926FB1; //Web design, Button Purple
+  $white:             #fff;
 
-  $mercury:    #E5E5E5; //search-bar
-  $tuna:       #333645; //base container background + buttons before hover.
+  $hoki:              #67809F; //Bespoke Software
+  $hoki-hover:        #526781; //Nav bar Bespoke Software
+  $blue:              #4183d7; //It Support, Google Reviews, Read more buttons
+  $dark-blue:         #166AF4; //Google:hover
+  $blue-hover:        #286abd; //It support
 
+  $purple:            #926FB1; //Web design, Button Purple
+  $purple-hover:      #79539A; //Web hover
+
+  $green:             #00b67b; //Digital Marketing, trustpilot
+  $dark-green:        #009B69; //trustpilot:hover
+  $green-hover:       #25A25A; //Nav bar Digital Marketing
+
+  $red:               #ce4125; // Developer Training 
+  $red-hover:         #A3331D; // Dev hover
+  $valencia:          #D64541; //Telecoms Services
+  $valencia-hover:    #BC2C28; //
+  $radical-red:       #F62459; //Cyber Security
+  $radical-red-hover :#DE093F; //
+  
+
+  $black:             #272936; //Black buttons
+  $dark-black:        #000;    //Black buttons hover
+ 
+
+  $mercury:           #E5E5E5; //search-bar
+  $tuna:              #333645; //base container background + buttons before hover.
+  
   // Social media colours
 
-  $linked-in:  #0077B5;//
-  $facebook:   #3B5998;//
-  $twitter:    #00ACED;//
-  $instagram:  #D93175;//
+  $linked-in:         #0077B5; //
+  $facebook:          #3B5998; //
+  $twitter:           #00ACED; //
+  $instagram:         #D93175; //
+ 
+///////////////////////////////////////////////////////////////////////////////////
+/// Media Query
+/// //////////////////////////////////////////////////////////////////////////////
 
 
+@media (min-width:992px){
+html {
+  font-size: 16px
+}
+
+body {
+  font-family: Poppins,sans-serif;
+  font-size: 1rem;
+  letter-spacing: .4px;
+  color: #666
+}
+
+.h1,h1 {
+  font-size: 2.25rem;
+  font-weight: 400;
+  margin: 0 0 28px;
+  color: #333645
+}
+
+.h2,h2 {
+  font-size: 2rem;
+}
+
+
+.h2,.h3,.h4,h2,h3,h4 {
+  font-weight: 400;
+  margin: 0 0 15px;
+  color: #333645
+}
+.sub-menu-banner-title{
+  color:$white;
+}
+.h3,.h4,h3,h4 {
+  font-size: 1.25rem
+}
+
+.h3,h3 {
+  font-size: 1.625rem
+}
+
+.h4,h4 {
+  font-size: 1rem
+}
+
+p {
+  line-height: 1.875rem;
+  margin-bottom: 25px
+}
+}

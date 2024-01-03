@@ -14,9 +14,6 @@
   display:none;
 }
 .nav-item{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
   margin-top: -15px;
   list-style: none;
   text-align: left;
@@ -137,7 +134,6 @@
     color:$white;
   }
     .sub-menu{
-      background-color: $hoki-hover;
       padding: 30px;
       top: 19px;
       width: 100vw;
@@ -153,12 +149,12 @@
   }
 }
 
- .it-h:hover{
-  background:$blue;
-  .icon-display-h::before{
-    color:$white;
-  }
-}
+//  .it-h:hover{
+//   background:$blue;
+//   .icon-display-h::before{
+//     color:$white;
+//   }
+// }
 .sub-menu-banner{
   a:hover{
     text-decoration: underline;
@@ -292,9 +288,44 @@
         padding: inherit;
       }
     }
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// DROPDOWN BACKGROUND 
+/// ////////////////////////////////////////////////////////////////////////////////////////////////////
+    .bespoke-ul{
+      background-color:$hoki-hover;
+    }
+    .it-support-ul{
+      background-color:$blue-hover;
+    }
+    .digital-ul{
+      background-color:$green-hover;
+    }
+    .telecoms-ul{
+      background-color:$valencia-hover;
+    }
+    .web-ul{
+      background-color:$purple-hover;
+    }
+    .cyber-ul{
+      background-color:$radical-red-hover;
+    }
+    .developer-ul{
+      background-color:$red-hover;
+    }
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//HOVER STATES FOR NAV BAR
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// Nav bar drop down & triangles.
       .bespoke-h:hover{
+        &:hover {
+          background-color: $hoki;
         .triangle{border-color:transparent transparent $hoki transparent;}
       }
+    }
       .it-h:hover{
         .triangle{border-color:transparent transparent $blue transparent;}
       }
@@ -343,6 +374,9 @@
       }
   }
 
+  //////////////////////////////////////////////////////////////////////////
+  /// Media Query
+  /// //////////////////////////////////////////////////////////////////////
   @media (min-width:1260px){
     .nav:hover{
       .triangle{
