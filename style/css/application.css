@@ -784,8 +784,7 @@ h4 {
     width: 750px;
     margin: auto;
   }
-  .email-container
-.m-device {
+  .m-device {
     display: grid;
     grid-template-columns: repeat(2, 50%);
   }
@@ -903,7 +902,6 @@ h4 {
     width: 1200px;
   }
   .xl-device {
-    display: grid;
     grid-template-columns: repeat(4, 25%);
   }
   .latest-news {
