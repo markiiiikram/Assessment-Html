@@ -5,6 +5,9 @@
 //   // nightmode scrollbar
 //   // scrollbar-color: #454a4d #202324;
 // }
+// *{
+//   box-sizing: border-box;
+// }
 body{   
     display:inherit;
     font-family: Poppins, sans-serif;
@@ -17,6 +20,7 @@ body{
     width: 100%;
     padding: 0;
     margin: 0;
+
   }
 
   a{
@@ -99,7 +103,7 @@ h1,h2,h3,h4,h5,h6{
   $black:             #272936; //Black buttons
   $dark-black:        #000;    //Black buttons hover
  
-
+  $border:            #CECECE;//
   $mercury:           #E5E5E5; //search-bar
   $tuna:              #333645; //base container background + buttons before hover.
   
@@ -113,6 +117,16 @@ h1,h2,h3,h4,h5,h6{
 ///////////////////////////////////////////////////////////////////////////////////
 /// Media Query
 /// //////////////////////////////////////////////////////////////////////////////
+
+@media (max-width:767px)
+{
+  // body{
+  //   padding-left:15px;
+  //   padding-right:15px;
+  // }
+  
+  
+}
 
 
 @media (min-width:992px){

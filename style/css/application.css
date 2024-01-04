@@ -116,7 +116,6 @@ h4 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: stretch;
   justify-content: space-between;
   align-items: center;
 }
@@ -145,31 +144,45 @@ h4 {
   border: 1px #ccc;
 }
 
-.search-box {
-  height: 44px;
-  padding: 5px 15px 5px;
-  border: 1px 0 1px 1px #999AA2;
+.please-work {
+  border: 2px solid #CECECE;
   background-color: #E5E5E5;
+  height: 41px;
+  border-radius: 3px;
+}
+
+.search-box-2 {
+  width: 100%;
+  border: none;
+  background: transparent;
+  height: 47px;
+}
+
+.search-box-2:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.search-box-1 {
+  height: 44px;
+  max-width: 142px;
+  padding: 5px 15px 5px;
+  border: 1px #999AA2;
+  margin-left: 70px;
   flex-grow: 1;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-.search-box:focus {
+.search-box-1:focus {
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
 .search-submit {
-  position: relative;
-  top: 1px;
-  display: inline-block;
   font-size: 23px;
-  width: 63px;
-  height: 56px;
-  padding: 7px 20px 3px;
-  background-color: #999aa2;
+  height: 58px;
   border: none;
   border-radius: 0 3px 3px 0;
 }
@@ -222,7 +235,6 @@ h4 {
   background-blend-mode: hard-light;
   text-align: center;
   position: relative;
-  border: 1px solid #7E808A;
   height: 550px;
   width: 100%;
   color: #fff;
@@ -295,16 +307,18 @@ h4 {
 
 @media (min-width: 767px) {
   .header-high {
-    justify-content: space-evenly;
-    padding-top: 20px;
+    justify-content: space-flex-start;
+    padding-top: 25px;
     padding-bottom: 15px;
   }
   .search-high {
     display: contents;
   }
   .search-submit {
-    position: inherit;
-    margin-left: -15px;
+    margin-left: -1px;
+    height: 57px;
+    width: 63px;
+    background-color: #999AA2;
   }
   .header-low {
     display: none;
@@ -321,7 +335,7 @@ h4 {
     border: 1px 0 1px 1px #999AA2;
   }
   .search-box:focus {
-    border-color: #de5b5b;
+    border-color: #5bc0de;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
   }
@@ -522,15 +536,20 @@ h4 {
   }
 }
 
-.container {
+.float-container {
   display: block;
   border-radius: 15px;
-  margin: 0px 15px;
-  padding: 30px 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
   border: 1px solid #ccc;
   top: 0;
   transition: .5s;
+}
+
+.align-center {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .wrapper {
@@ -539,7 +558,7 @@ h4 {
   padding-right: 15px;
 }
 
-.container:hover {
+.float-container:hover {
   transform: translate(0, -10px);
 }
 
@@ -549,15 +568,21 @@ h4 {
 
 .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training {
   text-align: center;
-  padding: 0px;
+  padding: 30px;
   margin-top: 30px;
-  padding: 0px;
+  height: 207px;
 }
 
-.services-h3 {
+.bespoke-software h3, .it-support h3, .dig-marketing h3, .tele-services h3, .web-design h3, .cyber-security h3, .developer-training h3 {
   font-size: 1.3rem;
   margin: 0 0 15px;
   color: #333645;
+  padding: 0px;
+}
+
+.bespoke-software p, .it-support p, .dig-marketing p, .tele-services p, .web-design p, .cyber-security p, .developer-training p {
+  padding: 0px;
+  margin-top: 0px;
 }
 
 .our-services-p {
@@ -566,6 +591,10 @@ h4 {
   margin-bottom: 13px;
   font-weight: 400;
   padding: 15px;
+}
+
+.show-m {
+  display: none;
 }
 
 .bespoke-software:hover, .it-support:hover, .dig-marketing:hover, .tele-services:hover, .web-design:hover, .cyber-security:hover, .developer-training:hover {
@@ -788,6 +817,12 @@ h4 {
   filter: grayscale(100%);
 }
 
+@media (max-width: 767px) {
+  .header-low, .welcome, .email-news {
+    padding: 15px 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .wrapper {
     width: 750px;
@@ -795,7 +830,15 @@ h4 {
   }
   .m-device {
     display: grid;
+    box-sizing: border-box;
     grid-template-columns: repeat(2, 50%);
+    gap: 30px;
+  }
+  .cyber-security, .developer-training {
+    margin-top: 0px;
+  }
+  .tele-services, .web-design, .cyber-security, .developer-training {
+    width: 283px;
   }
   .align-center {
     width: 750px;
@@ -933,6 +976,14 @@ h4 {
   white-space: normal;
 }
 
+.btn-banner {
+  height: 50px;
+  padding: 5px 20px;
+  margin-top: 30px;
+  margin-bottom: 18px;
+  border-radius: 3px;
+}
+
 #google-blue {
   display: block;
   margin-right: 8px;
@@ -1027,13 +1078,12 @@ h4 {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-size: 23px;
+  font-size: 21px;
   width: 63px;
   height: 56px;
-  padding: 7px 20px 3px;
   background-color: #333645;
   border: none;
-  border-radius: 0 3px 3px 0;
+  border-radius: 3px;
   margin-left: 20px;
 }
 
@@ -1103,6 +1153,8 @@ h4 {
 
 .icon-phone_in_talk-b:before {
   content: "\e901";
+  font-size: 32px;
+  color: #333645;
 }
 
 .icon-menu:before {
@@ -1155,6 +1207,8 @@ h4 {
 
 .icon-search-b:before {
   content: "\e986";
+  color: #fff;
+  background-color: #999aa2;
 }
 
 .icon-lock:before {
@@ -1303,7 +1357,7 @@ h4 {
   font-size: 32px;
   padding: 15px;
   border-radius: 50%;
-  margin-top: 30px;
+  margin: 0px auto 17px;
 }
 
 .icon-laptop {
@@ -1341,10 +1395,13 @@ h4 {
 }
 
 .icon-search {
-  font-size: 32px;
+  font-size: 24px;
   font-weight: 400;
   color: #333645;
   background-color: transparent;
+  position: relative;
+  top: 10px;
+  right: 10px;
 }
 
 .icon-laptop-h:before {
@@ -1395,7 +1452,7 @@ h4 {
   content: "\e913";
   background-color: #333645;
   color: #fff;
-  font-size: 1.438rem;
+  font-size: 40px;
   line-height: 45px;
 }
 
@@ -1462,9 +1519,10 @@ h4 {
 
 .nm-logo-black {
   max-width: 100%;
+  height: 60px;
   display: block;
   padding-left: 0px;
-  padding-right: 15px;
+  padding-right: 0px;
   margin-right: auto;
 }
 
@@ -1485,6 +1543,9 @@ h4 {
 @media (min-width: 768px) {
   .telephone {
     display: none;
+  }
+  .nm-logo-black {
+    max-width: 345px;
   }
 }
 

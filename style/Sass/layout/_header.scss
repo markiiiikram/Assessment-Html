@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: stretch;
   justify-content: space-between;
   align-items: center;
 }
@@ -27,30 +26,49 @@
   justify-content: space-between;
   border:1px #ccc;
 }
+.please-work{
+  border: 2px solid $border;
+  background-color: $mercury;
+  height:41px;
+  border-radius:3px;
 
-.search-box{
+}
+
+.search-box-2{
+  width:100%;
+  border:none;
+  background:transparent;
+  height:47px;
+}
+.search-box-2:focus-visible{
+  border:none;
+  outline:none;
+}
+// .search-low:focus input[name="search-2"] {
+//   border:none;
+// } 
+
+
+
+
+.search-box-1{
   height:44px;
+  max-width:142px;
   padding:5px 15px 5px;
-  border:1px 0 1px 1px #999AA2;
-  background-color:#E5E5E5;
+  border:1px #999AA2;
+  margin-left:70px;
   flex-grow:1;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   border: 2px solid rgba(0,0,0,.1);
 }
-.search-box:focus{
+.search-box-1:focus{
   border-color: #5bc0de;
   outline: 0;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
 }
 .search-submit{
-  position:relative;
-  top:1px;
-  display:inline-block;
   font-size:23px;
-  width:63px;
-  height:56px;
-  padding:7px 20px 3px;
-  background-color:#999aa2;
+  height:58px;
   border:none;
   border-radius:0 3px 3px 0;
 }
@@ -100,7 +118,7 @@
     background-blend-mode: hard-light;
     text-align:center;
     position:relative;
-    border:1px solid #7E808A;
+    // border:1px solid #7E808A;
     height:550px;
     width:100%;
     color:#fff;
@@ -184,8 +202,8 @@
 
   @media (min-width:767px){
     .header-high{
-      justify-content:space-evenly;
-      padding-top:20px;
+      justify-content:space-flex-start;
+      padding-top:25px;
       padding-bottom:15px;
     }
     .search-high{
@@ -193,8 +211,10 @@
 
     }
     .search-submit{
-      position:inherit;
-      margin-left:-15px;
+      margin-left:-1px;
+      height:57px;
+      width:63px;
+      background-color: #999AA2;
       
     }
    .header-low{
@@ -213,7 +233,7 @@
       
     }
     .search-box:focus{
-      border-color: #de5b5b;
+      border-color: #5bc0de;
       outline: 0;
       box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(91,192,222,.6);
     }
