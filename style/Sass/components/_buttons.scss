@@ -16,9 +16,14 @@
   .btn-banner{
     height:50px;
     padding:5px 20px;
-    margin-top:30px;
-    margin-bottom:18px;
     border-radius:3px;
+    background-color: $purple;
+    line-height: 50px;
+    font-size:1.2rem;
+    width:208px;
+    margin-left:auto;
+    margin-right:auto;
+    text-transform: uppercase;
   }
   #google-blue{
     display:block;
@@ -87,6 +92,7 @@
 
   .pretty-checkbox{
     border-radius: 3px;
+    color: currentColor;
     border: 3px solid #333645;
     height: 32px;
     width: 32px;
@@ -99,21 +105,76 @@
     height:96px;
   }
 
-  .hamburger{
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-size: 21px;
-  width: 63px;
-  height: 56px;
-  background-color:#333645;
-  border: none;
-  border-radius: 3px;
-  margin-left:20px;
-  
+.button-h{
+display:inline-block;
+height:46px;
+padding:5px 15px;
+border:1px;
+border-radius:3px;
+font-size: 1.125rem;
+text-transform: uppercase;
 }
 
+// .button-h > span {
+  .button-header-text{
+  font-family:Poppins, sans-serif;
+  text-transform:uppercase;
+  font-size:1.125rem;
+  line-height:46px;
+  color:$white;
+}
+.button-h{
+  [class^="icon-"]::before {
+    color:$white;
+    margin-right: 5px;
+  font-size: 23px;
+  float: left;
+  line-height: 43px;
+  }
+}
+.support, .contact{
+  display:none;
+}
+
+@media (max-width:562px){
+  .btn-banner{
+    margin-top:0px;
+  }
+  .banner-text{
+    margin-top:0px;
+  }
+  .banner-heading{
+    margin-bottom:0px;
+  }
+}
+@media (min-width:563px){
+  .btn-banner{
+    margin-top:30px;
+  }
+}
+@media (min-width:992px)
+{
+
+.support, .contact{
+  display:inline-block;
+  color:$white;
+}
+.support{
+  background-color: $blue;
+}
+.contact{
+background-color: $manatee;
+
+}
 .telephone{
   background-color:transparent;
   border:0px;
+}
+.btn-banner{
+  align-self:start;
+  margin-left:0px;
+  margin-right:0px;
+  margin-top:30px;
+  margin-bottom:18px;
+}
 }

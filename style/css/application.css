@@ -74,12 +74,6 @@ h4 {
   html {
     font-size: 16px;
   }
-  body {
-    font-family: Poppins,sans-serif;
-    font-size: 1rem;
-    letter-spacing: .4px;
-    color: #666;
-  }
   .h1, h1 {
     font-size: 2.25rem;
     font-weight: 400;
@@ -163,8 +157,21 @@ h4 {
   outline: none;
 }
 
+.hamburger {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-size: 21px;
+  width: 63px;
+  height: 56px;
+  background-color: #333645;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+}
+
 .search-box-1 {
-  height: 44px;
+  height: 42px;
   max-width: 142px;
   padding: 5px 15px 5px;
   border: 1px #999AA2;
@@ -182,7 +189,7 @@ h4 {
 
 .search-submit {
   font-size: 23px;
-  height: 58px;
+  height: 56px;
   border: none;
   border-radius: 0 3px 3px 0;
 }
@@ -218,50 +225,6 @@ h4 {
 
 .triangle {
   display: none;
-}
-
-.banner-main {
-  margin-left: -1px;
-  width: auto;
-}
-
-.banner {
-  display: inline-flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  /* *************************************** */
-  background: url(../images/banner/banner.png) center/cover no-repeat #000;
-  background-blend-mode: hard-light;
-  text-align: center;
-  position: relative;
-  height: 550px;
-  width: 100%;
-  color: #fff;
-}
-
-.banner .banner-heading {
-  font-size: 2.5rem;
-  line-height: 3rem;
-  margin: 0 0 1.25rem;
-  color: #fff;
-  font-weight: 600;
-}
-
-.banner .banner-text {
-  margin-bottom: 0.375rem;
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
-
-.banner .button-purple {
-  display: flex;
-  max-width: fit-content;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  margin-top: 50px;
 }
 
 .nav:hover [class^="icon-"]::before {
@@ -312,13 +275,16 @@ h4 {
     padding-bottom: 15px;
   }
   .search-high {
-    display: contents;
+    display: flex;
+    gap: 20px;
   }
   .search-submit {
-    margin-left: -1px;
-    height: 57px;
+    margin-left: -20px;
     width: 63px;
     background-color: #999AA2;
+  }
+  .hamburger {
+    margin: 0px;
   }
   .header-low {
     display: none;
@@ -344,6 +310,12 @@ h4 {
 @media (min-width: 992px) {
   .bottom-header {
     background-color: #333645;
+  }
+  .search-box-1 {
+    display: none;
+  }
+  .hamburger {
+    margin-left: 0px;
   }
   .nav-bar {
     display: flex;
@@ -562,8 +534,54 @@ h4 {
   transform: translate(0, -10px);
 }
 
+.banner-main {
+  margin-left: -1px;
+  width: auto;
+}
+
 .container-banner {
-  max-width: 100%;
+  background: url(../images/banner/banner.png) center/cover no-repeat #000;
+  background-color: #000;
+  opacity: 1.3;
+  height: 550px;
+  width: 100%;
+}
+
+.banner {
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 60px 15px;
+  color: #fff;
+}
+
+.banner-heading {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin: 0 0 1.25rem;
+  color: #fff;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-text {
+  margin-bottom: 0.375rem;
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.button-purple {
+  display: flex;
+  max-width: fit-content;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  margin-top: 50px;
 }
 
 .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training {
@@ -775,8 +793,12 @@ h4 {
   text-align: left;
 }
 
-.email-news {
+.email-container {
   background-color: #ddd;
+}
+
+.email-news {
+  background-color: inherit;
   padding-left: 15px;
   padding-right: 15px;
   display: flex;
@@ -786,7 +808,7 @@ h4 {
 
 .email {
   justify-content: flex-start;
-  width: 100%;
+  width: 99%;
   line-height: 47px;
 }
 
@@ -831,14 +853,12 @@ h4 {
   .m-device {
     display: grid;
     box-sizing: border-box;
-    grid-template-columns: repeat(2, 50%);
-    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 30px;
   }
   .cyber-security, .developer-training {
     margin-top: 0px;
-  }
-  .tele-services, .web-design, .cyber-security, .developer-training {
-    width: 283px;
   }
   .align-center {
     width: 750px;
@@ -910,6 +930,10 @@ h4 {
   .lg-device {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  .lg-device .float-container {
+    height: 250px;
   }
   .bespoke-software {
     display: inherit;
@@ -933,6 +957,18 @@ h4 {
   #why {
     margin-right: 5px;
   }
+  .banner {
+    display: flex;
+    justify-content: start;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .banner-heading {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    margin-bottom: 0px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -954,13 +990,29 @@ h4 {
     width: 1200px;
   }
   .xl-device {
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(4, 1fr);
+    width: 1200px;
+  }
+  .xl-device .float-container {
+    height: 250px;
+  }
+  .xl-device .cyber-security, .xl-device .developer-training {
+    margin-top: 30px;
+  }
+  .bespoke-software p, .dig-marketing p {
+    margin-bottom: 35px;
   }
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
     margin-right: auto;
     margin-left: auto;
   }
+}
+
+@font-face {
+  font-family: Glyphicons Halflings;
+  src: url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.eot);
+  src: url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"), url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.woff) format("woff"), url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.ttf) format("truetype"), url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg");
 }
 
 .btn {
@@ -979,9 +1031,14 @@ h4 {
 .btn-banner {
   height: 50px;
   padding: 5px 20px;
-  margin-top: 30px;
-  margin-bottom: 18px;
   border-radius: 3px;
+  background-color: #926FB1;
+  line-height: 50px;
+  font-size: 1.2rem;
+  width: 208px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
 }
 
 #google-blue {
@@ -1061,6 +1118,7 @@ h4 {
 
 .pretty-checkbox {
   border-radius: 3px;
+  color: currentColor;
   border: 3px solid #333645;
   height: 32px;
   width: 32px;
@@ -1074,22 +1132,76 @@ h4 {
   height: 96px;
 }
 
-.hamburger {
-  position: relative;
-  top: 1px;
+.button-h {
   display: inline-block;
-  font-size: 21px;
-  width: 63px;
-  height: 56px;
-  background-color: #333645;
-  border: none;
+  height: 46px;
+  padding: 5px 15px;
+  border: 1px;
   border-radius: 3px;
-  margin-left: 20px;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
-.telephone {
-  background-color: transparent;
-  border: 0px;
+.button-header-text {
+  font-family: Poppins, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 46px;
+  color: #fff;
+}
+
+.button-h [class^="icon-"]::before {
+  color: #fff;
+  margin-right: 5px;
+  font-size: 23px;
+  float: left;
+  line-height: 43px;
+}
+
+.support, .contact {
+  display: none;
+}
+
+@media (max-width: 562px) {
+  .btn-banner {
+    margin-top: 0px;
+  }
+  .banner-text {
+    margin-top: 0px;
+  }
+  .banner-heading {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 563px) {
+  .btn-banner {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .support, .contact {
+    display: inline-block;
+    color: #fff;
+  }
+  .support {
+    background-color: #4183d7;
+  }
+  .contact {
+    background-color: #999AA2;
+  }
+  .telephone {
+    background-color: transparent;
+    border: 0px;
+  }
+  .btn-banner {
+    align-self: start;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
 }
 
 @font-face {
@@ -1113,6 +1225,143 @@ h4 {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-paperplane:before {
+  content: "\e91f";
+}
+
+.icon-handshake:before {
+  content: "\e915";
+}
+
+.icon-code:before {
+  content: "\e91e";
+}
+
+.icon-code-b:before {
+  content: "\e91e";
+}
+
+.icon-code-1:before {
+  content: "\e91e";
+  margin-left: 25px;
+}
+
+.icon-question-mark:before {
+  content: "\e91d";
+}
+
+.icon-shopping-cart:before {
+  content: "\e914";
+}
+
+.icon-flask:before {
+  content: "\e921";
+}
+
+.icon-transfer:before {
+  content: "\e905";
+}
+
+.icon-headphones:before {
+  content: "\e910";
+}
+
+.icon-bullhorn:before {
+  content: "\e91a";
+}
+
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+.icon-phone:before {
+  content: "\e942";
+}
+
+.icon-display:before {
+  content: "\e956";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+.icon-search:before {
+  content: "\e986";
+}
+
+.icon-lock:before {
+  content: "\e98f";
+}
+
+.icon-meter:before {
+  content: "\e9a6";
+}
+
+.icon-briefcase:before {
+  content: "\e9ae";
+}
+
+.icon-cloud:before {
+  content: "\e9c1";
+}
+
+.icon-cloud-download:before {
+  content: "\e91b";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-earth:before {
+  content: "\e9ca";
+}
+
+.icon-star-full:before {
+  content: "\e9d9";
+}
+
+.icon-checkmark:before {
+  content: "\ea10";
+}
+
+.icon-shuffle:before {
+  content: "\ea30";
+}
+
+.icon-envelope:before {
+  content: "\e923";
+}
+
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+.icon-hdd-o:before {
+  content: "\e919";
+}
+
+.icon-embed2:before {
+  content: "\ea80";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
 }
 
 .icon-trending-up:before {
@@ -1147,6 +1396,10 @@ h4 {
   content: "\e900";
 }
 
+.icon-security-h:before {
+  content: "\e900";
+}
+
 .icon-phone_in_talk:before {
   content: "\e901";
 }
@@ -1165,44 +1418,16 @@ h4 {
   content: "\e902";
 }
 
-.icon-question-mark:before {
-  content: "\e91d";
-}
-
-.icon-transfer:before {
-  content: "\e905";
-}
-
-.icon-headphones:before {
-  content: "\e910";
-}
-
-.icon-bullhorn:before {
-  content: "\e91a";
-}
-
-.icon-folder-open:before {
-  content: "\e930";
-}
-
-.icon-phone:before {
-  content: "\e942";
-}
-
 .icon-phone-b:before {
   content: "\e942";
 }
 
-.icon-display:before {
+.icon-display-b:before {
   content: "\e956";
 }
 
-.icon-mobile:before {
+.icon-mobile-b:before {
   content: "\e958";
-}
-
-.icon-search:before {
-  content: "\e986";
 }
 
 .icon-search-b:before {
@@ -1211,128 +1436,12 @@ h4 {
   background-color: #999aa2;
 }
 
-.icon-lock:before {
-  content: "\e98f";
-}
-
-.icon-meter:before {
-  content: "\e9a6";
-}
-
-.icon-briefcase:before {
-  content: "\e9ae";
-}
-
-.icon-cloud:before {
-  content: "\e9c1";
-}
-
-.icon-download3:before {
-  content: "\e9c7";
-}
-
-.icon-earth:before {
-  content: "\e9ca";
+.icon-search-h:before {
+  content: "\e986";
 }
 
 .icon-star:before {
   content: "\e9d9";
-}
-
-.icon-checkmark:before {
-  content: "\ea10";
-}
-
-.icon-shuffle:before {
-  content: "\ea30";
-}
-
-.icon-arrow-right2:before {
-  content: "\ea3c";
-}
-
-.icon-code:before {
-  content: "\e91e";
-}
-
-.icon-facebook:before {
-  content: "\ea90";
-}
-
-.icon-instagram:before {
-  content: "\ea92";
-}
-
-.icon-twitter:before {
-  content: "\ea96";
-}
-
-.icon-linkedin2:before {
-  content: "\eaca";
-}
-
-.icon-shopping-cart:before {
-  content: "\e914";
-}
-
-.icon-handshake-o:before {
-  content: "\e915";
-}
-
-.icon-ticket:before {
-  content: "\e916";
-}
-
-.icon-pencil:before {
-  content: "\e917";
-}
-
-.icon-money:before {
-  content: "\e918";
-}
-
-.icon-hdd-o:before {
-  content: "\e919";
-}
-
-.icon-cloud-download:before {
-  content: "\e91b";
-}
-
-.icon-cogs:before {
-  content: "\e91c";
-}
-
-.icon-gears:before {
-  content: "\e91c";
-}
-
-.icon-dashboard:before {
-  content: "\e906";
-}
-
-.icon-tachometer:before {
-  content: "\e906";
-}
-
-.icon-group1:before {
-  content: "\e907";
-}
-
-.icon-money1:before {
-  content: "\e908";
-}
-
-.icon-handshake-o1:before {
-  content: "\e909";
-}
-
-.icon-clipboard:before {
-  content: "\e90a";
-}
-
-.icon-paste:before {
-  content: "\e90a";
 }
 
 .icon-laptop:before {
@@ -1349,6 +1458,34 @@ h4 {
 
 .icon-scholar-b:before {
   content: "\e903";
+}
+
+.icon-cogs:before {
+  content: "\e91c";
+}
+
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+.icon-money:before {
+  content: "\e918";
+}
+
+.icon-pencil:before {
+  content: "\e917";
+}
+
+.icon-ticket:before {
+  content: "\e916";
+}
+
+.icon-phone-square:before {
+  content: "\e922";
+}
+
+.icon-mouse:before {
+  content: "\e920";
 }
 
 .icon-ours {
@@ -1546,6 +1683,13 @@ h4 {
   }
   .nm-logo-black {
     max-width: 345px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nm-logo-black {
+    position: relative;
+    left: 0;
   }
 }
 

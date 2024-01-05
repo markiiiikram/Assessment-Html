@@ -49,10 +49,23 @@
 // } 
 
 
+.hamburger{
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-size: 21px;
+  width: 63px;
+  height: 56px;
+  background-color:#333645;
+  border: none;
+  border-radius: 3px;
+  margin-left:20px;
+  
+}
 
 
 .search-box-1{
-  height:44px;
+  height:42px;
   max-width:142px;
   padding:5px 15px 5px;
   border:1px #999AA2;
@@ -68,7 +81,7 @@
 }
 .search-submit{
   font-size:23px;
-  height:58px;
+  height:56px;
   border:none;
   border-radius:0 3px 3px 0;
 }
@@ -104,48 +117,6 @@
   display:none;
 
 }
-.banner-main{
-  margin-left:-1px;
-  width:auto;
-}
-.banner{
-    display:inline-flex;
-    flex-wrap:wrap;
-    flex-direction:column;
-    justify-content:center;
-    /* *************************************** */
-    background:url(../images/banner/banner.png) center/cover no-repeat #000;
-    background-blend-mode: hard-light;
-    text-align:center;
-    position:relative;
-    // border:1px solid #7E808A;
-    height:550px;
-    width:100%;
-    color:#fff;
-    .banner-heading{
-      font-size:2.5rem;
-      line-height:3rem;
-      margin:0 0 1.25rem;
-      color:#fff;
-      font-weight:600;
-    }
-    .banner-text{
-      margin-bottom:0.375rem;
-      font-size:1.25rem;
-      line-height: 1.75rem;
-      font-weight:600;
-  
-    }
-    .button-purple{
-      display:flex;
-      max-width:fit-content;
-      align-items:center;
-      align-content:center;
-      align-self:center;
-      margin-top:50px;
-    }
-  
-  }
   // Navigation Bar dropdown.
 .nav:hover{
   [class^="icon-"]::before {
@@ -207,15 +178,19 @@
       padding-bottom:15px;
     }
     .search-high{
-      display:contents;
+      display:flex;
+      gap:20px;
 
     }
     .search-submit{
-      margin-left:-1px;
-      height:57px;
+      margin-left:-20px;
+
       width:63px;
       background-color: #999AA2;
       
+    }
+    .hamburger{
+      margin:0px;
     }
    .header-low{
     display:none;
@@ -242,6 +217,12 @@
   @media(min-width:992px){
     .bottom-header{
       background-color: #333645
+    }
+    .search-box-1{
+      display:none;
+    }
+    .hamburger{
+      margin-left:0px;
     }
     .nav-bar{
       display: flex;
