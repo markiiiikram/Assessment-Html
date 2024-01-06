@@ -62,14 +62,14 @@
     font-weight:600;
 
   }
-  .button-purple{
-    display:flex;
-    max-width:fit-content;
-    align-items:center;
-    align-content:center;
-    align-self:center;
-    margin-top:50px;
-  }
+  // .button-purple{
+  //   display:flex;
+  //   max-width:fit-content;
+  //   align-items:center;
+  //   align-content:center;
+  //   align-self:center;
+  //   margin-top:50px;
+  // }
 
   .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training{
   text-align: center;
@@ -206,13 +206,21 @@
 .affiliation-banner{
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 50px;
   padding-bottom: 50px;
-
-
+  width: 100%;
+  overflow-x: hidden;
+  gap: 30px;
 }
 
+.mono-logo{
+  filter:grayscale(1)
+}
+
+.mono-logo:hover{
+    filter:grayscale(0);
+}
 
 // Welcome container
 .welcome{
@@ -355,6 +363,21 @@
     }
     .show-m{
       display:block;
+      padding:0px;
+      margin-top:25px;
+      margin-bottom:0px !important;
+      font-size:1.625rem;
+      font-weight:600;
+      color:$tuna;
+    }
+    .our-header{
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      width:100%;
+      padding-right:0px;
+      padding-left:0px;
+      align-items:baseline;
     }
 // News
     .latest-news{

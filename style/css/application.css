@@ -277,6 +277,8 @@ h4 {
   .search-high {
     display: flex;
     gap: 20px;
+    width: 100%;
+    justify-content: space-between;
   }
   .search-submit {
     margin-left: -20px;
@@ -575,15 +577,6 @@ h4 {
   font-weight: 600;
 }
 
-.button-purple {
-  display: flex;
-  max-width: fit-content;
-  align-items: center;
-  align-content: center;
-  align-self: center;
-  margin-top: 50px;
-}
-
 .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training {
   text-align: center;
   padding: 30px;
@@ -732,9 +725,20 @@ h4 {
 .affiliation-banner {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 50px;
   padding-bottom: 50px;
+  width: 100%;
+  overflow-x: hidden;
+  gap: 30px;
+}
+
+.mono-logo {
+  filter: grayscale(1);
+}
+
+.mono-logo:hover {
+  filter: grayscale(0);
 }
 
 .welcome {
@@ -869,6 +873,21 @@ h4 {
   }
   .show-m {
     display: block;
+    padding: 0px;
+    margin-top: 25px;
+    margin-bottom: 0px !important;
+    font-size: 1.625rem;
+    font-weight: 600;
+    color: #333645;
+  }
+  .our-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    align-items: baseline;
   }
   .latest-news {
     display: grid;
