@@ -222,6 +222,7 @@
 
 
 .xupes-logo, .survey-logo{
+  position:relative;
   height:38px !important;
   width:200px;
   padding-top:15px;
@@ -251,6 +252,7 @@
 .up{
   padding-right:15px;
   padding-left:15px;
+  position:relative;
 }
 .up:hover{
   
@@ -344,6 +346,20 @@
   /// 
 .email-container{
   background-color: $grey;
+  .button-black{
+    margin-bottom:30px;
+  }
+  line-height:32px;
+  font-weight:600;
+  color:$tuna;
+  a{
+    text-decoration:underline;
+    font-weight:bold;
+  }
+  label:after{
+    content: " *";
+    color: #d24d57;
+  }
 }
 .email-news{
     background-color:inherit;
@@ -355,7 +371,7 @@
   }
   .email{
     justify-content:flex-start;
-    width:99%;
+    width:100%;
     line-height: 47px;
   }
 
@@ -371,11 +387,14 @@
   .news-input{
     flex-direction: column;
     width:100%;
+    
   
   }
 
   .privacy-policy{
     display:flex;
+    margin-top:25px;
+    margin-bottom:25px;
   }
 .checkbox-container{
    display:flex;
@@ -394,6 +413,7 @@ input[type="checkbox"]{
   cursor:pointer;
   display:flex;
   outline:none;
+  margin-right:20px;
 }
 .label-checkmark{
   font-size: 1rem;
@@ -455,6 +475,7 @@ input[type="checkbox"]:checked:after{
  .header-low, .welcome, .email-news{
   padding:15px 20px;
  }
+
 }
 @media (min-width:768px){
 // Our services section
@@ -549,65 +570,76 @@ input[type="checkbox"]:checked:after{
 // Media query End
 // ==========================================================================
 
-@media (min-width:992px){
+@media screen and (min-width:992px){
 .article-container, .container-col-1, .container-col-2, .container-col-3{
+      width:455px;
+      border-radius:0px;
+    }
+    .article-details > p {
+      font-size:0.8125rem;
+    }
+  .employees{
     width:455px;
-    border-radius:0px;
+    height:263px;
   }
-  .article-details > p {
-    font-size:0.8125rem;
+    .align-center{
+      width:970px;
+    }
+  .lg-device{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    .float-container{
+      height:250px;
+    }
   }
-.employees{
-  width:455px;
-  height:263px;
-}
-  .align-center{
-    width:970px;
+  .bespoke-software{
+    display:inherit;
   }
-.lg-device{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  .float-container{
-    height:250px;
-  }
-}
-.bespoke-software{
-  display:inherit;
-}
-.welcome-grid{
-  display:grid;
-  grid-template-columns: repeat(2, 50%);
-  gap:15px;
+  .welcome-grid{
+    display:grid;
+    grid-template-columns: repeat(2, 50%);
+    gap:15px;
 
-  .button-black{
-    padding:10px 30px;
-    margin-right:30px;
-    margin-bottom:17px;
-  }
-}
-.welcome-1{
-  grid-column-start:1;
-}
-.welcome-2{
-  grid-column-start:2;
-}
-#why{
-  margin-right:5px;
-}
-.banner{
-  display:flex;
-  justify-content: start;
-  text-align:left;
-  margin-left: auto;
-  margin-right:auto;
-}
+    .button-black{
+      padding:10px 30px;
+      margin-right:30px;
+      margin-bottom:17px;
 
-.banner-heading{
-  font-size: 4.2rem;
-  line-height:5rem;
-  margin-bottom:0px;
-}
+    }
+  }
+  .news-input{
+    display:flex;
+    flex-direction:row;
+    gap:30px;
+  }
+  #your-email, #your-name{
+  width:450px;
+  display:block;
+  box-sizing:border-box;
+  }
+  .welcome-1{
+    grid-column-start:1;
+  }
+  .welcome-2{
+    grid-column-start:2;
+  }
+  #why{
+    margin-right:5px;
+  }
+  .banner{
+    display:flex;
+    justify-content: start;
+    text-align:left;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  .banner-heading{
+    font-size: 4.2rem;
+    line-height:5rem;
+    margin-bottom:0px;
+  }
 }
 
 
@@ -646,6 +678,9 @@ input[type="checkbox"]:checked:after{
     grid-template-columns: repeat(3, 1fr);
     margin-right:auto;
     margin-left:auto;
+  }
+  #your-email, #your-name{
+    width:570px;
   }
   // .container-col-3{
   //   display:inherit;
