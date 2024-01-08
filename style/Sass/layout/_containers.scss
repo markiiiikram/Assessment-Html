@@ -211,17 +211,45 @@
   padding-bottom: 50px;
   width: 100%;
   overflow-x: hidden;
-  gap: 30px;
+  gap: 0px;
+}
+.affiliation-banner:first-child{
+  margin-left:150px;
 }
 
 .mono-logo{
   filter:grayscale(1)
 }
-
-.mono-logo:hover{
-    filter:grayscale(0);
+.xupes-logo{
+  height:38px !important;
+  width:200px;
+  padding-top:15px;
 }
+// .mono-logo:hover{
+    
+// }
+.triangle-up{
+  display:none;
+}
+.mono-logo:hover{
+  filter:grayscale(0);
+}
+.sponsors-banner:hover{
+  .triangle-up{
+    display:block;
+    content:"";
+    width: 10px;
+    height: 10px;
+  
+    border-style: solid;
+    border-width: 40px 36px 0 36px;
+    border-color: #333645 transparent transparent transparent;
+    transform: rotate(0deg);
+    position:absolute;
 
+    z-index:2;
+  }
+}
 // Welcome container
 .welcome{
     background-color: #323544;
@@ -309,15 +337,73 @@
     width:100%;
   
   }
-  .checkbox{
-    .container input {
-      position: absolute;
-      opacity: 0;
-      cursor: pointer;
-      height: 0;
-      width: 0;
-    }
+
+  .privacy-policy{
+    display:flex;
   }
+.checkbox-container{
+   display:flex;
+
+}
+input[type="checkbox"]{
+  appearance:none;
+  -webkit-appearance:none;
+  min-height:26px;
+  min-width:26px;
+  max-height:26px;
+  max-width:26px;
+  background-color:$grey;
+  border:3px solid $tuna;
+  border-radius: 3px;
+  cursor:pointer;
+  display:flex;
+  outline:none;
+}
+.label-checkmark{
+  font-size: 1rem;
+  font-weight:600;
+
+}
+input[type="checkbox"]:after{
+  font-family: 'icomoon';
+  content: "\ea10";
+  color:$white;
+  font-size:1.2em;
+  display:none;
+  padding-top:2px;
+  padding-left:2px;
+}
+input[type="checkbox"]:checked{
+  background-color:$tuna;
+}
+input[type="checkbox"]:checked:after{
+  display:block;
+}
+// input[type='checkbox']{
+//   cursor: pointer;
+//   opacity: 0;
+//   position: absolute;
+// }
+// .checkbox-container{
+//     display:flex;
+//     gap:15px;
+// }
+ 
+//   input[type='checkbox']{
+//     cursor: pointer;
+//     opacity: 0;
+//     position: absolute;
+//     content:'';
+
+//   }
+  // .check{
+  //   display:flex;
+  // }
+  // .chkbox
+  // .chkbox::before{
+
+  // }
+  
 
   .color-logo{
     filter:grayscale(100%)
