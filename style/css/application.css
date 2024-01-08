@@ -475,10 +475,13 @@ h4 {
 .copyright {
   display: flex;
   align-items: center;
-  min-height: 35px;
-  padding: 0px;
+  height: 20px;
+  padding: 5px 0px 10px;
   background-color: #212330;
   color: #fff;
+  font-size: 0.8125rem;
+  margin: 0;
+  padding-top: 15px;
 }
 
 .about {
@@ -765,7 +768,7 @@ h4 {
   padding-bottom: 50px;
   width: 100%;
   overflow-x: hidden;
-  gap: 0px;
+  gap: 80px;
 }
 
 .affiliation-banner:first-child {
@@ -916,11 +919,6 @@ h4 {
   font-weight: bold;
 }
 
-.email-container label:after {
-  content: " *";
-  color: #d24d57;
-}
-
 .email-news {
   background-color: inherit;
   padding-left: 15px;
@@ -949,6 +947,11 @@ h4 {
 .news-input {
   flex-direction: column;
   width: 100%;
+}
+
+.news-input label:after {
+  content: " *";
+  color: #d24d57;
 }
 
 .privacy-policy {
@@ -1123,6 +1126,11 @@ input[type="checkbox"]:checked:after {
     grid-template-columns: repeat(2, 50%);
     gap: 15px;
   }
+  .welcome-grid h2 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 2.25rem;
+  }
   .welcome-grid .button-black {
     padding: 10px 30px;
     margin-right: 30px;
@@ -1235,17 +1243,21 @@ input[type="checkbox"]:checked:after {
 }
 
 #google-blue {
-  display: block;
   margin-right: 8px;
   margin-bottom: 8px;
-  height: 35px;
-  width: 208px;
   float: left;
 }
 
-#trust-green {
+#google-blue, #trust-green {
   display: block;
-  height: 35px;
+  width: 208px;
+  height: 45px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+
+#trust-green {
   width: 208px;
   float: inline-start;
 }

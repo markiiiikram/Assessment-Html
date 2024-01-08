@@ -26,16 +26,19 @@
     text-transform: uppercase;
   }
   #google-blue{
-    display:block;
     margin-right:8px;
     margin-bottom:8px;
-    height:35px;
-    width:208px;
     float:left;
   }
-  #trust-green{
+  #google-blue, #trust-green{
     display:block;
-    height:35px;
+    width:208px;
+    height:45px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:0px;
+  }
+  #trust-green{
     width:208px;
     float:inline-start;
   }
