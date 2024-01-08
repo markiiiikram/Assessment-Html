@@ -243,9 +243,11 @@
   display:none;
 }
 
-// .box{
-
-// }
+.welcome-1{
+  .button-black{
+    margin-bottom:5px;
+  }
+}
 .mono-logo:hover{
   filter:grayscale(0);
 }
@@ -433,31 +435,6 @@ input[type="checkbox"]:checked{
 input[type="checkbox"]:checked:after{
   display:block;
 }
-// input[type='checkbox']{
-//   cursor: pointer;
-//   opacity: 0;
-//   position: absolute;
-// }
-// .checkbox-container{
-//     display:flex;
-//     gap:15px;
-// }
- 
-//   input[type='checkbox']{
-//     cursor: pointer;
-//     opacity: 0;
-//     position: absolute;
-//     content:'';
-
-//   }
-  // .check{
-  //   display:flex;
-  // }
-  // .chkbox
-  // .chkbox::before{
-
-  // }
-  
 
   .color-logo{
     filter:grayscale(100%)
