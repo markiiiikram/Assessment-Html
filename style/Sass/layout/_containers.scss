@@ -62,14 +62,7 @@
     font-weight:600;
 
   }
-  // .button-purple{
-  //   display:flex;
-  //   max-width:fit-content;
-  //   align-items:center;
-  //   align-content:center;
-  //   align-self:center;
-  //   margin-top:50px;
-  // }
+
 
   .bespoke-software, .it-support, .dig-marketing, .tele-services, .web-design, .cyber-security, .developer-training{
   text-align: center;
@@ -442,9 +435,10 @@ input[type="checkbox"]:checked:after{
 // ==========================================================================
 // Media query Start
 // ==========================================================================
-@media (max-width:463px)
-{
-
+@media (max-width:389px){
+  .our-services-p, .it-support{
+    margin-bottom:0px;
+  }
 }
 @media (max-width:767px){
  .header-low, .welcome, .email-news{
@@ -657,6 +651,11 @@ input[type="checkbox"]:checked:after{
     grid-template-columns: repeat(3, 1fr);
     margin-right:auto;
     margin-left:auto;
+  }
+  .welcome-grid{
+    .button-black{
+      margin-right:0px;
+    }
   }
   #your-email, #your-name{
     width:570px;

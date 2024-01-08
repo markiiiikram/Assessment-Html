@@ -512,6 +512,13 @@ h4 {
   text-align: left;
 }
 
+@media (max-width: 484px) {
+  .footer-icons {
+    height: 130px;
+    width: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .links {
     display: grid;
@@ -1011,6 +1018,12 @@ input[type="checkbox"]:checked:after {
   filter: grayscale(100%);
 }
 
+@media (max-width: 389px) {
+  .our-services-p, .it-support {
+    margin-bottom: 0px;
+  }
+}
+
 @media (max-width: 767px) {
   .header-low, .welcome, .email-news {
     padding: 15px 20px;
@@ -1208,6 +1221,9 @@ input[type="checkbox"]:checked:after {
     grid-template-columns: repeat(3, 1fr);
     margin-right: auto;
     margin-left: auto;
+  }
+  .welcome-grid .button-black {
+    margin-right: 0px;
   }
   #your-email, #your-name {
     width: 570px;
@@ -1798,7 +1814,6 @@ input[type="checkbox"]:checked:after {
 .footer-icons {
   display: flex;
   font-size: 26px;
-  width: 100%;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -1867,16 +1882,6 @@ input[type="checkbox"]:checked:after {
 
 .color-logo, .mono-logo {
   height: 70px;
-}
-
-@media (max-width: 480px) {
-  .footer-icons {
-    max-width: 300px;
-    max-height: 66px;
-  }
-  .icon {
-    width: 35%;
-  }
 }
 
 @media (min-width: 768px) {

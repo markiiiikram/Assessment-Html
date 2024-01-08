@@ -346,7 +346,6 @@
 .footer-icons{
   display:flex;
   font-size: 26px;
-  width:100%;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -416,16 +415,7 @@ left:1px;
   height:70px;
 }
 
-  @media (max-width:480px){
-    .footer-icons{
-      max-width:300px;
-      max-height:66px;
-    }
-    .icon{
-      width:35%;
-    }
- 
-  }
+
 
 @media (min-width:768px){
   .telephone{display:none}

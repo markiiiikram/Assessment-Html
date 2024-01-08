@@ -42,6 +42,12 @@
   margin-bottom: 26px;
   text-align: left;
 }
+@media (max-width:484px){
+    .footer-icons{
+      height:130px;
+      width:200px;
+    }
+  }
 
 @media (min-width:768px){
   .links{
