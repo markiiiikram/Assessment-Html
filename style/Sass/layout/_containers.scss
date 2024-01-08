@@ -271,18 +271,16 @@
     margin-left:-36px;
   }
   .box{
-    display:block;
+    display: block;
     position: absolute;
-    position:relative;
-    margin-top: -120px;
-    z-index:2;
-    width:280px;
-    left:50%;
-    right:50%;
-    margin-left:-36px;
-    z-index:2;
-    background-color:$tuna;
-    color:$white;
+    margin-top: -459px;
+    margin-right: -41px;
+    z-index: 2;
+    width: 280px;
+    margin-left: -74px;
+    z-index: 2;
+    background-color: #333645;
+    color: #fff;
   }
   h3{
     color:$white;
