@@ -205,7 +205,6 @@
 //affiliation banner
 .affiliation-banner{
   display: flex;
-  justify-content: space-between;
   flex-wrap: nowrap;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -220,34 +219,73 @@
 .mono-logo{
   filter:grayscale(1)
 }
-.xupes-logo{
+
+
+.xupes-logo, .survey-logo{
   height:38px !important;
   width:200px;
   padding-top:15px;
+  margin-right:15px;
 }
-// .mono-logo:hover{
-    
-// }
-.triangle-up{
+.sponsors-banner{
+  max-height:70px;
+  & img {
+    height: 70px;
+    }
+}
+
+.sponsors-banner > .up{
+  margin-right:15px;
+}
+
+.triangle-up, .box{
   display:none;
 }
+
+// .box{
+
+// }
 .mono-logo:hover{
   filter:grayscale(0);
 }
-.sponsors-banner:hover{
+.up{
+  padding-right:15px;
+  padding-left:15px;
+}
+.up:hover{
+  
   .triangle-up{
     display:block;
     content:"";
-    width: 10px;
-    height: 10px;
-  
+    width: 0px;
+    height: 0px;
     border-style: solid;
-    border-width: 40px 36px 0 36px;
-    border-color: #333645 transparent transparent transparent;
+    border-width: 40px 36px 0 36px !important;
+    border-color:$tuna transparent transparent transparent;
     transform: rotate(0deg);
-    position:absolute;
-
+    position:relative;
+    top: -120px;
     z-index:2;
+    left:50%;
+    right:50%;
+    margin-left:-36px;
+  }
+  .box{
+    display:block;
+    position: absolute;
+    position:relative;
+    margin-top: -120px;
+    z-index:2;
+    width:280px;
+    left:50%;
+    right:50%;
+    margin-left:-36px;
+    z-index:2;
+    background-color:$tuna;
+    color:$white;
+  }
+  h3{
+    color:$white;
   }
 }
 // Welcome container
