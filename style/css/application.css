@@ -150,6 +150,7 @@ h4 {
   border: none;
   background: transparent;
   height: 47px;
+  padding-left: 15px;
 }
 
 .search-box-2:focus-visible {
@@ -517,6 +518,15 @@ h4 {
     height: 130px;
     width: 200px;
   }
+  .about {
+    margin-bottom: 0px;
+  }
+  .about h4 {
+    padding: 0px;
+  }
+  .about .footer-li {
+    margin-top: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -785,10 +795,10 @@ h4 {
 
 .xupes-logo, .survey-logo {
   position: relative;
-  height: 38px !important;
   width: 200px;
-  padding-top: 15px;
-  margin-right: 15px;
+  height: 36px !important;
+  padding-top: 17px;
+  padding-bottom: 17px;
 }
 
 .sponsors-banner {
@@ -811,39 +821,68 @@ h4 {
   border-width: 40px 36px 0 36px !important;
   border-color: #333645 transparent transparent transparent;
   transform: rotate(0deg);
-  position: relative;
-  bottom: 100px;
+  bottom: 40px;
   margin-right: auto;
   z-index: 2;
   left: 50%;
-  right: 50%;
-  margin-left: -36px;
+  transform: translateX(-50%);
 }
 
 .triangle-up {
   display: none;
   position: absolute;
+  margin-bottom: 30px;
+}
+
+.triangle-space {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -140px;
+  height: 100px;
 }
 
 .box {
   display: none;
+  position: absolute;
   z-index: 2;
   width: 280px;
-  top: auto;
   bottom: 130px;
   z-index: 2;
   background-color: #333645;
   color: #fff;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  left: 50%;
+  transform: translatex(-50%);
   text-align: center;
+}
+
+.box p {
+  font-size: .8125rem;
+  line-height: 1.375rem;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.box p, .box h3 {
+  padding: 0px 15px;
 }
 
 .box h3 {
   color: #fff;
+  font-size: 1.125rem;
+  padding-bottom: 17px;
+  margin: 0;
+}
+
+.box .btn {
+  display: block;
+  height: 30px;
+  margin: 10px 25px;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 0px;
+  line-height: 49px;
 }
 
 .welcome-1 .button-black {
@@ -860,11 +899,15 @@ h4 {
   position: relative;
 }
 
-.up:hover .triangle-up, .up-medium:hover .triangle-up, .up-large:hover .triangle-up {
+.up:hover .triangle-space {
   display: block;
 }
 
-.up:hover .box, .up-medium:hover .box, .up-large:hover .box {
+.up:hover .triangle-up {
+  display: block;
+}
+
+.up:hover .box {
   display: inline-block;
   padding: 5px;
 }
@@ -936,7 +979,6 @@ h4 {
   text-align: left;
   margin-top: 1px;
   padding: 30px;
-  border-top: 1px solid #ccc;
   width: 100%;
 }
 
@@ -1061,8 +1103,8 @@ input[type="checkbox"]:checked:after {
 }
 
 @media (max-width: 389px) {
-  .our-services-p, .it-support {
-    margin-bottom: 0px;
+  .block .float-container {
+    padding: 30px 30px 50px;
   }
 }
 
@@ -1177,6 +1219,9 @@ input[type="checkbox"]:checked:after {
   .lg-device .float-container {
     height: 250px;
   }
+  .m-device {
+    margin-top: 0px;
+  }
   .bespoke-software {
     display: inherit;
   }
@@ -1253,7 +1298,7 @@ input[type="checkbox"]:checked:after {
   .xl-device .float-container {
     height: 250px;
   }
-  .xl-device .cyber-security, .xl-device .developer-training {
+  .xl-device .float-container {
     margin-top: 30px;
   }
   .cyber-security button {

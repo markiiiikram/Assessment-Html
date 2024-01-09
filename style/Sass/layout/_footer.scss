@@ -47,6 +47,15 @@
       height:130px;
       width:200px;
     }
+    .about{
+      margin-bottom:0px;
+      & h4{
+        padding:0px;
+      }
+      & .footer-li{
+        margin-top:0px;
+      }
+    }
   }
 
 @media (min-width:768px){

@@ -218,10 +218,10 @@
 
 .xupes-logo, .survey-logo{
   position:relative;
-  height:38px !important;
   width:200px;
-  padding-top:15px;
-  margin-right:15px;
+  height:36px !important;
+  padding-top:17px;
+  padding-bottom:17px;
 }
 .sponsors-banner{
   max-height:70px;
@@ -243,37 +243,62 @@
   border-width: 40px 36px 0 36px !important;
   border-color:$tuna transparent transparent transparent;
   transform: rotate(0deg);
-  position:relative;
-  bottom:100px;
+  bottom:40px;
   margin-right:auto;
   z-index:2;
   left:50%;
-  right:50%;
-  margin-left:-36px;
+  transform: translateX(-50%)
 }
 .triangle-up{
   display:none;
   position:absolute;
+  margin-bottom:30px;
+}
+.triangle-space{
+display:none;
+ width:100%;
+ height:100%;
+ position:relative;
+ top:-140px;
+ height:100px;
 }
 .box{
   display:none;
+  position:absolute;
   z-index: 2;
   width: 280px;
-  top:auto;
   bottom:130px;
   z-index: 2;
   background-color: #333645;
   color: #fff;
-  position:absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
+  left:50%;
+  transform:translatex(-50%);
   text-align: center;
+
+  p{
+    font-size: .8125rem;
+    line-height: 1.375rem;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  p, h3{
+    padding: 0px 15px;
+  }
   h3{
     color:$white;
+    font-size:1.125rem;
+    padding-bottom:17px;
+    margin:0;
   }
-
+  .btn{
+    display: block;
+    height: 30px;
+    margin: 10px 25px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    line-height: 49px;
+  }
 }
 .welcome-1{
   .button-black{
@@ -296,7 +321,10 @@
 //   padding-top:15px;
 // }
 
-.up:hover, .up-medium:hover, .up-large:hover{
+.up:hover{
+  .triangle-space{
+    display:block;
+  }
   .triangle-up{
     display:block;
   }
@@ -372,7 +400,6 @@
     text-align: left;
     margin-top: 1px;
     padding:30px;
-    border-top: 1px solid #ccc;
     width:100%;
     p{
       margin-bottom:30px;
@@ -488,10 +515,13 @@ input[type="checkbox"]:checked:after{
 // Media query Start
 // ==========================================================================
 @media (max-width:389px){
-  .our-services-p, .it-support{
-    margin-bottom:0px;
+  .block{
+    & .float-container{
+      padding:30px 30px 50px;
+    }
   }
-}
+  }
+
 @media (max-width:767px){
  .header-low, .welcome, .email-news{
   padding:15px 20px;
@@ -612,6 +642,9 @@ input[type="checkbox"]:checked:after{
       height:250px;
     }
   }
+  .m-device{
+    margin-top:0px;
+  }
   .bespoke-software{
     display:inherit;
   }
@@ -690,8 +723,8 @@ input[type="checkbox"]:checked:after{
     .float-container{
       height: 250px;
     }
-   .cyber-security, .developer-training{
-    margin-top: 30px;
+   & .float-container{
+    margin-top: 30px
    }
   }
   .cyber-security{
