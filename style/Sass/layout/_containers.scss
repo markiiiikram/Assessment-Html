@@ -300,11 +300,11 @@ display:none;
     line-height: 49px;
   }
 }
-.welcome-1{
-  & button{
-    margin-bottom: 5px;
+.welcome-1, .welcome-2{
+  & button, .btn{
+    margin-bottom: 10px;
     padding:10px 15px;
-
+    font-weight: 600;
   }
 }
 .mono-logo:hover{
