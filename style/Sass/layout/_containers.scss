@@ -114,6 +114,7 @@
       background-color:#fff;
     }
   }
+  /*******************/
   .it-support:hover{
     background-color: #4183d7;
     #btn-blue{
@@ -143,12 +144,13 @@
   
   .tele-services:hover{
     background-color:$valencia;
-    .button-red{
+
+    #btn-valencia{
       color:$valencia;
       background-color:#fff;
     }
     .icon-phone_in_talk{
-      color:#ce4125;
+      color:$valencia;
       background-color:#fff;
     }
   }
@@ -182,7 +184,7 @@
   
   .developer-training:hover{
     background-color:#CE4125;
-    .button-punch{
+    .button-red{
       color:#CE4125;
       background-color:#fff;
     }
@@ -191,9 +193,9 @@
       background-color:#fff;
     }
   }
-  .btn-art:hover{
-    background-color:#fff;
-  }
+  // .btn-art:hover{
+  //   background-color:#fff;
+  // }
   
 //affiliation banner
 .affiliation-banner{
@@ -202,7 +204,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   gap: 80px;
 }
 .affiliation-banner:first-child{
@@ -229,13 +231,50 @@
 }
 
 .sponsors-banner > .up{
-  margin-right:15px;
+  width:280px;
 }
 
-.triangle-up, .box{
+
+.triangle-up{
+  content:"";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 40px 36px 0 36px !important;
+  border-color:$tuna transparent transparent transparent;
+  transform: rotate(0deg);
+  position:relative;
+  bottom:100px;
+  margin-right:auto;
+  z-index:2;
+  left:50%;
+  right:50%;
+  margin-left:-36px;
+}
+.triangle-up{
   display:none;
+  position:absolute;
 }
+.box{
+  display:none;
+  z-index: 2;
+  width: 280px;
+  top:auto;
+  bottom:130px;
+  z-index: 2;
+  background-color: #333645;
+  color: #fff;
+  position:absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  h3{
+    color:$white;
+  }
 
+}
 .welcome-1{
   .button-black{
     margin-bottom:5px;
@@ -249,39 +288,23 @@
   padding-left:15px;
   position:relative;
 }
-.up:hover{
-  
+// .up-small, .up-medium, .up-large{
+//   flex: 1 1 0px;
+// }
+// .howes-logo{
+//   height:38px !important;
+//   padding-top:15px;
+// }
+
+.up:hover, .up-medium:hover, .up-large:hover{
   .triangle-up{
     display:block;
-    content:"";
-    width: 0px;
-    height: 0px;
-    border-style: solid;
-    border-width: 40px 36px 0 36px !important;
-    border-color:$tuna transparent transparent transparent;
-    transform: rotate(0deg);
-    position:relative;
-    top: -120px;
-    z-index:2;
-    left:50%;
-    right:50%;
-    margin-left:-36px;
   }
   .box{
-    display: block;
-    position: absolute;
-    margin-top: -459px;
-    margin-right: -41px;
-    z-index: 2;
-    width: 280px;
-    margin-left: -74px;
-    z-index: 2;
-    background-color: #333645;
-    color: #fff;
+    display: inline-block;
+    padding:5px;
   }
-  h3{
-    color:$white;
-  }
+  
 }
 // Welcome container
 .welcome{
@@ -306,6 +329,24 @@
     padding:0px;
     background-color:#fff;
     margin-top:30px;
+    position:relative;
+  }
+  .image-container{
+    position:absolute;
+    background-color:$blue;
+    right:0;
+    top:10px;
+    color:$white;
+    font-weight:600;
+    padding:0px 10px;
+  }
+  .container-col-2{
+    .image-container{
+      background-color:$red;
+    }
+  }
+  .article-h3{
+    margin:0px;
   }
   .employees{
     height:100%;
@@ -320,6 +361,11 @@
     font-size: .85rem;
     vertical-align: middle;
   }
+  .latest-news{
+    & a{
+      display:contents;
+    }
+  }
   .article-details{
     display:flex;
     flex-wrap:wrap;
@@ -330,6 +376,12 @@
     width:100%;
     p{
       margin-bottom:30px;
+    }
+    .article-h3{
+      color:$blue;
+    }
+    .article-middle-h3{
+      color:$red;
     }
   }
   .flex{
@@ -463,9 +515,7 @@ input[type="checkbox"]:checked:after{
  .cyber-security, .developer-training{
     margin-top:0px;
   }
-  // .tele-services, .web-design, .cyber-security, .developer-training{
-   
-  // }
+
       .align-center{
       width:750px;
       margin:auto;
@@ -643,6 +693,11 @@ input[type="checkbox"]:checked:after{
    .cyber-security, .developer-training{
     margin-top: 30px;
    }
+  }
+  .cyber-security{
+    & button{
+      margin-top:22px;
+    }
   }
   .bespoke-software, .dig-marketing{
     p{margin-bottom:35px;}

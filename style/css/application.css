@@ -676,6 +676,7 @@ h4 {
   background-color: #fff;
 }
 
+/*******************/
 .it-support:hover {
   background-color: #4183d7;
 }
@@ -710,13 +711,13 @@ h4 {
   background-color: #D64541;
 }
 
-.tele-services:hover .button-red {
+.tele-services:hover #btn-valencia {
   color: #D64541;
   background-color: #fff;
 }
 
 .tele-services:hover .icon-phone_in_talk {
-  color: #ce4125;
+  color: #D64541;
   background-color: #fff;
 }
 
@@ -754,7 +755,7 @@ h4 {
   background-color: #CE4125;
 }
 
-.developer-training:hover .button-punch {
+.developer-training:hover .button-red {
   color: #CE4125;
   background-color: #fff;
 }
@@ -764,17 +765,13 @@ h4 {
   background-color: #fff;
 }
 
-.btn-art:hover {
-  background-color: #fff;
-}
-
 .affiliation-banner {
   display: flex;
   flex-wrap: nowrap;
   padding-top: 50px;
   padding-bottom: 50px;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: clip;
   gap: 80px;
 }
 
@@ -803,11 +800,50 @@ h4 {
 }
 
 .sponsors-banner > .up {
-  margin-right: 15px;
+  width: 280px;
 }
 
-.triangle-up, .box {
+.triangle-up {
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 40px 36px 0 36px !important;
+  border-color: #333645 transparent transparent transparent;
+  transform: rotate(0deg);
+  position: relative;
+  bottom: 100px;
+  margin-right: auto;
+  z-index: 2;
+  left: 50%;
+  right: 50%;
+  margin-left: -36px;
+}
+
+.triangle-up {
   display: none;
+  position: absolute;
+}
+
+.box {
+  display: none;
+  z-index: 2;
+  width: 280px;
+  top: auto;
+  bottom: 130px;
+  z-index: 2;
+  background-color: #333645;
+  color: #fff;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.box h3 {
+  color: #fff;
 }
 
 .welcome-1 .button-black {
@@ -824,38 +860,13 @@ h4 {
   position: relative;
 }
 
-.up:hover .triangle-up {
+.up:hover .triangle-up, .up-medium:hover .triangle-up, .up-large:hover .triangle-up {
   display: block;
-  content: "";
-  width: 0px;
-  height: 0px;
-  border-style: solid;
-  border-width: 40px 36px 0 36px !important;
-  border-color: #333645 transparent transparent transparent;
-  transform: rotate(0deg);
-  position: relative;
-  top: -120px;
-  z-index: 2;
-  left: 50%;
-  right: 50%;
-  margin-left: -36px;
 }
 
-.up:hover .box {
-  display: block;
-  position: absolute;
-  margin-top: -459px;
-  margin-right: -41px;
-  z-index: 2;
-  width: 280px;
-  margin-left: -74px;
-  z-index: 2;
-  background-color: #333645;
-  color: #fff;
-}
-
-.up:hover h3 {
-  color: #fff;
+.up:hover .box, .up-medium:hover .box, .up-large:hover .box {
+  display: inline-block;
+  padding: 5px;
 }
 
 .welcome {
@@ -880,6 +891,25 @@ h4 {
   padding: 0px;
   background-color: #fff;
   margin-top: 30px;
+  position: relative;
+}
+
+.image-container {
+  position: absolute;
+  background-color: #4183d7;
+  right: 0;
+  top: 10px;
+  color: #fff;
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.container-col-2 .image-container {
+  background-color: #ce4125;
+}
+
+.article-h3 {
+  margin: 0px;
 }
 
 .employees {
@@ -896,6 +926,10 @@ h4 {
   vertical-align: middle;
 }
 
+.latest-news a {
+  display: contents;
+}
+
 .article-details {
   display: flex;
   flex-wrap: wrap;
@@ -908,6 +942,14 @@ h4 {
 
 .article-details p {
   margin-bottom: 30px;
+}
+
+.article-details .article-h3 {
+  color: #4183d7;
+}
+
+.article-details .article-middle-h3 {
+  color: #ce4125;
 }
 
 .flex {
@@ -1214,6 +1256,9 @@ input[type="checkbox"]:checked:after {
   .xl-device .cyber-security, .xl-device .developer-training {
     margin-top: 30px;
   }
+  .cyber-security button {
+    margin-top: 22px;
+  }
   .bespoke-software p, .dig-marketing p {
     margin-bottom: 35px;
   }
@@ -1260,6 +1305,11 @@ input[type="checkbox"]:checked:after {
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
+}
+
+.btn-banner:hover {
+  background-color: #79539A;
+  color: #fff;
 }
 
 #google-blue {
@@ -1859,7 +1909,7 @@ input[type="checkbox"]:checked:after {
 }
 
 .min-logo {
-  padding-left: 10px;
+  padding-left: 30px;
   padding-bottom: 10px;
 }
 

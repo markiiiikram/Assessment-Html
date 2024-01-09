@@ -25,6 +25,10 @@
     margin-right:auto;
     text-transform: uppercase;
   }
+  .btn-banner:hover{
+    background-color:$purple-hover;
+    color:$white;
+  }
   #google-blue{
     margin-right:8px;
     margin-bottom:8px;
@@ -57,7 +61,6 @@
     background-color:$blue;
     border:1px solid transparent;
   }
-  
   .button-red{
     background-color:$red;
     border:1px solid transparent;
