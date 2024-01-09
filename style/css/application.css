@@ -884,9 +884,9 @@ h4 {
   line-height: 49px;
 }
 
-.welcome-1 .button-black {
+.welcome-1 button {
   margin-bottom: 5px;
-  height: 45px;
+  padding: 10px 15px;
 }
 
 .mono-logo:hover {

@@ -301,9 +301,10 @@ display:none;
   }
 }
 .welcome-1{
-  .button-black{
-    margin-bottom:5px;
-    height:45px;
+  & button{
+    margin-bottom: 5px;
+    padding:10px 15px;
+
   }
 }
 .mono-logo:hover{
