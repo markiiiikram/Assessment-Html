@@ -264,6 +264,7 @@ h4 {
   border: none;
   border-radius: 3px;
   color: #fff;
+  line-height: 60px;
 }
 
 .hamburger, .search-submit, .btn-banner {
@@ -1146,6 +1147,7 @@ h4 {
   color: #fff;
   text-decoration: none;
   align-items: flex-start;
+  padding-bottom: 10px;
 }
 
 .footer-icons {
@@ -1250,6 +1252,14 @@ footer p {
   }
   .about .footer-li {
     margin-top: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .copyright {
+    max-height: 72px;
+    padding-top: 20px;
+    padding-bottom: 25px;
   }
 }
 
