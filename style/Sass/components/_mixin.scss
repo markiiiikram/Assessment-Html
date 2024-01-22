@@ -1,3 +1,66 @@
 @mixin dark-containers {
     padding:15px 25px;
 }
+
+@mixin center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@mixin bluebutton{
+    background-color: $blue;
+}
+@mixin bluebutton-hover{
+    background-color:$blue-hover;
+}
+
+
+
+// 480px breaks the icons down
+
+
+// $brkpoint-zero    :1px;
+// $brkpoint-xxsmall :389px;
+// $brkpoint-xsmall  :488px;
+// $brkpoint-small   :768px;
+// $brkpoint-md      :992px;
+// $brkpoint-lg      :1260px;
+
+// @mixin mq($break)   {
+
+//     @if $break == 'xxsmall'{
+//        @media  (max-width: $brkpoint-xxsmall){
+//         @content;
+//         }
+//     }
+//     @else if $break== 'xsmall'{
+//         @media (max-width: $brkpoint-xsmall){
+//             @content;
+//         }
+//     @else if $break  == 'small'{
+//         @media (min-width: $brkpoint-zero) and (max-width: #{$brkpoint-small - 1}) {
+            
+
+//         }
+    
+    
+    
+    
+    
+//         @else if $break == 'small'{
+//         @media (min-width: $brkpoint-sm) and (max-width: $brkpoint-md){
+//             @content;
+//             }
+//         }
+
+
+        
+//         @else if $break =='medium'{
+//             @media (min-width: #{$brkpoint-md + 1}){
+//                 @content;
+//             }
+//         }
+//         @else if $break =='large'{
+//             @media (min-width: $brkpoint-lg + 1)
+//         }
+//     }

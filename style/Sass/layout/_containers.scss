@@ -8,10 +8,15 @@
     top:0;
     transition:.5s;
   }
-  .align-center{
-    padding-right:15px;
-    padding-left:15px;
-  }
+.align-center{
+  margin-left:auto;
+  margin-right:auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-sizing:border-box;
+}
+
+
   // wrapper is for contents that do no need to be 100% width of the page
   .wrapper{
     margin:auto;
@@ -83,7 +88,7 @@
   }
 
   .our-services-p{
-    font-size: .8125rem;
+    font-size: .8124rem;
     line-height: 1.375rem;
     margin-bottom: 13px;
     font-weight: 400;
@@ -95,11 +100,14 @@
   }
   ///HOVER EFFECTS
   .bespoke-software:hover, .it-support:hover,.dig-marketing:hover, .tele-services:hover,.web-design:hover, .cyber-security:hover, .developer-training:hover{
-    color: #fff;
+    color: $white;
     border-color: transparent;
     top: -10px;
     transition: .5s ease;
     text-decoration: none;
+    .services-h3{
+      color:$white;
+    }
   }
 
   // Hover containers for Our Services
@@ -292,12 +300,17 @@ display:none;
   }
   .btn{
     display: block;
-    height: 30px;
-    margin: 10px 25px;
+    height: 47px;
+    margin: auto;
     text-align: center;
-    padding-bottom: 15px;
+    // padding-bottom: 15px;
     padding-top: 0px;
     line-height: 49px;
+    width:240px;
+    box-sizing:border-box;
+  }
+  .btn:hover{
+    @include bluebutton-hover;
   }
 }
 .welcome-1, .welcome-2{
@@ -332,21 +345,12 @@ display:none;
   }
   .box{
     display: inline-block;
-    padding:5px;
+    padding:20px;
+    box-sizing:border-box;
   }
   
 }
-// Welcome container
-.welcome{
-    background-color: #323544;
-    color:#fff;
-    text-align:left;
-  }
 
-.google-trust{
-  display:inline-block;
-  padding-bottom:30px;
-}
 
   /* News */
 .article-container{
@@ -369,6 +373,9 @@ display:none;
     color:$white;
     font-weight:600;
     padding:0px 10px;
+    font-size:.75rem;
+    padding-top:3px;
+    padding-bottom:3px;
   }
   .container-col-2{
     .image-container{
@@ -377,6 +384,8 @@ display:none;
   }
   .article-h3{
     margin:0px;
+    font-size:1rem;
+    font-weight: 600;
   }
   .employees{
     height:100%;
@@ -412,103 +421,24 @@ display:none;
     .article-middle-h3{
       color:$red;
     }
+    .btn{
+      height: 46px;
+      display: block;
+      box-sizing: border-box;
+      margin-left:0px
+    }
   }
   .flex{
     text-align: left;
+    font-size: 0.875rem;
+   strong{
+    font-weight:600;
+   }
   }
 
   /////////////////////
   /// 
   /// 
-.email-container{
-  background-color: $grey;
-  .button-black{
-    margin-bottom:30px;
-  }
-  line-height:32px;
-  font-weight:600;
-  color:$tuna;
-  a{
-    text-decoration:underline;
-    font-weight:bold;
-  }
-}
-.email-news{
-    background-color:inherit;
-    padding-left: 15px;
-    padding-right: 15px;
-    display:flex;
-    flex-wrap:wrap;
-    text-align:left;
-  }
-  .email{
-    justify-content:flex-start;
-    width:100%;
-    line-height: 47px;
-  }
-
-  .marketing-agree{
-  border-radius: 3px;
-  border: 3px solid #333645;
-  height: 32px;
-  width: 32px;
-  position: relative;
-  float: left;
-  margin-right: 20px;
-  }
-  .news-input{
-    flex-direction: column;
-    width:100%;
-    label:after{
-      content: " *";
-      color: #d24d57;
-    }  
-  }
-
-  .privacy-policy{
-    display:flex;
-    margin-top:25px;
-    margin-bottom:25px;
-  }
-.checkbox-container{
-   display:flex;
-
-}
-input[type="checkbox"]{
-  appearance:none;
-  -webkit-appearance:none;
-  min-height:26px;
-  min-width:26px;
-  max-height:26px;
-  max-width:26px;
-  background-color:$grey;
-  border:3px solid $tuna;
-  border-radius: 3px;
-  cursor:pointer;
-  display:flex;
-  outline:none;
-  margin-right:20px;
-}
-.label-checkmark{
-  font-size: 1rem;
-  font-weight:600;
-
-}
-input[type="checkbox"]:after{
-  font-family: 'icomoon';
-  content: "\ea10";
-  color:$white;
-  font-size:1.2em;
-  display:none;
-  padding-top:2px;
-  padding-left:2px;
-}
-input[type="checkbox"]:checked{
-  background-color:$tuna;
-}
-input[type="checkbox"]:checked:after{
-  display:block;
-}
 
   .color-logo{
     filter:grayscale(100%)
@@ -550,36 +480,30 @@ input[type="checkbox"]:checked:after{
 
       .align-center{
       width:750px;
-      margin:auto;
     }
     .hidden-m{
       display:none;
     }
     .show-m{
       display:block;
-      padding:0px;
-      margin-top:25px;
-      margin-bottom:0px !important;
-      font-size:1.625rem;
-      font-weight:600;
-      color:$tuna;
+ 
+    }
+    .show-m:hover{
+      text-decoration: underline;
     }
     .our-header{
       display:flex;
       align-items:center;
       justify-content: space-between;
-      width:100%;
-      padding-right:0px;
-      padding-left:0px;
       align-items:baseline;
     }
 // News
     .latest-news{
       display:grid;
-      grid-template-columns: repeat(2, 50%);
       margin-left:auto;
       margin-right:auto;
       padding-bottom:30px;
+      gap:30px;
     }
 .employees{
   height:200px;
@@ -686,17 +610,25 @@ input[type="checkbox"]:checked:after{
     margin-right:5px;
   }
   .banner{
+    width:950px;
     display:flex;
     justify-content: start;
     text-align:left;
     margin-left: auto;
     margin-right:auto;
+    
   }
 
   .banner-heading{
     font-size: 4.2rem;
     line-height:5rem;
     margin-bottom:0px;
+  }
+  .banner-text{
+    font-size:1.625rem;
+    line-height: 2.5rem;
+    
+
   }
 }
 
@@ -705,6 +637,7 @@ input[type="checkbox"]:checked:after{
   .wrapper{
     width:1200px;
   }
+ 
   .article-container, .container-col-1, .container-col-2, .container-col-3{
     width:370px;
     border-radius:0px;
@@ -734,11 +667,12 @@ input[type="checkbox"]:checked:after{
       margin-top:22px;
     }
   }
-  .bespoke-software, .dig-marketing{
+  .dig-marketing{
     p{margin-bottom:35px;}
   }
   .latest-news{
     grid-template-columns: repeat(3, 1fr);
+    grid-gap:40px;
     margin-right:auto;
     margin-left:auto;
   }
@@ -747,11 +681,11 @@ input[type="checkbox"]:checked:after{
       margin-right:0px;
     }
   }
+  #trust-green{
+    margin-top: 30px;
+  }
   #your-email, #your-name{
     width:570px;
   }
-  // .container-col-3{
-  //   display:inherit;
-  //   @extend .container-col-2;
-  // }
+
 }

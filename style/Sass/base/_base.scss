@@ -4,10 +4,7 @@
 // html{
 //   // nightmode scrollbar
 //   // scrollbar-color: #454a4d #202324;
-// }
-// *{
-//   box-sizing: border-box;
-// }
+
 body{   
     display:inherit;
     font-family: Poppins, sans-serif;
@@ -101,6 +98,7 @@ h1,h2,h3,h4,h5,h6{
   
 
   $black:             #272936; //Black buttons
+  $black-hover:       #22242E; //Black buttons hover
   $dark-black:        #000;    //Black buttons hover
   $footer:            #212330;
   $grey:                #ddd;    //email container
@@ -108,6 +106,7 @@ h1,h2,h3,h4,h5,h6{
   $mercury:           #E5E5E5; //search-bar
   $tuna:              #333645; //base container background + buttons before hover.
   $manatee:           #999AA2; //Icons (search + contact)
+  $waterloo:          #84858F;  //search + contract hover
   // Social media colours
 
   $linked-in:         #0077B5; //

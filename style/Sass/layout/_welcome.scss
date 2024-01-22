@@ -1,0 +1,61 @@
+// Welcome container
+.welcome{
+    background-color: #323544;
+    color:#fff;
+    text-align:left;
+  }
+/// make the ashcroft partnership hover underlined.
+.welcome-2 p a:hover{
+  text-decoration: underline;
+}
+.welcome-grid{
+  padding-top:50px;
+  padding-bottom:50px;
+  h2{
+    padding-top:0px;
+    padding-bottom:0px;
+  }
+  .google-trust{
+    display:inline-block;
+  }
+  #google-blue{
+    margin-right:8px;
+    margin-bottom:8px;
+    float:left;
+    margin-bottom: 28px;
+  }
+  .button-black{
+    background-color:$black;
+  }
+  #google-blue, #trust-green, .button-black{
+    display:block;
+    width:208px;
+    height:45px;
+    text-align: center;
+    padding-top:10px;
+    padding-bottom:0px;
+  }
+  #trust-green{
+    width:208px;
+    float:inline-start;
+  }
+  #google-blue:hover{
+    background-color: $dark-blue;
+ 
+  }
+  #trust-green:hover{
+    background-color: $dark-green;
+  }
+  
+}
+.welcome-buttons{
+  display:flex;
+  gap:10px;
+  flex-wrap: wrap;
+}
+@media (min-width: 992px){
+  #google-blue{
+    margin-top: 28px;
+
+  }
+}

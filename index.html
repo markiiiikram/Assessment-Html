@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,7 +11,7 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https//fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
     <link rel='stylesheet' type='text/css' media='screen' href='style/css/application.css'>
 </head>
 <body>
@@ -19,21 +19,23 @@
         <div class="header-high align-center">
             <form class="search-high">
                 <a href="#" ><img src="style/images/logos/nm-logo.webp" class="nm-logo-black" alt="netmatters logo"></a>
-                <div class="support button-h" type="submit" >
-                    <span class=button-header-text>Support</span><span class="icon-mouse "></span></div>
-                <div class="contact button-h" type="submit" >
-                    <span class=button-header-text>Contact</span><span class="icon-paperplane "></span></div>
-                <input type="text" placeholder="Search.." class="search-box-1">
-                <button type="submit" class="search-submit" ><span class="icon-search-b"></span></button>
-                <button type="submit" class="hamburger" ><span class="icon-hamburger"></span></button>
+                <div class="support-contact ">
+                   <a href="#" > <div class="support button-h"  >
+                   <span class=button-header-text>Support</span><span class="icon-mouse "></span></div></a>
+                   <a href="#" > <div class="contact button-h" >
+                    <span class=button-header-text>Contact</span><span class="icon-paperplane "></span></div></a>
+                    </div>
+                <input type="text" placeholder="Search.." class="search-box-1" name="search-box-1">
+                <a href="#"><span class="search-submit" ><span class="icon-search-b"></span></span></a>
+               <a href="#"><span  class="hamburger" ><span class="icon-hamburger"></span></span></a> 
             </form>
         </div>
         <!-- search bar-->
         <div class="header-low">
             <div class="header-low-logo">
                 <a href="#" class="nm-logo-black"><img src="style/images/logos/nm-logo.webp" class="nm-logo-black" alt="NetMatters Black logo"></a>
-                <button type="submit" class="telephone" ><span class=" icon-phone_in_talk-b"></span></button>
-                <button type="submit" class="hamburger" ><span class="icon-hamburger"></span></button>
+                <span class="telephone" ><span class=" icon-phone_in_talk-b"></span></span>
+                <span  class="hamburger"><span class="icon-hamburger"></span></span>
             </div>
             <div class="please-work">
             <form class="search-low">
@@ -44,24 +46,28 @@
          </div>
         <div class="bottom-header">
             
-                <ul class="nav-bar align-center">
+         <div class="nav-bar align-center">
                  
                     <div class="bespoke-h nav">
-                        <span class="icon-laptop-h"></span>
-                        <br>
-                       <span> 
-                        <small>Bespoke</small>
-                        <br>
-                        Software
-                       </span>
+                        <a href="#">
+                               <span class="icon-laptop-h"></span>
+                               <br>
+                               <span class="nav-title-text"> 
+                               <small>BESPOKE</small>
+                               <br>
+                               SOFTWARE
+                            </span>
+                        </a>
                        <span class="triangle"></span>
                        <div class="sub-menu-banner bespoke-software-banner ">
                             <div class="mw bespoke-color">
                                 <ul class="sub-menu sub-container bespoke-ul bespoke-color">
                                     <li class="h2 sub-menu-banner-title">Our Bespoke Software Services</li>
                                     <li class="nav-item nav-sub-menu">
-                                            <span class="icon-cogs"></span>
+                                      <a href="#">    
+                                        <span class="icon-cogs"></span>
                                             <span class="link-text">Bespoke CRM</span>
+                                      </a>      
                                     </li>   
                                     <li class="nav-item nav-sub-menu">
                                         <a href="#">
@@ -107,7 +113,7 @@
                                     </li>  
                                     <li class="nav-item nav-sub-menu">
                                         <a href="#">
-                                            <span class="icon-laptop"></span>
+                                            <span class="icon-laptop-b"></span>
                                             <span class="link-text">Internet of Things (IoT) Software</span>
                                         </a>
                                     </li>  
@@ -133,18 +139,19 @@
                                 
                             </div>
                        </div>
-                    </a>   
+                    
              </div>  
              <!--  -->
                 <div class="it-h nav">
-                 
+                 <a href="#">
                     <span class="icon-display-h "></span>
                     <br>
-                    <span> 
+                    <span class="nav-title-text"> 
                         <small>IT</small>
                         <br>
                         SUPPORT
                     </span>
+                 </a>
                     <span class="triangle"></span>
                     <div class="sub-menu-banner it-support-banner ">
                         <div class="mw it-support-color">
@@ -152,14 +159,16 @@
                             <ul class="sub-menu sub-container it-support-ul it-support-color">
                                 <li class="h2 sub-menu-banner-title">Our IT Support Services</li>
                                 <li class="nav-item nav-sub-menu">
+                                    <a href="#">
                                         <span class="icon-headphones"></span>
                                         <span class="link-text">Managed IT Support</span>
+                                    </a>    
                                 </li>
                                 <li class="nav-item nav-sub-menu">
-            
+                                    <a href="#">
                                         <span class="icon-briefcase"></span>
                                         <span class="link-text">Business IT Support</span>
-                               
+                                    </a>
                                 </li>
                                 <li class="nav-item nav-sub-menu">
                                     <a href="#">
@@ -196,7 +205,7 @@
                  
                     <span class="icon-bar-graph-h icon-hover"></span>
                     <br>
-                    <span> 
+                    <span class="nav-title-text"> 
                      <small>DIGITAL</small>
                      <br>
                      MARKETING
@@ -253,7 +262,7 @@
                  
                     <span class="icon-phone-h icon-hover"></span>
                     <br>
-                    <span> 
+                    <span class="nav-title-text"> 
                      <small>TELECOMS</small>
                      <br>
                      SERVICES
@@ -264,7 +273,7 @@
                             <ul class="sub-menu sub-container telecoms-ul telecoms-color">
                                 <li class="h2 sub-menu-banner-title">Our Telecoms Services</li>
                                 <li class="nav-item nav-sub-menu">
-
+                                    <a>
                                         <span class="icon-ticket"></span>
                                         <span class="link-text">Business Mobile</span>
                                     </a>
@@ -307,7 +316,7 @@
                  
                     <span class="icon-code-h icon-hover"></span>
                     <br>
-                    <span> 
+                    <span class="nav-title-text"> 
                      <small>WEB</small>
                      <br>
                      DESIGN
@@ -362,7 +371,7 @@
                  
                     <span class="icon-security-h hover-icon"></span>
                     <br>
-                    <span> 
+                    <span class="nav-title-text"> 
                      <small>CYBER</small>
                      <br>
                      SECURITY
@@ -417,10 +426,10 @@
 
                        <span class="icon-scholar-h"></span>
                        <br>
-                       <span> 
-                        <small>Developer</small>
+                       <span class="nav-title-text"> 
+                        <small>DEVELOPER</small>
                         <br>
-                        Course
+                        COURSE
                        </span>
                        <span class="triangle"></span>
                        <div class="sub-menu-banner developer-banner ">
@@ -462,34 +471,34 @@
     <!-- carousel -->
     <div class="banner-main">
     <div class="container-banner">
-        <div class="banner wrapper">
+        <div class="banner align-center">
             <h1 class="banner-heading ">
                 The East Of England's Leading Technology Company
             </h1>
             <p class="banner-text">Performance-driven digital and technology services
             <br>
             with complete transparency.</p>
-            <span class="btn-banner">Why choose us? <span class="icon-arrow-right2" id="whyy"></span> </span>
+            <a href="#"><span class="btn-banner">Why choose us? <span class="icon-arrow-right2" ></span> </span></a>
     
         </div>
     </div>
 </div> 
         <!-- our services area -->
-        <div class = "our-services align-center">
-            <div class="our-header wrapper">
-            <h2>Our Services</h2>
-            <div class="show-m"><a href="#" >View Our Work</a></div>
+        <div class = "our-services">
+            <div class="our-header align-center">
+            <h2 class="h1">Our Services</h2>
+            <a href="#" ><div class="show-m h2">View Our Work <span class="icon-arrow-right2"></span></div></a>
             </div>
             <!-- choices start here -->
             <div class="block">
-            <div class="lg-device ">
+            <div class="lg-device align-center">
             <a href='#'>
                 <div class= "bespoke-software float-container">
                     <span class=" icon-laptop icon-ours" ></span>
                     <h3 class="services-h3">Bespoke Software</h3>
                     <p class="our-services-p">Bespoke software solutions for all your business needs including integrations and reporting.</p>
             
-                    <button class="button-hoki btn btn-art" id="btn-hoki">Read More</button>
+                    <span class="button-hoki btn btn-art" id="btn-hoki">Read More</span>
                   </div>
                 </a>
 
@@ -499,7 +508,7 @@
                     <h3 class="services-h3">IT Support</h3>
                     <p class="our-services-p">Fully managed IT support and consultance packages tailored to meet your exact business needs.</p>
                     
-                    <button class="button-blue btn btn-art" id="btn-blue">Read More</button>
+                    <span class="button-blue btn btn-art" id="btn-blue">Read More</span>
                 </div>
             </a>
             <a href='#'>
@@ -508,11 +517,11 @@
                     <h3 class="services-h3">Digital Marketing</h3>
                     <p class="our-services-p">Driven brand awareness & ROI through creative digital marketing campaigns.</p>
                     
-                    <button class="button-green btn btn-art" id="btn-green">Read More</button>
+                    <span class="button-green btn btn-art" id="btn-green">Read More</span>
                 </div>
             </a>  
             </div>
-         <div class="m-device xl-device">    
+         <div class="m-device xl-device align-center">    
             <a href='#'>
                 <div class="tele-services float-container">
                     <div class="work">
@@ -532,7 +541,7 @@
                     <h3 class="services-h3">Web Design</h3>
                     <p class="our-services-p">User-centric design for businesses looking to make a lasting impression.</p>
                     
-                    <button class="button-purple btn btn-art" id="btn-purple">Read More</button>
+                    <span class="button-purple btn btn-art" id="btn-purple">Read More</span>
                 </div>
             </a>
 
@@ -542,7 +551,7 @@
                     <h3 class="services-h3">Cyber Security</h3>
                     <p class="our-services-p">Prevention, testing, consultancy & breach management services.</p>
                     
-                    <button class="button-radicalred btn btn-art">Read More</button>
+                    <span class="button-radicalred btn btn-art">Read More</span>
                 </div>
             </a>
         <a href='#'>
@@ -551,7 +560,7 @@
                 <h3 class="services-h3">Developer Training</h3>
                 <p class="our-services-p">Web design & software training coures designed to secure a job in tech.</p>
                 
-                <button class="button-red btn btn-art">Read More</button>
+                <span class="button-red btn btn-art">Read More</span>
             </div>
         </a>    
         </div>
@@ -579,7 +588,7 @@
         <div class="align-center">
             <div class="welcome-grid">
             <div class="welcome-1">
-                <h2>Welcome to Netmatters</h2>
+                <h2 class="h1">Welcome to Netmatters</h2>
                 <p class="welcome-p"><strong>Netmatters is a leading Bespoke Software, IT Support, and Digital Marketing company based in the East of England with offices in London, Cambridge, Wymondham, and Great Yarmouth.</strong>
                     <br>
                     <br>
@@ -587,11 +596,13 @@
                     <br>
                     <br>
                     We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-                <button class="btn button-black"> WHY CHOOSE US? <span class=icon-arrow-right2></span></button>
-                <button class="btn button-black"> OUR CULTURE <span class=icon-arrow-right2></span></button>
+                <div class="welcome-buttons">
+                    <span class="btn welcome-buttons-top button-black"> WHY CHOOSE US? <span class=icon-arrow-right2></span></span>
+                    <span class="btn welcome-buttons-top button-black"> OUR CULTURE <span class=icon-arrow-right2></span></span>
+                </div>
             </div>
             <div class="welcome-2">
-                <h2><strong>What Our Clients Think</strong></h2>
+                <h2 class="h1">What Our Clients Think</h2>
                 <div class="stars">
                 <div style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star" ></div>
                 <div style="color: orange; margin-bottom: 25px; font-size: 50px;" class="icon-star" ></div>
@@ -601,88 +612,96 @@
                 </div>
 
                 <p class="quote"><strong><em>Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</em></strong></p>
-                <p><cite>Eleanor Bishop, Head of Marketing -</cite>Ashcroft Partnership LLP</p>
+                <p><cite>Eleanor Bishop, Head of Marketing -</cite><a href="#" >Ashcroft Partnership LLP</a></p>
                 <div class="google-trust">
                     <a href="#" class="btn button-blue" id="google-blue"> Google Reviews <span class=icon-arrow-right2></span></a>
-                    <a href="#" class="btn button-green "id='trust-green'> Trustpilot Reviews <span class=icon-arrow-right2></span></a>
+                    <a href="#" class="btn button-green" id='trust-green'> Trustpilot Reviews <span class=icon-arrow-right2></span></a>
                 </div>
             </div>
         </div>
         </div>
      </div>   
         <!-- The news area  -->
-    
-            <h3 class="h3-news">Latest News</h3>
-            <!-- add a bunch of containers here-->
-
-            <!--add images of logos here-->
-         <div class="latest-news align-center">
-                <!-- Jamie Slater -->
-             
-            <div class="article-container float-container container-col-1">  
-                <a href="#">
-                            <div class="image-container">
-                                News
-                            </div>
-                               <img class="employees" src="style/images/people/jamie-slater-DJvi.webp">
-                                    <div class="article-details">
-                                        <h3 class="article-h3">Jamie Slater - Netmatters 5 year legend <span class="read-time">- 3 minute read</span></h3>
-                                        <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
-                                        <button class="button-blue btn" id="button-g">Read More</button>
-                                    </div>   
-
-                                        
-                                    <img src="style/images/logos/netmatters-ltd-VXAv.webp" class="min-logo">
-                                    <div class="flex">
-                                    <strong class="text-primary">Posted by Netmatters </strong><br> 15th December 2023 </div>
-                </a>                              
-            </div>                                  
-        <!-- Samantha Lupton -->
-        <div class="article-container float-container container-col-2" >
-            <a href="#">
-                <div class="image-container">
-                   News
+        <div class="align-center">
+            <div class="h3-news">
+                    <h2 class="h1">Latest News</h2>
+                
+                    <a href='#'><h3 class="h2" > View all <span class=icon-arrow-right2></span></h3></a>
+                   
                 </div>
-                    <img class="employees" src="style/images/people/samantha.webp">
-                    <div class="article-details">
-                        <h3 class="article-h3 article-middle-h3">November Notables 2023 <span class="read-time">- 4 minute read</span></h3>
-                        <p>At Netmatters, recognising and appreciating the hard work and achievements of our team members is a...</p>
-                        <button class="button-red btn">Read More</button>
-                    </div>
-
-                    <img src="style/images/logos/netmatters-ltd-VXAv.webp" class="min-logo">
-                    <div class="flex">
-                            <strong >Posted by Netmatters </strong><br> 9th December 2023 </div>
-                </a>
-        </div>
-
-            <!-- Sean Bosley -->
-           
-                <div class="article-container float-container container-col-3">
+            <div class="latest-news">
+                    <!-- Jamie Slater -->
+                
+                <div class="article-container float-container container-col-1">  
                     <a href="#">
+                                
+                                <img class="employees" alt="Jamie Slater" src="style/images/people/jamie-slater-DJvi.webp">
+                                        <div class="article-details">
+                                            <h3 class="article-h3">Jamie Slater - Netmatters 5 year legend <span class="read-time">- 3 minute read</span></h3>
+                                            <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
+                                            <span class="button-blue btn" id="button-g">Read More</span>
+                                        </div>   
+
+                                            
+                                        <img src="style/images/logos/netmatters-ltd-VXAv.webp" alt="" class="min-logo">
+                                        <div class="flex">
+                                        <strong class="text-primary">Posted by Netmatters </strong><br> 15th December 2023 </div>
+                    </a>  
                     <div class="image-container">
-                        News
+                        <a href='#'>NEWS</a>    
                     </div>
+                                          
+                </div>                                  
+            <!-- Samantha Lupton -->
+            <div class="article-container float-container container-col-2" >
+                <a href="#">
+                   
+                        <img class="employees" alt="Samantha" src="style/images/people/samantha.webp">
+                        <div class="article-details">
+                            <h3 class="article-h3 article-middle-h3">November Notables 2023 <span class="read-time">- 4 minute read</span></h3>
+                            <p>At Netmatters, recognising and appreciating the hard work and achievements of our team members is a...</p>
+                            <span class="button-red btn">Read More</span>
+                        </div>
 
-                    <img class="employees" src="style/images/people/sean-bosley-DG1n.webp">
+                        <img src="style/images/logos/netmatters-ltd-VXAv.webp" alt="nm-logo" class="min-logo">
+                        <div class="flex">
+                                <strong >Posted by Netmatters </strong><br> 9th December 2023 </div>
+                    </a>
+                    <div class="image-container">
+                        <a href='#'>NEWS</a>
+                        </div>
+            </div>
 
-                    <div class="article-details">
-                        <h3 class="article-h3">Sean Bosley - Netmatters 5 year legend <span class="read-time">- 3 minute read</span></h3>
-                        <p>Today, we celebrate the brilliant accomplishments of Sean Bosley as he receives the Netmatters Long...</p>
-                        <button class="button-blue btn">Read More</button>
-                    </div>
-
-                    <img src="style/images/logos/netmatters-ltd-VXAv.webp" class="min-logo">
-                    <div class="flex">
-                        <strong>Posted by Netmatters </strong><br> 8th December 2023
-                    </div>
-                </a>
-                </div>
+                <!-- Sean Bosley -->
             
-               
-          <h3 class="hidden view-all"><a href="#">View All<span class="icon-arrow-right2"></span></a></h3>
-        </div>
-        
+                    <div class="article-container float-container container-col-3">
+                        <a href="#">
+                        <div class="image-container">
+                            
+                        </div>
+
+                        <img class="employees" alt="Sean Bosley" src="style/images/people/sean-bosley-DG1n.webp">
+
+                        <div class="article-details">
+                            <h3 class="article-h3">Sean Bosley - Netmatters 5 year legend <span class="read-time">- 3 minute read</span></h3>
+                            <p>Today, we celebrate the brilliant accomplishments of Sean Bosley as he receives the Netmatters Long...</p>
+                            <span class="button-blue btn">Read More</span>
+                        </div>
+
+                        <img src="style/images/logos/netmatters-ltd-VXAv.webp" alt="nm-logo" class="min-logo">
+                        <div class="flex">
+                            <strong>Posted by Netmatters </strong><br> 8th December 2023
+                        </div>
+                    </a>
+                    <div class="image-container">
+                        <a href='#'>NEWS</a>
+                    </div>
+                    </div>
+                
+                
+            <h3 class="hidden view-all"><a href="#">View All<span class="icon-arrow-right2"></span></a></h3>
+            </div>
+        </div>    
         <!-- affiliation banner  -->
           <div class="affiliation-banner sponsors-banner">
             <div class="up">
@@ -690,7 +709,7 @@
                 <div class="triangle-space"><span class="triangle-up"></span></div>
                 <div class="box"> <h3>Swan Care Group</h3>
                     <p>Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on putting the needs of their residents first.</p>
-                    <a href="#" class="btn button-blue"> Find Out More <span class="icon-arrow-right2" id="whyy"></span></a> 
+                    <a href="#" class="btn button-blue"> VIEW OUR CASE STUDY   <span class="icon-arrow-right2" ></span></a> 
                 </div>
              </div>
         
@@ -722,9 +741,9 @@
             <div class="up">
                 <img class="girlguides-logo mono-logo" src="style/images/logos/girl_guides_anglia_logo.png" alt="Girl Guides Anglia ">
                 <div class="triangle-space"><span class="triangle-up"></span></div>
-                <div class="box"> <h3>Gild Guiding Anglia</h3>
+                <div class="box"> <h3>Girl Guiding Anglia</h3>
                     <p>Black Swan Care Group own and manage 21 high-quality care and residential homes with a focus on putting the needs of their residents first.</p>
-                    <a href="#" class="btn button-blue"> Find Out More <span class="icon-arrow-right2" id="whyy"></span></a> 
+                    <a href="#" class="btn button-blue"> VIEW OUR CASE STUDY <span class="icon-arrow-right2" ></span></a> 
                 </div>
             </div>
             <div class="up">
@@ -732,7 +751,7 @@
                 <div class="triangle-space"><span class="triangle-up"></span></div>
                 <div class="box"> <h3>Sweetzy</h3>
                     <p>Sweetzy are an online sweets retailer, based in Wymondham.</p>
-                    <a href="#" class="btn button-blue"> Find Out More <span class="icon-arrow-right2" id="whyy"></span></a> 
+                    <a href="#" class="btn button-blue"> VIEW OUR CASE STUDY <span class="icon-arrow-right2" ></span></a> 
                 </div>
             </div>
             <div class="up">
@@ -747,7 +766,7 @@
                 <div class="triangle-space"><span class="triangle-up"></span></div>
                 <div class="box"> <h3>GDST</h3>
                     <p>The <a href="#">Girl's Day School Trust (GDST)</a>is the UK's leading family of 25 independent girls' schools. </p>
-                    <a href="#" class="btn button-blue"> Find Out More <span class="icon-arrow-right2" id="whyy"></span></a> 
+                    <a href="#" class="btn button-blue"> VIEW OUR CASE STUDY <span class="icon-arrow-right2" ></span></a> 
                 </div>
             </div>
             <div class="up">
@@ -777,15 +796,15 @@
         <h2 id="newsletter">Email Newsletter Sign-Up</h2>
         <div class="news-input">
             <div class="email-input-container">
-                <label>Your Name</label>
+                <label for="your-name">Your Name</label>
                 <br>
-                <input type="text" id="your-name" name="name" class="email"> </input>
+                <input type="text" id="your-name" name="name" autocomplete="name" class="email">
                 <br>
             </div>
             <div class="email-input-container">
-                <label>Your Email</label>
+                <label for="your-email">Your Email</label>
                 <br>
-                <input type="text" id="your-email" name="email" class="email"> </input>
+                <input type="text" id="your-email" name="email" autocomplete="email" class="email"> 
             </div>
     </div>
     <br>
@@ -793,23 +812,23 @@
             <!-- <input class="pretty-checkbox" type="checkbox" checked="checked" ;><span class="icon-checkmark"></span> -->
             <div class="checkbox-container"></div>
                 <input type="checkbox" id="check">
-                <label for="check" id="label-checkmark">Please tick this box if you wish to receive marketing information from us. Please see our <a href='#'>Privacy Policy</a> for more information on how we keep your data safe</label>
+                <label for="check" id="label-checkmark">Please tick this box if you wish to receive marketing information from us. Please see our <a href='#'>Privacy Policy</a> for more information on how we keep your data safe.</label>
 
 
       
         </div>
-        <button type="submit" id="submit" class="btn button-black subscribe" >SUBSCRIBE</button>
+        <span  id="submit" class="btn button-black subscribe" >SUBSCRIBE</span>
     </form>
 </div>
     <!-- bottom footer -->
   
-    </div>
+    
 
     <footer class="about-footer container-mw ">
         <div class="align-center footer-container">
         <div class="about about-netmatters">
-        <img src="style/images/logos/nm-logo-white-med.webp" class="nm-logo-med">    
-        <h4 class="footer-h4">FOLLOW US ON</h4>
+        <img src="style/images/logos/nm-logo-white-med.webp" alt="nm-logo-white" class="nm-logo-med">    
+        <h4 class="footer-h4">FOLLOW US ON:</h4>
         <div class="footer-icons">
         <a href='#'><span class="icon icon-facebook"></span></a>
         <a href='#'><span class="icon icon-linkedin2"></span></a>
@@ -820,34 +839,36 @@
 
      <div class="links">
         <div class="about our-stuff">
-        <ul class="footer-li" >
             <h4 class="footer-h4">ABOUT NETMATTERS</h4>
+        <ul class="footer-li" >
+            
             <li>
-                <a href '#' class="ftr-li">News</a>
+                <a href='#' class="ftr-li">News</a>
             </li>
             <li>
-                <a href '#' class="ftr-li">Our Careers</a>
+                <a href='#' class="ftr-li">Our Careers</a>
+            </li>  
+            <li>  
+                <a href='#' class="ftr-li">Our Team</a>
+            <li>
+                <a href='#' class="ftr-li">Contact us</a>
             </li>    
-                <a href '#' class="ftr-li">Our Team</a>
             <li>
-                <a href '#' class="ftr-li">Contact us</a>
-            </li>    
-            <li>
-                <a href '#' class="ftr-li">Privacy Policy</a>
+                <a href='#' class="ftr-li">Privacy Policy</a>
             </li>
             <li>
-                <a href '#' class="ftr-li">Cookie Policy</a>
+                <a href='#' class="ftr-li">Cookie Policy</a>
             <li>
-                <a href '#' class="ftr-li">Data Retention & Disposal Policy</a>
+                <a href='#' class="ftr-li">Data Retention & Disposal Policy</a>
             </li>
             <li>
-                <a href '#' class="ftr-li">CCTV Policy</a>
+                <a href='#' class="ftr-li">CCTV Policy</a>
             </li>
             <li>
-                <a href '#' class="ftr-li">Environmental Policy</a>
+                <a href='#' class="ftr-li">Environmental Policy</a>
             </li>
             <li>
-                <a href '#' class="ftr-li">Terms & Conditions</a>
+                <a href='#' class="ftr-li">Terms & Conditions</a>
             </li>
         </ul>
      </div>
@@ -855,21 +876,25 @@
             <h4 class="footer-h4"> OUR SERVICES </h4>
             <ul class="footer-li">
                 <li>
-                    <a href '#' class="ftr-li">Bespoke Software</a>
+                    <a href='#' class="ftr-li">Bespoke Software</a>
                 </li>
                 <li>
-                    <a href '#' class="ftr-li">IT Support</a>
+                    <a href='#' class="ftr-li">IT Support</a>
                 </li>
                 <li>
-                    <a href '#' class="ftr-li">Digital Marketing</a>
+                    <a href='#' class="ftr-li">Digital Marketing</a>
                 <li>
-                    <a href '#' class="ftr-li">Telecoms Services</a>
+                    <a href='#' class="ftr-li">Telecoms Services</a>
                 </li>
-                    <a href '#' class="ftr-li">Web Design</a>
                 <li>
-                    <a href '#' class="ftr-li">Cyber Security</a>
+                    <a href='#' class="ftr-li">Web Design</a>
+                <li>
+                    <a href='#' class="ftr-li">Cyber Security</a>
                 </li>
-                    <a href '#' class="ftr-li">Developer Training</a>
+                <li>
+                    <a href='#' class="ftr-li">Developer Training</a>
+                </li>
+                    
             </ul>
             </div>
 
@@ -877,29 +902,32 @@
                 <h4 class="footer-h4"> OUR INDUSTRIES </h4>
                 <ul class="footer-li" >
                     <li>
-                        <a href '#' class="ftr-li">Financial Services</a>
+                        <a href='#' class="ftr-li">Financial Services</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">Construction</a>
+                        <a href='#' class="ftr-li">Construction</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">Retail & E-commerce</a>
+                        <a href='#' class="ftr-li">Retail & E-commerce</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">Non-Profits</a>
+                        <a href='#' class="ftr-li">Non-Profits</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">SME's</a>
+                        <a href='#' class="ftr-li">SME's</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">Healthcare</a>
+                        <a href='#' class="ftr-li">Healthcare</a>
                     </li>
                     <li>
-                        <a href '#' class="ftr-li">Education & Training</a>
+                        <a href='#' class="ftr-li">Education & Training</a>
                     </li>
-                        <a href '#' class="ftr-li">Healthcare</a>
                     <li>
-                        <a href '#' class="ftr-li">Education & Training</a>
+                        <a href='#' class="ftr-li">Healthcare</a>
+                    </li>
+                        
+                    <li>
+                        <a href='#' class="ftr-li">Education & Training</a>
                     </li>
                 </ul>
                 </div>
@@ -907,27 +935,27 @@
             <h4 class="footer-h4"> LOCATIONS </h4>
             <ul class="footer-li">
                 <li>
-                    <a href '#' class="ftr-li">London Office</a>
+                    <a href='#' class="ftr-li">London Office</a>
                 </li>
                 <li>
-                    <a href '#' class="ftr-li">Cambridge Office</a>
+                    <a href='#' class="ftr-li">Cambridge Office</a>
                 </li>
                 <li>
-                    <a href '#' class="ftr-li">Wymondham Office</a>
+                    <a href='#' class="ftr-li">Wymondham Office</a>
                 </li>
                 <li>
-                    <a href '#' class="ftr-li">Great Yarmouth Office</a>
+                    <a href='#' class="ftr-li">Great Yarmouth Office</a>
                 </li>
-
+            </ul>
         </div>
     </div>
-        </ul>
+       
     </div>
     </footer>
     
     <!-- copyright footer -->
 <footer class="copyright container-mw">
-     <p>&copy; Copyright Netmatters 2023. All rights reserved.    Sitemap<p>
+     <p class="align-center" >&copy; Copyright Netmatters 2023. All rights reserved. &nbsp; &nbsp;-&nbsp;&nbsp; Sitemap<p>
 </footer>
 </body>
 </html>

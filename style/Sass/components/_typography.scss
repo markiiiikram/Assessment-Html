@@ -1,7 +1,13 @@
+.h1{
+    font-size:2.25rem;
+    font-weight: 600;
+}
 
-
-@font-face {
-    font-family: Glyphicons Halflings;
-    src: url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.eot);
-    src: url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.eot?#iefix) format("embedded-opentype"),url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.woff) format("woff"),url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.ttf) format("truetype"),url(/packages/netmatters/base/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format("svg")
+.h2 {
+    padding:0px;
+    margin-top:25px;
+    margin-bottom:0px !important;
+    font-size:1.625rem;
+    font-weight:600;
+    color:$tuna;
 }

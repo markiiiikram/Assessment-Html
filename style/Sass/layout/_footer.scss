@@ -1,11 +1,54 @@
 /* about us footer */
 .about-footer{
-    padding:15px 25px;
+    padding-top:27px;
     background-color: #323544;
     color:#fff;
     text-decoration: none;
     align-items: flex-start;
 }
+.footer-icons{
+  display:flex;
+  font-size: 26px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.footer-icons:hover{
+  a{  
+    text-decoration:none;
+  }
+
+}
+.icon-facebook, .icon-instagram, .icon-twitter, .icon-linkedin2{
+  
+  height:auto;
+  padding: 12px 22px 16px;
+  // margin-right: 10px;
+  // margin-bottom: 10px;
+}
+.icon {
+  background-color:#212330;
+  padding: 12px 22px 16px;
+  display:block;
+}
+
+.icon-facebook:hover{
+  background-color: $facebook;
+  text-decoration:none;
+}
+.icon-linkedin2:hover{
+  background-color: $linked-in;
+  text-decoration:none;
+}
+.icon-twitter:hover{
+  background-color: $twitter;
+  text-decoration:none;
+}
+.icon-instagram:hover{
+  background-color: $instagram;
+  text-decoration:none;
+}
+
 
 .copyright{
     display:flex;
@@ -42,10 +85,23 @@
   margin-bottom: 26px;
   text-align: left;
 }
-@media (max-width:488px){
+
+footer {
+  & p {
+    text-align:left;
+  padding-top:15px;
+  }
+}
+@media (max-width:480px){
     .footer-icons{
-      height:130px;
-      width:200px;
+     & a{
+      width:35%;
+      margin-right:10px;
+      margin-bottom:10px;
+     }
+     
+     
+      
     }
     .about{
       margin-bottom:0px;
@@ -67,6 +123,10 @@
   .about-footer{
     h4, h3{
       color:$white !important;
+    }
+    h4{
+      margin: 0px;
+      font-size: 1rem;
     }
   }
   .footer-li{
@@ -95,5 +155,8 @@
   }
   .our-stuff, .our-srvc, .our-indr, .locations{
     margin-right:50px;
+  }
+  .footer-icons{
+    flex-wrap:nowrap !important;
   }
 }
