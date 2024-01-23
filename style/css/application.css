@@ -1727,6 +1727,7 @@ footer p {
   margin: 0px;
   font-size: 1rem;
   font-weight: 600;
+  padding: 0;
 }
 
 .employees {
