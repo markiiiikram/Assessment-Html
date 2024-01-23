@@ -1734,6 +1734,16 @@ footer p {
   width: 100%;
 }
 
+.hidden-m {
+  font-weight: 600;
+  font-size: 1.625rem;
+  color: #333645;
+}
+
+.hidden-m:hover {
+  text-decoration: underline;
+}
+
 .read-time {
   display: inline;
   text-transform: uppercase;
