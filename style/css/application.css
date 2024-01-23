@@ -1989,7 +1989,7 @@ footer p {
   text-align: left;
 }
 
-.welcome-2 p a:hover {
+.welcome-1 p a:hover, .welcome-2 p a:hover {
   text-decoration: underline;
 }
 

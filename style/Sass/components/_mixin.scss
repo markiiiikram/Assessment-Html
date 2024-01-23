@@ -28,7 +28,7 @@
 
 // @mixin mq($break)   {
 
-//     @if $break == 'xxsmall'{
+//     @if $break == 'base'{
 //        @media  (max-width: $brkpoint-xxsmall){
 //         @content;
 //         }
@@ -37,13 +37,28 @@
 //         @media (max-width: $brkpoint-xsmall){
 //             @content;
 //         }
+//     }
 //     @else if $break  == 'small'{
 //         @media (min-width: $brkpoint-zero) and (max-width: #{$brkpoint-small - 1}) {
-            
+//             display: block;
 
 //         }
     
+//     }
+//     @else if $break  == 'medium'{
+//         @media (min-width: $brkpoint-)  {
+//             display: block;
+
+//         }
     
+//     }
+//     @else if $break  == 'small'{
+//         @media (min-width: $brkpoint-zero) and (max-width: #{$brkpoint-small - 1}) {
+//             display: block;
+
+//         }
+    
+//     }
     
     
     
