@@ -1,6 +1,45 @@
 .h3-news{
+ 
     text-align:left;
     display:flex;
     justify-content: space-between;
     align-items: baseline;
+}
+.posted{
+    display:flex;
+    gap:30px;
+    margin-top:30px;
+    padding-top:30px;
+    border-top: 1px solid #ccc;
+}
+
+.h3-news{
+    padding-top:35px;
+    padding-bottom: 35px;
+    .h1,h1{
+        color: $tuna;
+        padding:0;
+        margin:0;
+      }
+   
+    & .h2{
+        display:none;
+    }
+    & .h2:hover{
+        text-decoration: underline;
+    }
+}
+
+
+@media (min-width:768px){
+    .h3-news{
+        & .h2{
+           display:block; 
+        }
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .container-col-2 p{
+        font-size:0.8rem;
+    }
 }

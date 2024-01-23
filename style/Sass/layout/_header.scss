@@ -26,7 +26,12 @@
   padding-bottom: 10px;
   font-size: 1.2rem;
   line-height: 1.313rem;
+  span{
+    text-decoration:none;
 }
+}
+
+
 .search-low{
   display: inline-flex;
   width: 100%;
@@ -63,11 +68,14 @@
   height:42px;
   max-width:142px;
   padding:5px 15px 5px;
-  border:1px #999AA2;
-  margin-left:70px;
+  border: 1px solid #e5e5e5;
+  margin-left:auto;
   flex-grow:1;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
   border: 2px solid rgba(0,0,0,.1);
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
 }
 .search-box-1:focus, .email:focus{
   border-color: #5bc0de;
@@ -78,7 +86,7 @@
   font-size:23px;
   height:56px;
   border:none;
-  border-radius:3px;
+  border-radius:0px 3px 3px 0px;
 }
 .header-low-logo{
   display: flex;
@@ -142,7 +150,7 @@
 //   }
 // }
 .sub-menu-banner{
-  a:hover{
+  .link-text:hover{
     text-decoration: underline;
   }
 }  
@@ -186,12 +194,13 @@
     }
     
     .search-submit{
-      margin-left:-20px;
+      margin-left:-22px;
 
       width:63px;
       background-color: #999AA2;
       
     }
+   
     .hamburger{
       margin:0px;
     }
@@ -217,7 +226,11 @@
     }
 
   }
-
+  @media (min-width:992px) and (max-width:1259px){
+    .search-submit{
+      border-radius: 3px;
+    }
+  }
   @media(min-width:992px){
     .bottom-header{
       background-color: #333645
@@ -243,7 +256,7 @@
       }
 
     }
-
+  
     .support-contact{
       display:block;
     }
@@ -259,8 +272,9 @@
     .nav{
       [class^="icon-"] {
         font-size:23px;
-        
+        text-decoration:none !important;
       }
+ 
       .sub-menu-banner-title{
         width: 100%;
         padding-bottom: 15px;
@@ -402,7 +416,7 @@
   @media (min-width:1260px){
     .nav:hover{
       .triangle{
-        border-width: 0 85.5px 35px 85.5px;
+        border-width: 0 84.5px 35px 84.5px;
       }
       .sub-menu{
         width:1200px;

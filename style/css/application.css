@@ -38,10 +38,13 @@ p {
   font-style: italic;
 }
 
-cite {
+.cite, .cite-company {
   font-weight: 600;
-  color: #a3a8ac;
   font-size: 1.1rem;
+}
+
+.cite {
+  color: #a3a8ac;
 }
 
 /* headings */
@@ -77,7 +80,7 @@ h4 {
   .h1, h1 {
     font-size: 2.25rem;
     font-weight: 400;
-    margin: 0 0 28px;
+    margin: 0;
     color: #333645;
   }
   .h2, h2 {
@@ -555,7 +558,6 @@ h4 {
 .icon-search-b:before {
   content: "\e986";
   color: #fff;
-  background-color: #999aa2;
 }
 
 .icon-search-h:before {
@@ -650,7 +652,6 @@ h4 {
 .stars {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 5px;
 }
 
@@ -713,7 +714,6 @@ h4 {
 }
 
 .min-logo {
-  margin-left: 30px;
   margin-bottom: 10px;
   border-radius: 50%;
 }
@@ -804,6 +804,10 @@ h4 {
   line-height: 1.313rem;
 }
 
+.nav-item span {
+  text-decoration: none;
+}
+
 .search-low {
   display: inline-flex;
   width: 100%;
@@ -835,11 +839,14 @@ h4 {
   height: 42px;
   max-width: 142px;
   padding: 5px 15px 5px;
-  border: 1px #999AA2;
-  margin-left: 70px;
+  border: 1px solid #e5e5e5;
+  margin-left: auto;
   flex-grow: 1;
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   border: 2px solid rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
 }
 
 .search-box-1:focus, .email:focus {
@@ -852,7 +859,7 @@ h4 {
   font-size: 23px;
   height: 56px;
   border: none;
-  border-radius: 3px;
+  border-radius: 0px 3px 3px 0px;
 }
 
 .header-low-logo {
@@ -909,7 +916,7 @@ h4 {
   color: #fff;
 }
 
-.sub-menu-banner a:hover {
+.sub-menu-banner .link-text:hover {
   text-decoration: underline;
 }
 
@@ -949,7 +956,7 @@ h4 {
     align-items: center;
   }
   .search-submit {
-    margin-left: -20px;
+    margin-left: -22px;
     width: 63px;
     background-color: #999AA2;
   }
@@ -974,6 +981,12 @@ h4 {
     border-color: #5bc0de;
     outline: 0;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1259px) {
+  .search-submit {
+    border-radius: 3px;
   }
 }
 
@@ -1013,6 +1026,7 @@ h4 {
   }
   .nav [class^="icon-"] {
     font-size: 23px;
+    text-decoration: none !important;
   }
   .nav .sub-menu-banner-title {
     width: 100%;
@@ -1126,7 +1140,7 @@ h4 {
 
 @media (min-width: 1260px) {
   .nav:hover .triangle {
-    border-width: 0 85.5px 35px 85.5px;
+    border-width: 0 84.5px 35px 84.5px;
   }
   .nav:hover .sub-menu {
     width: 1200px;
@@ -1200,13 +1214,11 @@ h4 {
 .copyright {
   display: flex;
   align-items: center;
-  height: 20px;
   padding: 5px 0px 10px;
   background-color: #212330;
   color: #fff;
   font-size: 0.8125rem;
   margin: 0;
-  padding-top: 15px;
 }
 
 .about {
@@ -1237,9 +1249,18 @@ h4 {
   text-align: left;
 }
 
+.hide {
+  margin: 0 !important;
+  padding-top: 10px;
+}
+
+.unhide {
+  display: none;
+}
+
 footer p {
   text-align: left;
-  padding-top: 15px;
+  line-height: 1.42857143;
 }
 
 @media (max-width: 480px) {
@@ -1259,18 +1280,18 @@ footer p {
   }
 }
 
-@media (max-width: 767px) {
-  .copyright {
-    max-height: 72px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
-}
-
 @media (min-width: 768px) {
   .links {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  .hide {
+    display: none;
+  }
+  .unhide {
+    display: flex;
+    margin: 0;
+    padding-top: 10px;
   }
   .about-footer h4, .about-footer h3 {
     color: #fff !important;
@@ -1313,7 +1334,6 @@ footer p {
 
 .float-container {
   display: block;
-  border-radius: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
@@ -1385,6 +1405,7 @@ footer p {
   text-align: center;
   padding: 30px;
   margin-top: 30px;
+  border-radius: 15px;
 }
 
 .bespoke-software h3, .it-support h3, .dig-marketing h3, .tele-services h3, .web-design h3, .cyber-security h3, .developer-training h3 {
@@ -1711,7 +1732,6 @@ footer p {
 .employees {
   height: 100%;
   width: 100%;
-  border-radius: 14px 14px 0px 0px;
 }
 
 .read-time {
@@ -1720,6 +1740,7 @@ footer p {
   color: rgba(51, 54, 69, 0.5);
   font-size: .85rem;
   vertical-align: middle;
+  font-weight: 400;
 }
 
 .latest-news a {
@@ -1729,6 +1750,7 @@ footer p {
 .article-details {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   text-align: left;
   margin-top: 1px;
   padding: 30px;
@@ -1737,6 +1759,7 @@ footer p {
 
 .article-details p {
   margin-bottom: 30px;
+  font-size: 0.8125rem;
 }
 
 .article-details .article-h3 {
@@ -1859,9 +1882,6 @@ footer p {
     width: 455px;
     border-radius: 0px;
   }
-  .article-details > p {
-    font-size: 0.8125rem;
-  }
   .employees {
     width: 455px;
     height: 263px;
@@ -1936,6 +1956,12 @@ footer p {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1259px) {
+  .banner {
+    padding-top: 35px;
+  }
+}
+
 @media screen and (min-width: 1260px) {
   .wrapper {
     width: 1200px;
@@ -1972,7 +1998,7 @@ footer p {
   }
   .latest-news {
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
+    grid-gap: 25px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1999,7 +2025,7 @@ footer p {
 
 .welcome-grid {
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .welcome-grid h2 {
@@ -2009,6 +2035,7 @@ footer p {
 
 .welcome-grid .google-trust {
   display: inline-block;
+  margin-top: 15px;
 }
 
 .welcome-grid #google-blue {
@@ -2024,11 +2051,12 @@ footer p {
 
 .welcome-grid #google-blue, .welcome-grid #trust-green, .welcome-grid .button-black {
   display: block;
-  width: 208px;
+  width: auto !important;
   height: 45px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 0px;
+  font-size: 20px;
 }
 
 .welcome-grid #trust-green {
@@ -2052,7 +2080,7 @@ footer p {
 
 @media (min-width: 992px) {
   #google-blue {
-    margin-top: 28px;
+    margin-top: 30px;
   }
 }
 
@@ -2061,6 +2089,45 @@ footer p {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.posted {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.h3-news {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.h3-news .h1, .h3-news h1 {
+  color: #333645;
+  padding: 0;
+  margin: 0;
+}
+
+.h3-news .h2 {
+  display: none;
+}
+
+.h3-news .h2:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .h3-news .h2 {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container-col-2 p {
+    font-size: 0.8rem;
+  }
 }
 
 .email-container {
@@ -2163,8 +2230,8 @@ input[type="checkbox"]:after {
   color: #fff;
   font-size: 1.2em;
   display: none;
-  padding-top: 2px;
-  padding-left: 2px;
+  padding-top: 5px;
+  padding-left: 5px;
 }
 
 input[type="checkbox"]:checked {

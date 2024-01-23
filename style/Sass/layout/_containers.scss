@@ -1,6 +1,5 @@
 .float-container{
     display:block;
-    border-radius:15px;
     padding-top:15px;
     padding-bottom:15px;
     box-shadow:rgba(0, 0, 0, 0.1) 0px 3px 35px 0px;
@@ -73,7 +72,7 @@
   text-align: center;
   padding:30px;
   margin-top:30px;
-  
+  border-radius:15px;
 
   h3{
     font-size: 1.3rem;
@@ -382,7 +381,6 @@ display:none;
   .employees{
     height:100%;
     width:100%;
-    border-radius:14px 14px 0px 0px;
   }
 
   .read-time{
@@ -391,6 +389,7 @@ display:none;
     color:rgba(51,54,69,.5);
     font-size: .85rem;
     vertical-align: middle;
+    font-weight:400;
   }
   .latest-news{
     & a{
@@ -400,12 +399,14 @@ display:none;
   .article-details{
     display:flex;
     flex-wrap:wrap;
+    flex-direction: column;
     text-align: left;
     margin-top: 1px;
     padding:30px;
     width:100%;
-    p{
+    p{ 
       margin-bottom:30px;
+      font-size:0.8125rem;
     }
     .article-h3{
       color:$blue;
@@ -465,7 +466,7 @@ display:none;
       gap:28px;
       margin-top:30px;
       }
-  
+
  .cyber-security, .developer-training{
     margin-top:0px;
   }
@@ -489,6 +490,7 @@ display:none;
       justify-content: space-between;
       align-items:baseline;
     }
+    
 // News
     .latest-news{
       display:grid;
@@ -542,9 +544,7 @@ display:none;
       width:455px;
       border-radius:0px;
     }
-    .article-details > p {
-      font-size:0.8125rem;
-    }
+  
   .employees{
     width:455px;
     height:263px;
@@ -624,6 +624,11 @@ display:none;
   }
 }
 
+@media (min-width:992px) and (max-width:1259px){
+  .banner{
+    padding-top:35px;
+  }
+}
 
 @media screen and (min-width:1260px){
   .wrapper{
@@ -664,7 +669,7 @@ display:none;
   }
   .latest-news{
     grid-template-columns: repeat(3, 1fr);
-    grid-gap:40px;
+    grid-gap:25px;
     margin-right:auto;
     margin-left:auto;
   }

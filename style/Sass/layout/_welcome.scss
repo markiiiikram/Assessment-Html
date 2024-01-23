@@ -11,13 +11,14 @@
 }
 .welcome-grid{
   padding-top:50px;
-  padding-bottom:50px;
+  padding-bottom:30px;
   h2{
     padding-top:0px;
     padding-bottom:0px;
   }
   .google-trust{
     display:inline-block;
+    margin-top:15px;
   }
   #google-blue{
     margin-right:8px;
@@ -30,11 +31,12 @@
   }
   #google-blue, #trust-green, .button-black{
     display:block;
-    width:208px;
+    width:auto !important;
     height:45px;
     text-align: center;
     padding-top:10px;
     padding-bottom:0px;
+    font-size: 20px;
   }
   #trust-green{
     width:208px;
@@ -56,7 +58,7 @@
 }
 @media (min-width: 992px){
   #google-blue{
-    margin-top: 28px;
+    margin-top: 30px;
 
   }
 }
