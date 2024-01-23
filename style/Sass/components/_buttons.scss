@@ -67,8 +67,8 @@
     transition: 0.3s;
   }
   .button-black:hover{
-    background-color: $black-hover;
-    color:#fff;
+    background-color: $black-hover !important;
+    color:#fff !important;
   }
   .button-hoki{
     background-color:#67809F;

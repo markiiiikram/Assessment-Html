@@ -196,8 +196,8 @@ h4 {
 }
 
 .button-black:hover {
-  background-color: #22242E;
-  color: #fff;
+  background-color: #22242E !important;
+  color: #fff !important;
 }
 
 .button-hoki {
