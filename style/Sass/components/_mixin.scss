@@ -14,7 +14,12 @@
     background-color:$blue-hover;
 }
 
-
+@mixin button-green{
+       background-color: $green;
+}
+@mixin button-green-hover{
+        background-color: $green-button-hover;
+}
 
 // 480px breaks the icons down
 

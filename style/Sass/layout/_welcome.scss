@@ -18,7 +18,7 @@
   }
   .google-trust{
     display:inline-block;
-    margin-top:15px;
+    margin-top:45px;
   }
   #google-blue{
     margin-right:8px;
@@ -49,7 +49,9 @@
   #trust-green:hover{
     background-color: $dark-green;
   }
-  
+  p{
+    margin:0;
+  }
 }
 .welcome-buttons{
   display:flex;
@@ -60,5 +62,14 @@
   #google-blue{
     margin-top: 30px;
 
+  }
+}
+
+@media (min-width:1260px){
+  .google-trust{
+    margin-top:70px !important;
+  }
+  .welcome-buttons{
+    margin-top:25px;
   }
 }

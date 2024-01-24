@@ -162,60 +162,75 @@ h4 {
   margin-left: 5px;
 }
 
+[class^="icon-"] {
+  border: 1px solid transparent;
+}
+
 .btn-banner:hover {
   background-color: #79539A;
   color: #fff;
 }
 
 .button-green {
-  background-color: #00b67b;
-  border: 1px solid transparent;
+  background-color: #2ecc71;
+}
+
+.button-green:hover {
+  background-color: #26AB5F;
 }
 
 .button-blue {
   background-color: #4183d7;
-  border: 1px solid transparent;
 }
 
-.button-red {
-  background-color: #ce4125;
-  border: 1px solid transparent;
+.button-blue:hover {
+  background-color: #286abd;
 }
 
-.button-radicalred {
-  background-color: #F62459;
-  border: 1px solid transparent;
-}
-
-.button-valencia {
-  background-color: #D64541;
-  border: 1px solid transparent;
-}
-
-.button-black {
-  background-color: #333645;
-  border: 1px solid transparent;
-  transition: 0.3s;
-}
-
-.button-black:hover {
-  background-color: #22242E !important;
-  color: #fff !important;
+.article-details .button-blue:hover {
+  background-color: #4183d7;
 }
 
 .button-hoki {
   background-color: #67809F;
-  border: 1px solid transparent;
+}
+
+.button-hoki:hover {
+  background-color: #526781;
 }
 
 .button-purple {
   background-color: #926FB1;
-  border: 1px solid transparent;
+}
+
+.button-purple:hover {
+  background-color: #79539A;
+}
+
+.button-red {
+  background-color: #ce4125;
+}
+
+.button-radicalred {
+  background-color: #F62459;
+}
+
+.button-valencia {
+  background-color: #D64541;
+}
+
+.button-black {
+  background-color: #333645;
+  transition: 0.3s;
+}
+
+.button-black:hover {
+  background-color: #121318 !important;
+  color: #fff !important;
 }
 
 .button-punch {
   background-color: #CE4125;
-  border: 1px solid transparent;
 }
 
 #label-checkmark {
@@ -275,7 +290,7 @@ h4 {
 }
 
 .hamburger:hover {
-  background-color: #22242E;
+  background-color: #121318;
 }
 
 @media (max-width: 562px) {
@@ -341,7 +356,6 @@ h4 {
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -826,7 +840,7 @@ h4 {
   width: 100%;
   border: none;
   background: transparent;
-  height: 47px;
+  padding-top: 13px;
   padding-left: 15px;
 }
 
@@ -1448,102 +1462,97 @@ footer p {
   background-color: #67809F;
 }
 
-.bespoke-software:hover #btn-hoki {
+.bespoke-software:hover .btn-art {
   color: #67809F;
   background-color: #fff;
 }
 
-.bespoke-software:hover .icon-laptop {
+.bespoke-software:hover .icon {
   color: #67809F;
   background-color: #fff;
 }
 
-/*******************/
 .it-support:hover {
   background-color: #4183d7;
 }
 
-.it-support:hover #btn-blue {
+.it-support:hover .btn-art {
   color: #4183d7;
   background-color: #fff;
 }
 
-.it-support:hover .icon-display {
+.it-support:hover .icon {
   color: #4183d7;
   background-color: #fff;
 }
 
-/***********/
 .dig-marketing:hover {
   background-color: #00b67b;
 }
 
-.dig-marketing:hover .button-green {
+.dig-marketing:hover .btn-art {
   color: #00b67b;
   background-color: #fff;
 }
 
-.dig-marketing:hover .icon-bar-graph {
+.dig-marketing:hover .icon {
   color: #00b67b;
   background-color: #fff;
 }
 
-/*************/
 .tele-services:hover {
   background-color: #D64541;
 }
 
-.tele-services:hover #btn-valencia {
+.tele-services:hover .btn-art {
   color: #D64541;
   background-color: #fff;
 }
 
-.tele-services:hover .icon-phone_in_talk {
+.tele-services:hover .icon {
   color: #D64541;
   background-color: #fff;
 }
 
-/**********/
 .web-design:hover {
   background-color: #926FB1;
 }
 
-.web-design:hover #btn-purple {
+.web-design:hover .btn-art {
   color: #926FB1;
   background-color: #fff;
 }
 
-.web-design:hover .icon-code {
+.web-design:hover .icon {
   color: #926FB1;
   background-color: #fff;
 }
 
-/**********/
 .cyber-security:hover {
   background-color: #F62459;
 }
 
-.cyber-security:hover .button-radicalred {
+.cyber-security:hover .btn-art {
   color: #F62459;
   background-color: #fff;
 }
 
-.cyber-security:hover .icon-security {
+.cyber-security:hover .icon {
   color: #F62459;
   background-color: #fff;
 }
 
 .developer-training:hover {
-  background-color: #CE4125;
+  background-color: #ce4125;
 }
 
-.developer-training:hover .button-red {
-  color: #CE4125;
+.developer-training:hover .btn-art {
+  color: #ce4125;
   background-color: #fff;
 }
 
-.developer-training:hover .icon-scholar {
-  color: #CE4125;
+.developer-training:hover .icon {
+  color: #ce4125;
   background-color: #fff;
 }
 
@@ -1658,10 +1667,6 @@ footer p {
   box-sizing: border-box;
 }
 
-.box .btn:hover {
-  background-color: #286abd;
-}
-
 .welcome-1 button, .welcome-1 .btn, .welcome-2 button, .welcome-2 .btn {
   margin-bottom: 10px;
   padding: 10px 15px;
@@ -1719,8 +1724,21 @@ footer p {
   padding-bottom: 3px;
 }
 
+.image-container:hover {
+  text-decoration: underline;
+}
+
 .container-col-2 .image-container {
   background-color: #ce4125;
+}
+
+.hidden {
+  color: #333645;
+  font-weight: 600;
+}
+
+.hidden:hover {
+  text-decoration: underline;
 }
 
 .article-h3 {
@@ -2046,7 +2064,7 @@ footer p {
 
 .welcome-grid .google-trust {
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 45px;
 }
 
 .welcome-grid #google-blue {
@@ -2083,6 +2101,10 @@ footer p {
   background-color: #009B69;
 }
 
+.welcome-grid p {
+  margin: 0;
+}
+
 .welcome-buttons {
   display: flex;
   gap: 10px;
@@ -2092,6 +2114,15 @@ footer p {
 @media (min-width: 992px) {
   #google-blue {
     margin-top: 30px;
+  }
+}
+
+@media (min-width: 1260px) {
+  .google-trust {
+    margin-top: 70px !important;
+  }
+  .welcome-buttons {
+    margin-top: 25px;
   }
 }
 

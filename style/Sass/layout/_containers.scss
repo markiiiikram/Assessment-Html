@@ -110,96 +110,48 @@
   }
 
   // Hover containers for Our Services
-  .bespoke-software:hover{
-    background-color: #67809F;
-    #btn-hoki{
-      color:#67809F;
-      background-color:#fff;
-    }
-    .icon-laptop{
-      color:#67809F;
-      background-color:#fff;
-    }
-  }
-  /*******************/
-  .it-support:hover{
-    background-color: #4183d7;
-    #btn-blue{
-      color:#4183d7;
-      background-color:#fff;
-    }
-    .icon-display{
-      color:#4183d7;
-      background-color:#fff;
+  @mixin hover-style($bg-color, $text-color, $btn-bg) {
+    &:hover {
+      background-color: $bg-color;
+      .btn-art {
+        color: $text-color;
+        background-color: $btn-bg;
+      }
+      .icon {
+        color: $text-color;
+        background-color: $btn-bg;
+      }
     }
   }
-  /***********/
-
-.dig-marketing:hover{
-    background-color: #00b67b;
-    .button-green{
-      color:#00b67b;
-      background-color:#fff;
-    }
-    .icon-bar-graph{
-      color:#00b67b;
-      background-color:#fff;
-    }
+  ///asdsadsad
+  .bespoke-software {
+    @include hover-style($hoki, $hoki, $white);
   }
   
-  /*************/ 
-  
-  .tele-services:hover{
-    background-color:$valencia;
-
-    #btn-valencia{
-      color:$valencia;
-      background-color:#fff;
-    }
-    .icon-phone_in_talk{
-      color:$valencia;
-      background-color:#fff;
-    }
+  .it-support {
+    @include hover-style($blue, $blue, $white);
   }
   
-  /**********/
-  
-  .web-design:hover{
-    background-color:#926FB1;
-    #btn-purple{
-      color:#926FB1;
-      background-color:#fff;
-    }
-    .icon-code{
-      color:#926FB1;
-      background-color:#fff;
-    }
+  .dig-marketing {
+    @include hover-style($green, $green, $white);
   }
   
-  /**********/
-  .cyber-security:hover{
-    background-color:#F62459;
-    .button-radicalred{
-      color:#F62459;
-      background-color:#fff;
-    }
-    .icon-security{
-      color:#F62459;
-      background-color:#fff;
-    }
+  .tele-services {
+    @include hover-style($valencia, $valencia, $white);
   }
   
-  .developer-training:hover{
-    background-color:#CE4125;
-    .button-red{
-      color:#CE4125;
-      background-color:#fff;
-    }
-    .icon-scholar{
-      color:#CE4125;
-      background-color:#fff;
-    }
+  .web-design {
+    @include hover-style($purple, $purple, $white);
   }
+  
+  .cyber-security {
+    @include hover-style($radical-red, $radical-red, $white);
+  }
+  
+  .developer-training {
+    @include hover-style($red, $red, $white);
+  }
+  
   // .btn-art:hover{
   //   background-color:#fff;
   // }
@@ -307,9 +259,7 @@ display:none;
     width:240px;
     box-sizing:border-box;
   }
-  .btn:hover{
-    @include bluebutton-hover;
-  }
+
 }
 .welcome-1, .welcome-2{
   & button, .btn{
@@ -368,10 +318,20 @@ display:none;
     padding-top:3px;
     padding-bottom:3px;
   }
+  .image-container:hover{
+    text-decoration: underline;
+  }
   .container-col-2{
     .image-container{
       background-color:$red;
     }
+  }
+  .hidden{
+    color: $tuna;
+    font-weight: 600;
+  }
+  .hidden:hover{
+    text-decoration: underline;
   }
   .article-h3{
     margin:0px;
