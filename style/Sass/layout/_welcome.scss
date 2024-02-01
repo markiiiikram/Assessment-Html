@@ -15,10 +15,12 @@
   h2{
     padding-top:0px;
     padding-bottom:0px;
+    margin-top: 0px;
+    margin-bottom: 30px;
   }
   .google-trust{
     display:inline-block;
-    margin-top:45px;
+    margin-top:25px;
   }
   #google-blue{
     margin-right:8px;
@@ -28,6 +30,9 @@
   }
   .button-black{
     background-color:$black;
+  }
+  .google-trust, .welcome-buttons{
+    font-weight: 400;
   }
   #google-blue, #trust-green, .button-black{
     display:block;
@@ -50,8 +55,10 @@
     background-color: $dark-green;
   }
   p{
-    margin:0;
+    margin: 0px;
+    margin-bottom: 20px;
   }
+
 }
 .welcome-buttons{
   display:flex;
@@ -82,9 +89,7 @@
 }
 
 @media (min-width:1260px){
-  .google-trust{
-    margin-top:67px !important;
-  }
+
   .welcome-buttons{
     margin-top:25px;
   }

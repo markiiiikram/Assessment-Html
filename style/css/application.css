@@ -2045,11 +2045,13 @@ footer p {
 .welcome-grid h2 {
   padding-top: 0px;
   padding-bottom: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 .welcome-grid .google-trust {
   display: inline-block;
-  margin-top: 45px;
+  margin-top: 25px;
 }
 
 .welcome-grid #google-blue {
@@ -2061,6 +2063,10 @@ footer p {
 
 .welcome-grid .button-black {
   background-color: #272936;
+}
+
+.welcome-grid .google-trust, .welcome-grid .welcome-buttons {
+  font-weight: 400;
 }
 
 .welcome-grid #google-blue, .welcome-grid #trust-green, .welcome-grid .button-black {
@@ -2087,7 +2093,8 @@ footer p {
 }
 
 .welcome-grid p {
-  margin: 0;
+  margin: 0px;
+  margin-bottom: 20px;
 }
 
 .welcome-buttons {
@@ -2119,9 +2126,6 @@ footer p {
 }
 
 @media (min-width: 1260px) {
-  .google-trust {
-    margin-top: 67px !important;
-  }
   .welcome-buttons {
     margin-top: 25px;
   }
