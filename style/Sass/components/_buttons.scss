@@ -42,57 +42,56 @@
     background-color:$purple-hover;
     color:$white;
   }
-  .button-green{
-    background-color: $green-button;
+  .button-green {
+    @include button($green-button, $green-button-hover);
   }
-  .button-green:hover{
-    background-color: $green-button-hover;
+  
+  .button-blue {
+    @include button($blue, $blue-hover);
   }
-  .button-blue{
-    background-color:$blue;
+  
+  .article-details .button-blue:hover {
+    background-color: $blue; 
   }
-  .button-blue:hover{
-      background-color:$blue-hover;
+  
+  .button-hoki {
+    @include button($hoki, $hoki-hover);
+  }
+  
+  .button-purple {
+    @include button($purple, $purple-hover);
+  }
+  
+  .button-red {
+    @include button($red, $red-hover);
+  }
+  
+  .button-radicalred {
+    @include button($radical-red, $radical-red-hover);
+  }
+  
+  .button-valencia {
+    @include button($valencia, $valencia-hover);
+  }
+  
+  .button-black {
+    background-color: $tuna;
+    transition: 0.3s;
+    &:hover {
+      background-color: $black-hover !important;
+      color: #fff !important;
+    }
+  }
+  
+  .button-grey {
+    @include button($manatee, $waterloo);
+  }
+  
+  .button-punch {
+    background-color: #CE4125;
   }
 
-  .article-details .button-blue:hover {
-  background-color: $blue; 
-  }
-  .button-hoki{
-    background-color:$hoki;
-  }
-  .button-hoki:hover{
-    background-color: $hoki-hover;
-  }
-  .button-purple{
-    background-color:$purple;
-  }
-  .button-purple:hover{
-    background-color:$purple-hover;
-  }
-  .button-red{
-    background-color:$red;
-  }
-  .button-radicalred{
-    background-color:$radical-red;
-  }
-  .button-valencia{
-    background-color:$valencia;
-  }
-  .button-black{
-    background-color:$tuna;
-    transition: 0.3s;
-  }
-  .button-black:hover{
-    background-color: $black-hover !important;
-    color:#fff !important;
-  }
- 
- 
-  .button-punch{
-    background-color:#CE4125;
-    
-  }
+  
   #label-checkmark{
     cursor:pointer;
   }
