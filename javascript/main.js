@@ -25,11 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
         hideCookiePopup();
     }
 
-    changeSettingsBtn.addEventListener('click', function() {
-        acceptCookies();
-        // Add your logic for changing settings here
-    });
-
     acceptCookiesBtn.addEventListener('click', function() {
         acceptCookies();
     });
@@ -41,3 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
         showCookiePopup();
     }
 });
+
+/////////////////////////////////////
+var prevScrollPos = window.pageYOffset;
+var header = document.querySelector('.header');
+
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    header.style.top = "0";
+    header.style.position = "sticky"
+  } else {
+    header.style.top = "-100%";
+  }
+  prevScrollPos = currentScrollPos;
+}

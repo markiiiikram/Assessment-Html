@@ -872,6 +872,12 @@ h4 {
   padding-right: 15px;
 }
 
+.header {
+  transition: .5s ease;
+  background-color: #fff;
+  z-index: 99;
+}
+
 .header-high {
   display: flex;
   flex-direction: row;
