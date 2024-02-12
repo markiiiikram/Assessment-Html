@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('.container-banner').slick({
         autoplay: true,
         dots: true,
+        adaptiveHeight: true,
         nextArrow: false,
         prevArrow: false,
     });
