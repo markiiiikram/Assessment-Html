@@ -67,13 +67,3 @@ window.onscroll = function() {
   prevScrollPos = currentScrollPos;
 }
 
-////////////////////////////////////
-// affiliation banner test
-$(document).ready(function(){
-    $('affiliation-banner').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-      });
-    });
