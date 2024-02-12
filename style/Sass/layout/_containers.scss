@@ -162,6 +162,10 @@
   overflow-x: clip;
   gap: 80px;
 }
+.affiliation-banner img {
+  display: inline-block;
+  margin-right: 20px; /* Adjust the spacing between images */
+}
 .affiliation-banner:first-child{
   margin-left:150px;
 }

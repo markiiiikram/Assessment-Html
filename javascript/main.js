@@ -1,3 +1,4 @@
+// COOKIE CONSENT
 document.addEventListener("DOMContentLoaded", function() {
     const cookieConsent = document.getElementById('cookieConsent');
     const cookieOverlay = document.getElementById('cookieOverlay');
@@ -36,8 +37,22 @@ document.addEventListener("DOMContentLoaded", function() {
         showCookiePopup();
     }
 });
+//////////////////////////////////////
+/// Burger button
+
+
+function show() {
+  document.querySelectorAll('#main-container,#sidebar, #hamburger, #hamburger-low').forEach(function(element) {
+    element.classList.toggle('active');
+  });
+}
+
+//////////////////////////////////////
+/// sidebar 
+
 
 /////////////////////////////////////
+// NAV BAR - STICKY
 var prevScrollPos = window.pageYOffset;
 var header = document.querySelector('.header');
 
@@ -51,3 +66,14 @@ window.onscroll = function() {
   }
   prevScrollPos = currentScrollPos;
 }
+
+////////////////////////////////////
+// affiliation banner test
+$(document).ready(function(){
+    $('affiliation-banner').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
+    });
