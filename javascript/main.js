@@ -40,7 +40,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //////////////////////////////////////
 /// Burger button
 // Function to toggle the sidebar
-// Function to toggle the sidebar
 function toggleSidebar() {
   document.querySelectorAll('#main-container, #sidebar, #hamburger, #hamburger-low').forEach(function(element) {
     element.classList.toggle('active');
@@ -64,8 +63,13 @@ function preventScroll(event) {
   event.preventDefault();
 }
 
-// Event listener to toggle the sidebar when the burger button is clicked
+// Event listener to toggle the sidebar when the burger buttons are clicked
 document.getElementById('hamburger').addEventListener('click', function(event) {
+  event.stopPropagation(); // Prevent the event from propagating to the body
+  toggleSidebar();
+});
+
+document.getElementById('hamburger-low').addEventListener('click', function(event) {
   event.stopPropagation(); // Prevent the event from propagating to the body
   toggleSidebar();
 });
