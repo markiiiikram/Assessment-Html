@@ -28,7 +28,8 @@
 #main-container.active{
     right:275px;
     height:100%;
-    filter:brightness(.5)
+    filter:brightness(.5);
+    background-color: rgba(0,0,0,0.4);
 }
 #body.active{
     overflow-y: hidden !important;
@@ -86,6 +87,7 @@
 // styling for the smaller containers under main containers
 .sidebar li {
     border-top: 1px solid hsla(0,0%,100%,.05);
+    border-bottom: 1px solid rgba(0,0,0,.45);
     background-color: rgba(0,0,0,.25);
     padding: 10px;
     padding-inline-start: 0;
@@ -94,9 +96,7 @@
 .sidebar li:not(:first-child) {
     border-top: 1px solid hsla(0,0%,100%,.05);
 }
-.sidebar li{
-    border-bottom: 1px solid rgba(0,0,0,.45);
-}
+
 
 .sidebar  a > small{
     font-size:.625rem;
@@ -112,9 +112,37 @@
     text-align: left;
     li{
     padding:15px 20px !important;
+    height:52px;
+    box-sizing:border-box;
     }
     div > a{
     padding:20px;
     display:block;
+    height:56px;
+    box-sizing:border-box;
+    }
+}
+
+
+@media (min-width:992px){
+    .sidebar{
+        width:350px;
+        right: -350px;
+        overflow-x:hidden;
+        li{
+            font-size:.875rem;
+        }
+    }
+    .sidebar-inner{
+        padding:0px;
+    }
+    .sidebar br {
+        display:none;
+    }
+    #main-container.active{
+        right:350px;
+    }
+    .hidden-list{
+        display:none;
     }
 }

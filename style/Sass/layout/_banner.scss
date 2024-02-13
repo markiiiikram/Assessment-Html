@@ -1,12 +1,12 @@
 
 .banner-main{
-    margin-left:-1px;
+    overflow-x: hidden;
     width:auto;
   }
   .container-banner{
     position: relative;
     background-blend-mode: hard-light;
-    height:550px;
+    height: 560px;
     width:100%;
   }
   #carousel-banner-1{
@@ -25,9 +25,9 @@
     background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-5.png) center/cover no-repeat;
   }
   #carousel-banner-6{
-    background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-6.png) center/cover no-repeat;
+    background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-6.jpg) center/cover no-repeat;
   }
-  #carousel-banner-6{
+  #carousel-banner-7{
     background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-7.png) center/cover no-repeat;
   }
   .banner{
@@ -37,9 +37,12 @@
       justify-content:center;
       text-align:center;
       position:relative;
-      padding:60px 15px;
-    
+      padding:125px 15px;
+      height: 100%;
       color:#fff;
+    }
+    .banner-bespoke{
+      padding:60px 15px;
     }
     .banner-heading{
       font-size:2.5rem;
@@ -55,6 +58,43 @@
       font-size:1.3rem;
       line-height: 1.75rem;
       font-weight:600;
-  
     }
   
+    @media (max-width:562px){
+      .btn-banner{
+        margin-top:40px;
+      }
+      .banner-text{
+        margin-top:0px;
+      }
+      .banner-heading{
+        margin-bottom:0px;
+      }
+    }
+    @media (min-width:563px){
+      .btn-banner{
+        margin-top:30px;
+      }
+    }
+    @media (min-width: 992px){
+      .banner{
+        width:950px;
+        display:flex;
+        justify-content: start;
+        text-align:left;
+        margin-left: auto;
+        margin-right:auto;
+        
+      }
+    
+      .banner-heading{
+        font-size: 4.2rem;
+        line-height:5rem;
+        margin-bottom:0px;
+      }
+      .banner-text{
+        font-size:1.625rem;
+        line-height: 2.5rem;
+      }
+    }
+    

@@ -4,6 +4,7 @@ $(document).ready(function() {
         autoplay: true,
         dots: true,
         adaptiveHeight: true,
+       
         nextArrow: false,
         prevArrow: false,
     });
