@@ -15,8 +15,8 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  overflow-y: visible !important;
-  overflow-x: hidden !important;
+  overflow-y: visible;
+  overflow-x: hidden;
 }
 
 a {
@@ -470,6 +470,10 @@ h4 {
 
 .article-details .button-blue:hover {
   background-color: #4183d7;
+}
+
+.article-details .button-red:hover {
+  background-color: #ce4125;
 }
 
 .button-hoki {
@@ -1069,7 +1073,7 @@ h4 {
 }
 
 .color-logo, .mono-logo {
-  height: 70px;
+  max-height: 70px;
 }
 
 @media (min-width: 768px) {
@@ -1144,6 +1148,53 @@ h4 {
 
 .cookie-content a:hover {
   text-decoration: underline;
+}
+
+.footer-cookie {
+  position: fixed;
+  line-height: 22px;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background: #75788a;
+  font-weight: 600;
+  color: #fff;
+  border: solid #75788a;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  cursor: pointer;
+  font-size: .8rem;
+}
+
+.footer-cookie:hover {
+  color: #fff;
+  background-color: #999aa2;
+  border-color: #999aa2;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
+.footer-chat {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  line-height: 22px;
+  height: 58px;
+  width: 58px;
+  z-index: 99;
+  border: 1px solid #333645;
+  border-radius: 50%;
+  background-color: #333645;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.footer-chat .icon-chat {
+  font-size: 35px;
+  color: white;
+  line-height: 1.65;
 }
 
 .cookie-buttons {
@@ -2021,7 +2072,8 @@ footer p {
     width: 100%;
   }
   .links {
-    display: contents;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .about-netmatters {
     margin-right: 65px;
@@ -2224,10 +2276,6 @@ footer p {
   margin-left: 150px;
 }
 
-.mono-logo {
-  filter: grayscale(1);
-}
-
 .xupes-logo, .survey-logo {
   position: relative;
   width: 200px;
@@ -2237,10 +2285,6 @@ footer p {
 }
 
 .sponsors-banner {
-  max-height: 70px;
-}
-
-.sponsors-banner img {
   height: 70px;
 }
 
@@ -2325,6 +2369,10 @@ footer p {
   margin-bottom: 10px;
   padding: 10px 15px;
   font-weight: 500;
+}
+
+.mono-logo {
+  filter: grayscale(1);
 }
 
 .mono-logo:hover {
@@ -2755,7 +2803,7 @@ footer p {
   }
   .welcome-grid {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, 49%);
     gap: 15px;
   }
   .welcome-grid h2 {

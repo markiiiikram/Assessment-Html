@@ -1,41 +1,52 @@
 // COOKIE CONSENT
 document.addEventListener("DOMContentLoaded", function() {
-    const cookieConsent = document.getElementById('cookieConsent');
-    const cookieOverlay = document.getElementById('cookieOverlay');
-    const changeSettingsBtn = document.getElementById('cookie-change-settings');
-    const acceptCookiesBtn = document.getElementById('cookie-accept');
-    const body = document.body;
+  const cookieConsent = document.getElementById('cookieConsent');
+  const cookieOverlay = document.getElementById('cookieOverlay');
+  const changeSettingsBtn = document.getElementById('cookie-change-settings');
+  const acceptCookiesBtn = document.getElementById('cookie-accept');
+  const body = document.body;
 
-    function showCookiePopup() {
-        cookieOverlay.style.display = 'block';
-        cookieConsent.style.display = 'block';
-        body.style.overflow = 'hidden'; // Disable scrolling
-    }
+  // Function to show the cookie popup
+  function showCookiePopup() {
+      cookieOverlay.style.display = 'block';
+      cookieConsent.style.display = 'block';
+      body.style.overflow = 'hidden'; // Disable scrolling
+  }
 
-    function hideCookiePopup() {
-        cookieOverlay.style.display = 'none';
-        cookieConsent.style.display = 'none';
-        body.style.overflow = 'auto'; // Re-enable scrolling
-    }
+  // Function to hide the cookie popup
+  function hideCookiePopup() {
+      cookieOverlay.style.display = 'none';
+      cookieConsent.style.display = 'none';
+      body.style.overflow = 'auto'; // Re-enable scrolling
+  }
 
-    function acceptCookies() {
-        localStorage.setItem('cookieConsent', 'true');
-        setTimeout(function() {
-            localStorage.removeItem('cookieConsent');
-        }, 60000); // Remove after 1 minute (60000 milliseconds)
-        hideCookiePopup();
-    }
+  // Function to accept cookies
+  function acceptCookies() {
+      localStorage.setItem('cookieConsent', 'true');
+      setTimeout(function() {
+          localStorage.removeItem('cookieConsent');
+      }, 60000); // Remove after 1 minute (60000 milliseconds)
+      hideCookiePopup();
+  }
 
-    acceptCookiesBtn.addEventListener('click', function() {
-        acceptCookies();
-    });
+  // Event listener for accepting cookies
+  acceptCookiesBtn.addEventListener('click', function() {
+      acceptCookies();
+  });
 
-    const hasConsent = localStorage.getItem('cookieConsent');
-    if (hasConsent === 'true') {
-        hideCookiePopup();
-    } else {
-        showCookiePopup();
-    }
+  // Event listener for clicks on the footer cookie element
+  document.getElementById('footer-cookie').addEventListener('click', function(event) {
+      // Show the cookie popup when the footer cookie element is clicked
+      showCookiePopup();
+  });
+
+  // Check if the user has already accepted cookies
+  const hasConsent = localStorage.getItem('cookieConsent');
+  if (hasConsent === 'true') {
+      hideCookiePopup();
+  } else {
+      showCookiePopup();
+  }
 });
 //////////////////////////////////////
 /// Burger button

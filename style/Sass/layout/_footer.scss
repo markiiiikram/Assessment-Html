@@ -159,7 +159,8 @@ footer {
     width:100%;
   }
   .links{
-    display:contents;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .about-netmatters{
     margin-right:65px;

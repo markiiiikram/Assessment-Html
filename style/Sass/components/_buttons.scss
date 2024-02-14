@@ -53,7 +53,9 @@
   .article-details .button-blue:hover {
     background-color: $blue; 
   }
-  
+  .article-details .button-red:hover {
+    background-color: $red; 
+  }
   .button-hoki {
     @include button($hoki, $hoki-hover);
   }
