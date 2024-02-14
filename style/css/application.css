@@ -1212,6 +1212,8 @@ h4 {
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
+  font-size: 1.063rem;
+  border: 1px solid transparent;
 }
 
 @media (max-width: 768px) {
