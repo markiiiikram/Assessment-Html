@@ -1183,7 +1183,7 @@ h4 {
   line-height: 22px;
   height: 58px;
   width: 58px;
-  z-index: 99;
+  z-index: 100;
   border: 1px solid #333645;
   border-radius: 50%;
   background-color: #333645;
@@ -1520,6 +1520,7 @@ h4 {
   height: 56px;
   border: none;
   border-radius: 0px 3px 3px 0px;
+  cursor: pointer;
 }
 
 .header-low-logo {
@@ -1812,8 +1813,9 @@ h4 {
 }
 
 .banner-main {
-  overflow-x: hidden;
+  overflow: hidden;
   width: auto;
+  height: 560px;
 }
 
 .container-banner {
@@ -1912,13 +1914,15 @@ h4 {
     margin-right: auto;
   }
   .banner-heading {
-    font-size: 4.2rem;
+    font-size: 4rem;
     line-height: 5rem;
     margin-bottom: 0px;
+    padding: 0;
   }
   .banner-text {
     font-size: 1.625rem;
     line-height: 2.5rem;
+    margin-top: 20px;
   }
 }
 
@@ -2332,8 +2336,8 @@ footer p {
   width: 100%;
   height: 100%;
   position: relative;
-  top: -170px;
-  height: 100px;
+  bottom: 224px;
+  height: 170px;
 }
 
 .box {
@@ -2341,7 +2345,7 @@ footer p {
   position: absolute;
   z-index: 2;
   width: 280px;
-  bottom: 215px;
+  bottom: 78px;
   z-index: 2;
   background-color: #333645;
   color: #fff;
@@ -2393,10 +2397,19 @@ footer p {
   filter: grayscale(0);
 }
 
+.sweetzy-logo {
+  padding-top: 8px;
+}
+
+.ashcroft-logo {
+  padding-top: 20px;
+}
+
 .up {
   padding-right: 15px;
   padding-left: 15px;
   position: relative;
+  height: 50px;
 }
 
 .up:hover .triangle-space {
@@ -2673,12 +2686,6 @@ footer p {
   }
   #why {
     margin-right: 5px;
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1259px) {
-  .banner {
-    padding-top: 35px;
   }
 }
 

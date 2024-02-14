@@ -179,15 +179,15 @@ display:none;
  width:100%;
  height:100%;
  position:relative;
- top:-170px;
- height:100px;
+ bottom: 224px;
+ height: 170px;
 }
 .box{
   display:none;
   position:absolute;
   z-index: 2;
   width: 280px;
-  bottom:215px;
+  bottom:78px;
   z-index: 2;
   background-color: #333645;
   color: #fff;
@@ -235,10 +235,17 @@ display:none;
 .mono-logo:hover{
   filter:grayscale(0);
 }
+.sweetzy-logo{
+  padding-top: 8px;
+}
+.ashcroft-logo{
+  padding-top: 20px;
+}
 .up{
   padding-right:15px;
   padding-left:15px;
   position:relative;
+  height: 50px;
 }
 
 .up:hover{
@@ -526,11 +533,7 @@ display:none;
 
 }
 
-@media (min-width:992px) and (max-width:1259px){
-  .banner{
-    padding-top:35px;
-  }
-}
+
 
 @media screen and (min-width:1260px){
   .wrapper{

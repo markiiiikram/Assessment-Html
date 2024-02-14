@@ -75,7 +75,7 @@
     line-height: 22px;
     height: 58px;
     width: 58px;
-    z-index: 99;
+    z-index: 100;
     border:1px solid $tuna;
     border-radius: 50%;
     background-color: $tuna;
@@ -85,7 +85,7 @@
         font-size: 35px;
         color: white;
         line-height: 1.65;
-    }
+    } 
 }
 .cookie-buttons{
     border-top: 1px solid $mercury;
