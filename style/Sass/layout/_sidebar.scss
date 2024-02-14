@@ -112,7 +112,7 @@
     text-align: left;
     li{
     padding:15px 20px !important;
-    height:52px;
+    font-size:.875rem;
     box-sizing:border-box;
     }
     div > a{
@@ -141,6 +141,8 @@
     }
     #main-container.active{
         right:350px;
+        cursor: pointer;
+        pointer-events: none;
     }
     .hidden-list{
         display:none;

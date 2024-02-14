@@ -1366,7 +1366,7 @@ h4 {
 
 .sidebar-left-align li {
   padding: 15px 20px !important;
-  height: 52px;
+  font-size: .875rem;
   box-sizing: border-box;
 }
 
@@ -1394,6 +1394,8 @@ h4 {
   }
   #main-container.active {
     right: 350px;
+    cursor: pointer;
+    pointer-events: none;
   }
   .hidden-list {
     display: none;
