@@ -334,9 +334,8 @@ display:none;
     }
   }
   .article-details{
-    display:flex;
-    flex-wrap:wrap;
-    flex-direction: column;
+    display:grid;
+    grid-template-rows: .8fr auto 1fr;
     text-align: left;
     margin-top: 1px;
     padding:30px;
