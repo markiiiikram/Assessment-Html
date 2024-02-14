@@ -433,16 +433,21 @@ h4 {
   background-color: #926FB1;
   line-height: 50px;
   font-size: 1.2rem;
-  width: 208px;
+  width: 181px;
   margin-left: auto;
   margin-right: auto;
   text-transform: uppercase;
 }
 
 .btn-banner span {
-  margin-left: 5px;
+  margin-left: 12px;
 }
 
+.btn-banner-bespoke {
+  width: 214px;
+}
+
+.btn-banner:after
 [class^="icon-"] {
   border: 1px solid transparent;
 }
@@ -457,6 +462,14 @@ h4 {
 }
 
 .button-green:hover {
+  background-color: #26AB5F;
+}
+
+.button-green-dark {
+  background-color: #00b67b;
+}
+
+.button-green-dark:hover {
   background-color: #26AB5F;
 }
 
@@ -583,7 +596,7 @@ h4 {
   font-size: 35px;
   width: 63px;
   height: 56px;
-  background-color: #272936;
+  background-color: #333645;
   border: none;
   border-radius: 3px;
   color: #fff;
@@ -959,7 +972,7 @@ h4 {
 }
 
 .icon-bar-graph {
-  background-color: #00b67b;
+  background-color: #2ecc71;
 }
 
 .icon-phone_in_talk {
@@ -1043,7 +1056,6 @@ h4 {
 }
 
 .min-logo {
-  margin-bottom: 10px;
   border-radius: 50%;
 }
 
@@ -1527,7 +1539,7 @@ h4 {
   display: flex;
   justify-content: flex-end;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 11px;
   align-items: center;
   gap: 20px;
 }
@@ -1575,6 +1587,19 @@ h4 {
 
 .nav:hover .icon-hover {
   color: #fff;
+}
+
+.sub-menu {
+  display: flex;
+}
+
+.sub-menu li a {
+  display: flex;
+}
+
+.sub-menu li a [class^="icon-"] {
+  display: flex;
+  align-items: center;
 }
 
 .sub-menu-banner .link-text:hover {
@@ -1704,7 +1729,7 @@ h4 {
     width: 0px;
     height: 0px;
     border-style: solid;
-    border-width: 0px 70px 36px 70px;
+    border-width: 0px 67px 36px 67px;
     border-color: transparent transparent #FF4532 transparent;
     transform: rotate(180deg);
     position: absolute;
@@ -1726,7 +1751,6 @@ h4 {
   }
   .nav:hover .link-text {
     margin-left: 10px;
-    margin-top: 15px;
   }
   .bespoke-color {
     background-color: #526781;
@@ -1826,31 +1850,31 @@ h4 {
 }
 
 #carousel-banner-1 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner.png) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner.png) center/cover no-repeat;
 }
 
 #carousel-banner-2 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-2.jpg) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-2.jpg) center/cover no-repeat;
 }
 
 #carousel-banner-3 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-3.png) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-3.png) center/cover no-repeat;
 }
 
 #carousel-banner-4 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-4.png) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-4.png) center/cover no-repeat;
 }
 
 #carousel-banner-5 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-5.png) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-5.png) center/cover no-repeat;
 }
 
 #carousel-banner-6 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-6.jpg) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-6.jpg) center/cover no-repeat;
 }
 
 #carousel-banner-7 {
-  background: linear-gradient(270deg, transparent 25%, #000), url(../images/banner/banner-7.png) center/cover no-repeat;
+  background: linear-gradient(270deg, transparent 25%, #000), url(../../images/banner/banner-7.png) center/cover no-repeat;
 }
 
 .banner {
@@ -2037,7 +2061,7 @@ footer p {
 
 @media (max-width: 480px) {
   .footer-icons a {
-    width: 35%;
+    width: 109px;
     margin-right: 10px;
     margin-bottom: 10px;
   }
@@ -2205,16 +2229,16 @@ footer p {
 }
 
 .dig-marketing:hover {
-  background-color: #00b67b;
+  background-color: #2ecc71;
 }
 
 .dig-marketing:hover .btn-art {
-  color: #00b67b;
+  color: #2ecc71;
   background-color: #fff;
 }
 
 .dig-marketing:hover .icon {
-  color: #00b67b;
+  color: #2ecc71;
   background-color: #fff;
 }
 
@@ -2383,12 +2407,6 @@ footer p {
   box-sizing: border-box;
 }
 
-.welcome-1 button, .welcome-1 .btn, .welcome-2 button, .welcome-2 .btn {
-  margin-bottom: 10px;
-  padding: 10px 15px;
-  font-weight: 500;
-}
-
 .mono-logo {
   filter: grayscale(1);
 }
@@ -2442,6 +2460,7 @@ footer p {
   background-color: #fff;
   margin-top: 30px;
   position: relative;
+  border-radius: 0 0 3px 3px;
 }
 
 .image-container {
@@ -2523,7 +2542,7 @@ footer p {
 }
 
 .article-details p {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   font-size: 0.8125rem;
 }
 
@@ -2620,7 +2639,6 @@ footer p {
   }
   .container-col-1, .container-col-2, .container-col-3 {
     width: 345px;
-    border-radius: 0px;
     margin: 0px;
     margin-left: auto;
   }
@@ -2645,7 +2663,6 @@ footer p {
 @media screen and (min-width: 992px) {
   .article-container, .container-col-1, .container-col-2, .container-col-3 {
     width: 455px;
-    border-radius: 0px;
   }
   .employees {
     width: 455px;
@@ -2695,7 +2712,6 @@ footer p {
   }
   .article-container, .container-col-1, .container-col-2, .container-col-3 {
     width: 370px;
-    border-radius: 0px;
   }
   .container-col-3 {
     display: flex;
@@ -2753,7 +2769,7 @@ footer p {
 
 .welcome-grid {
   padding-top: 50px;
-  padding-bottom: 30px;
+  padding-bottom: 13px;
 }
 
 .welcome-grid h2 {
@@ -2791,6 +2807,7 @@ footer p {
   padding-top: 10px;
   padding-bottom: 0px;
   font-size: 20px;
+  border-radius: 6px;
 }
 
 .welcome-grid #trust-green {
@@ -2815,6 +2832,12 @@ footer p {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+}
+
+.welcome-1 button, .welcome-1 .btn, .welcome-2 button, .welcome-2 .btn {
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  font-weight: 400;
 }
 
 @media (min-width: 992px) {

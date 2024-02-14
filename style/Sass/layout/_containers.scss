@@ -94,7 +94,7 @@
   }
   
   .dig-marketing {
-    @include hover-style($green, $green, $white);
+    @include hover-style($green-button, $green-button, $white);
   }
   
   .tele-services {
@@ -222,13 +222,7 @@ display:none;
   }
 
 }
-.welcome-1, .welcome-2{
-  & button, .btn{
-    margin-bottom: 10px;
-    padding:10px 15px;
-    font-weight: 500;
-  }
-}
+
 .mono-logo{
   filter:grayscale(1)
 }
@@ -279,6 +273,7 @@ display:none;
     background-color:#fff;
     margin-top:30px;
     position:relative;
+    border-radius: 0 0 3px 3px;
   }
   .image-container{
     position:absolute;
@@ -347,8 +342,9 @@ display:none;
     margin-top: 1px;
     padding:30px;
     width:100%;
+    
     p{ 
-      margin-bottom:30px;
+      margin-bottom:25px;
       font-size:0.8125rem;
     }
     .article-h3{
@@ -458,7 +454,7 @@ display:none;
 // Bottom 3 containers
 .container-col-1, .container-col-2, .container-col-3{
     width:345px;
-    border-radius:0px;
+   
     margin:0px;
     margin-left:auto;
   }
@@ -486,7 +482,7 @@ display:none;
 @media screen and (min-width:992px){
 .article-container, .container-col-1, .container-col-2, .container-col-3{
       width:455px;
-      border-radius:0px;
+   
     }
   
   .employees{
@@ -542,7 +538,7 @@ display:none;
  
   .article-container, .container-col-1, .container-col-2, .container-col-3{
     width:370px;
-    border-radius:0px;
+    
   }
   .container-col-3{
     display:flex;

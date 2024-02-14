@@ -11,7 +11,7 @@
 }
 .welcome-grid{
   padding-top:50px;
-  padding-bottom:30px;
+  padding-bottom:13px;
   h2{
     padding-top:0px;
     padding-bottom:0px;
@@ -23,7 +23,7 @@
     margin-top:25px;
   }
   #google-blue{
-    margin-right:8px;
+    margin-right: 8px;
     margin-bottom:8px;
     float:left;
     margin-bottom: 28px;
@@ -42,6 +42,7 @@
     padding-top:10px;
     padding-bottom:0px;
     font-size: 20px;
+    border-radius: 6px;
   }
   #trust-green{
     width:208px;
@@ -64,6 +65,13 @@
   display:flex;
   gap:10px;
   flex-wrap: wrap;
+}
+.welcome-1, .welcome-2{
+  & button, .btn{
+    margin-bottom: 10px;
+    padding:10px 15px;
+    font-weight: 400;
+  }
 }
 @media (min-width: 992px){
   #google-blue{
