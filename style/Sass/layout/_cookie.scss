@@ -1,3 +1,4 @@
+
 .cookie-overlay{
     position:absolute;
     width:100%;
@@ -103,3 +104,16 @@
     padding-right: 15px;
 }
 
+
+
+@media (max-width:768px){
+    .cookie-consent{
+        max-width:90%;
+    }
+    .cookie-buttons{
+        flex-wrap:wrap;
+    }
+    .cookie-buttons span {
+        width: 100%;
+    }
+}
