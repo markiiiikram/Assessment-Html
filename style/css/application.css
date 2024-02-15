@@ -1119,6 +1119,7 @@ h4 {
   height: 1000vh;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 99;
+  display:none;
 }
 
 .cookie-consent {
