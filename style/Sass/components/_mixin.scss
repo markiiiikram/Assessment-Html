@@ -16,50 +16,7 @@
 
   
 
-  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//HOVER STATES FOR NAV BAR
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-// Nav bar drop down & triangles.
-@mixin hoverEffect($bgColor, $triangleColor, $iconColor: $white) {
-  &:hover {
-    background-color: $bgColor;
-    .triangle {
-      border-color: transparent transparent $triangleColor transparent;
-    }
-    > .icon-bar-graph-h:before {
-      color: $iconColor;
-    }
-  }
-}
-
-.bespoke-h {
-  @include hoverEffect($hoki, $hoki);
-}
-
-.it-h {
-  @include hoverEffect($blue, $blue);
-}
-
-.digital-h {
-  @include hoverEffect($green, $green);
-}
-
-.telecoms-h {
-  @include hoverEffect($valencia, $valencia);
-}
-
-.web-h {
-  @include hoverEffect($purple, $purple);
-}
-
-.cyber-h {
-  @include hoverEffect($radical-red, $radical-red);
-}
-
-.developer-h {
-  @include hoverEffect($red, $red);
-}
+  
 // 480px breaks the icons down
 
 
