@@ -201,25 +201,25 @@
   }
 }  
 
-  .our-services{
-    .viewourwork{
-      visibility:hidden;
-    }
-    h2{
-        font-size:43.2px;
-        font-weight:600;
-        line-height:47.52px;
-        color:#333645;
-        text-align:start;
-        margin:25px 0px 0px;
-    }
-    h3{
-      font-size:26px;
-    
-      margin: 0 0 15px;
-      color:#333645;
-    }
+.our-services{
+  .viewourwork{
+    visibility:hidden;
   }
+  h2{
+      font-size:43.2px;
+      font-weight:600;
+      line-height:47.52px;
+      color:#333645;
+      text-align:start;
+      margin:25px 0px 0px;
+  }
+  h3{
+    font-size:26px;
+  
+    margin: 0 0 15px;
+    color:#333645;
+  }
+}
 
 
   @media (min-width:767px){
@@ -391,68 +391,8 @@
 
 
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//HOVER STATES FOR NAV BAR
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-// Nav bar drop down & triangles.
-    .bespoke-h:hover{
-        &:hover {
-          background-color: $hoki;
-        .triangle{border-color:transparent transparent $hoki transparent;}
-      }
-    }
-      .it-h:hover{
-        &:hover {
-          background-color: $blue;
-        .triangle{border-color:transparent transparent $blue transparent;}
-      }
-      }
-      .digital-h:hover{
-        &:hover {
-          background-color: $green;
-          .triangle {
-            border-color: transparent transparent $green transparent;
-          }
-      }
-    }
-    .digital-h:hover > .icon-bar-graph-h:before{
-      color: $white;
-    }
-      .telecoms-h:hover{
-        &:hover {
-          background-color: $valencia;
-          .triangle {
-            border-color: transparent transparent $valencia transparent;
-          }
-      }
-      }
-      .web-h:hover{
-              &:hover {
-          background-color: $purple;
-          .triangle {
-            border-color: transparent transparent $purple transparent;
-          }
-      }
-      }
-      .cyber-h:hover{
-        &:hover {
-          background-color: $radical-red;
-          .triangle {
-            border-color: transparent transparent $radical-red transparent;
-          }
-      }
-    }
-      .developer-h:hover{
-        &:hover {
-          background-color: $red;
-          .triangle {
-            border-color: transparent transparent $red transparent;
-          }
-      }
-      }
   }
-
   //////////////////////////////////////////////////////////////////////////
   /// Media Query
   /// //////////////////////////////////////////////////////////////////////
