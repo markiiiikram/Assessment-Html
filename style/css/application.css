@@ -30,8 +30,7 @@ a {
 }
 
 .about {
-  max-width: 80%;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 p {
@@ -805,6 +804,7 @@ h4 {
 
 .icon-arrow-right2 {
   border: 0;
+  margin-left: 12px;
 }
 
 .icon-hdd-o:before {
@@ -1088,6 +1088,10 @@ h4 {
   max-height: 70px;
 }
 
+.princess {
+  padding-top: 15px;
+}
+
 @media (min-width: 768px) {
   .telephone {
     display: none;
@@ -1135,6 +1139,7 @@ h4 {
   border-radius: 5px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
   z-index: 99;
+  display: none;
 }
 
 .cookie-h3 {
@@ -1200,7 +1205,7 @@ h4 {
   border-radius: 50%;
   background-color: #333645;
   cursor: pointer;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
 }
 
 .footer-chat .icon-chat {
@@ -1295,7 +1300,12 @@ h4 {
   padding-top: 20px;
 }
 
-.sidebar-inner > [class^="sidebar"] > a:hover, .sidebar-contact:hover, .sidebar-left-align [class^="sidebar"] > a:hover {
+.sidebar-left-align .sidebar-our-work:hover > :first-child, .sidebar-left-align
+.sidebar-services:hover > :first-child, .sidebar-left-align
+.sidebar-our-knowledge:hover > :first-child, .sidebar-left-align
+.sidebar-training:hover > :first-child, .sidebar-left-align
+.sidebar-our-company:hover > :first-child, .sidebar-left-align
+.sidebar-contact-bottom:hover > :first-child {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -1630,7 +1640,7 @@ h4 {
 @media (min-width: 767px) {
   .header-high {
     justify-content: space-flex-start;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 15px;
     height: 110px;
     box-sizing: border-box;
@@ -2007,6 +2017,7 @@ h4 {
 
 .footer-h4 {
   font-size: 1rem;
+  text-wrap: nowrap;
 }
 
 .copyright {
@@ -2354,7 +2365,7 @@ footer p {
 .triangle-up {
   display: none;
   position: absolute;
-  bottom: 5px;
+  bottom: 42px;
 }
 
 .triangle-space {
@@ -2362,7 +2373,7 @@ footer p {
   width: 100%;
   height: 100%;
   position: relative;
-  bottom: 224px;
+  bottom: 220px;
   height: 170px;
 }
 
@@ -2371,7 +2382,7 @@ footer p {
   position: absolute;
   z-index: 2;
   width: 280px;
-  bottom: 78px;
+  bottom: 110px;
   z-index: 2;
   background-color: #333645;
   color: #fff;
@@ -2599,6 +2610,7 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     margin-top: 30px;
+    padding-bottom: 50px;
   }
   .cyber-security, .developer-training {
     margin-top: 0px;
@@ -2769,8 +2781,12 @@ footer p {
   text-decoration: underline;
 }
 
+.button-black {
+  height: auto !important;
+}
+
 .welcome-grid {
-  padding-top: 50px;
+  padding-top: 40px;
   padding-bottom: 13px;
 }
 
@@ -2828,6 +2844,11 @@ footer p {
 .welcome-grid p {
   margin: 0px;
   margin-bottom: 20px;
+}
+
+.button-black {
+  height: auto !important;
+  padding: 10px 30px;
 }
 
 .welcome-buttons {

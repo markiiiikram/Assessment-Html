@@ -9,9 +9,12 @@
 .welcome-1 p a:hover, .welcome-2 p a:hover{
   text-decoration: underline;
 }
+.button-black{
+  height: auto!important;
+}
 .welcome-grid{
-  padding-top:50px;
-  padding-bottom:13px;
+  padding-top: 40px;
+  padding-bottom: 13px;
   h2{
     padding-top:0px;
     padding-bottom:0px;
@@ -59,7 +62,10 @@
     margin: 0px;
     margin-bottom: 20px;
   }
-
+}
+.button-black{
+  height: auto!important;
+  padding: 10px 30px;
 }
 .welcome-buttons{
   display:flex;
