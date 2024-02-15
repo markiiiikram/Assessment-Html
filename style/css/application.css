@@ -40,7 +40,7 @@ p {
 
 .quote {
   font-weight: 600;
-  font-size: 1.3rem;
+  font-size: 1.31rem;
   font-style: italic;
 }
 
@@ -421,6 +421,7 @@ h4 {
   height: 46px;
   display: block;
   box-sizing: border-box;
+  font-size: 1.063rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1305,12 +1306,34 @@ h4 {
   padding-top: 20px;
 }
 
-.sidebar-left-align .sidebar-our-work:hover > :first-child, .sidebar-left-align
+.sidebar-covid, .sidebar-support {
+  cursor: pointer;
+}
+
+.sidebar-contact:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-left-align .sidebar-our-work:hover > :first-child,
+.sidebar-inner > .sidebar-our-work:hover > :first-child, .sidebar-left-align
+.sidebar-services:hover > :first-child,
+.sidebar-inner >
 .sidebar-services:hover > :first-child, .sidebar-left-align
+.sidebar-our-knowledge:hover > :first-child,
+.sidebar-inner >
 .sidebar-our-knowledge:hover > :first-child, .sidebar-left-align
+.sidebar-training:hover > :first-child,
+.sidebar-inner >
 .sidebar-training:hover > :first-child, .sidebar-left-align
+.sidebar-our-company:hover > :first-child,
+.sidebar-inner >
 .sidebar-our-company:hover > :first-child, .sidebar-left-align
-.sidebar-contact-bottom:hover > :first-child {
+.sidebar-contact-bottom:hover > :first-child,
+.sidebar-inner >
+.sidebar-contact-bottom:hover > :first-child, .sidebar-left-align
+.hidden-list:hover > :first-child,
+.sidebar-inner >
+.hidden-list:hover > :first-child {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -1420,7 +1443,7 @@ h4 {
 .header {
   transition: .5s ease;
   background-color: #fff;
-  z-index: 99;
+  z-index: 98;
 }
 
 .header-high {
@@ -2176,7 +2199,7 @@ footer p {
   transition: .5s;
 }
 
-.align-center {
+.container {
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -2639,7 +2662,7 @@ footer p {
   .cyber-security, .developer-training {
     margin-top: 0px;
   }
-  .align-center {
+  .container {
     width: 750px;
   }
   .hidden-m {
@@ -2706,7 +2729,7 @@ footer p {
     width: 455px;
     height: 263px;
   }
-  .align-center {
+  .container {
     width: 970px;
   }
   .lg-device {
@@ -2758,7 +2781,7 @@ footer p {
     width: 370px;
     height: 213px;
   }
-  .align-center {
+  .container {
     width: 1200px;
   }
   .xl-device {
